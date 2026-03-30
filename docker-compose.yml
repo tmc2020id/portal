@@ -1,0 +1,31 @@
+# ============================================================
+# TMC SMART Website — Docker Compose
+# Usage:
+#   docker compose up --build          # build & start
+#   docker compose up -d               # run in background
+#   docker compose down                # stop & remove
+# ============================================================
+
+services:
+  website-tmc:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      # NEXT_PUBLIC_* vars must be supplied at BUILD time.
+      # They are read from the .env file in this directory (or from the shell).
+      # Default to localhost to avoid accidental production URL baking.
+      args:
+        NEXT_PUBLIC_SITE_URL: ${NEXT_PUBLIC_SITE_URL:-http://localhost:3000}
+    image: website-tmc:latest
+    container_name: website-tmc
+    ports:
+      - "3000:3000"
+    environment:
+      NODE_ENV: production
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "wget --no-verbose --tries=1 --spider http://localhost:3000/ || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
