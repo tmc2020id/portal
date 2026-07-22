@@ -1,6 +1,7 @@
-import Link from "next/link";
-import { PortalFooter, PortalNav } from "./portal-nav";
-import styles from "./content-page.module.css";
+import Link from 'next/link';
+import { PortalFooter, PortalNav } from './portal-nav';
+import styles from './content-page.module.css';
+import { ReactNode } from 'react';
 
 type ContentPageProps = {
   eyebrow: string;
@@ -15,6 +16,7 @@ type ContentPageProps = {
   checklist: string[];
   ctaLabel: string;
   ctaHref: string;
+  children?: ReactNode;
 };
 
 export function ContentPage({
@@ -30,6 +32,7 @@ export function ContentPage({
   checklist,
   ctaLabel,
   ctaHref,
+  children,
 }: ContentPageProps) {
   return (
     <div className={styles.pageShell}>
@@ -37,7 +40,7 @@ export function ContentPage({
 
       <main className={styles.main}>
         <section className={styles.hero}>
-          <div className={styles.heroAura} aria-hidden="true" />
+          <div className={styles.heroAura} aria-hidden='true' />
           <div className={styles.heroCopy}>
             <span>{eyebrow}</span>
             <h1>{title}</h1>
@@ -60,6 +63,14 @@ export function ContentPage({
             <p>{intro}</p>
           </div>
         </section>
+
+        {children && (
+          <section className={styles.customContent}>
+            <div className={styles.container}>
+              {children}
+            </div>
+          </section>
+        )}
 
         <section className={styles.highlightSection}>
           <div className={styles.highlightGrid}>
