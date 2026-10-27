@@ -72,8 +72,8 @@
 .spotlightCopy h2,
 .ctaCard h2 {
   font-weight: 500;
-  letter-spacing: -0.065em;
-  line-height: 0.98;
+  letter-spacing: var(--tracking-heading);
+  line-height: var(--leading-display);
 }
 
 .heroCopy h1 {
@@ -178,7 +178,7 @@
   max-width: 280px;
   font-size: var(--text-title-lg);
   font-weight: 500;
-  line-height: 1.02;
+  line-height: var(--leading-title);
   letter-spacing: var(--tracking-title);
 }
 
@@ -221,7 +221,7 @@
   display: grid;
   gap: 12px;
   margin-top: 18px;
-  padding-left: 18px;
+  padding-inline-start: 18px;
 }
 
 .checklistCard li {

@@ -1,39 +1,35 @@
 import Link from "next/link";
+import { localizeHref, type Locale } from "@/i18n/config";
+import type { ContentPageData, Dictionary } from "@/i18n/dictionaries/en";
 import { PortalFooter, PortalNav } from "./portal-nav";
 import styles from "./content-page.module.css";
 
 type ContentPageProps = {
-  eyebrow: string;
-  title: string;
-  summary: string;
-  intro: string;
-  metrics: Array<{ value: string; label: string }>;
-  highlights: Array<{ title: string; body: string }>;
-  spotlightTitle: string;
-  spotlightBody: string;
-  checklistTitle: string;
-  checklist: string[];
-  ctaLabel: string;
-  ctaHref: string;
+  locale: Locale;
+  dict: Dictionary;
+  page: ContentPageData;
 };
 
-export function ContentPage({
-  eyebrow,
-  title,
-  summary,
-  intro,
-  metrics,
-  highlights,
-  spotlightTitle,
-  spotlightBody,
-  checklistTitle,
-  checklist,
-  ctaLabel,
-  ctaHref,
-}: ContentPageProps) {
+export function ContentPage({ locale, dict, page }: ContentPageProps) {
+  const {
+    eyebrow,
+    title,
+    summary,
+    intro,
+    metrics,
+    highlights,
+    spotlightTitle,
+    spotlightBody,
+    checklistTitle,
+    checklist,
+    ctaLabel,
+    ctaHref,
+  } = page;
+  const labels = dict.contentPage;
+
   return (
     <div className={styles.pageShell}>
-      <PortalNav />
+      <PortalNav locale={locale} nav={dict.nav} />
 
       <main className={styles.main}>
         <section className={styles.hero}>
@@ -55,8 +51,8 @@ export function ContentPage({
 
         <section className={styles.introSection}>
           <div className={styles.sectionCopy}>
-            <span>Overview</span>
-            <h2>Built from the current ERP presence</h2>
+            <span>{labels.overviewEyebrow}</span>
+            <h2>{labels.overviewTitle}</h2>
             <p>{intro}</p>
           </div>
         </section>
@@ -75,7 +71,7 @@ export function ContentPage({
         <section className={styles.spotlightSection}>
           <article className={styles.spotlightCard}>
             <div className={styles.spotlightCopy}>
-              <span>Focus</span>
+              <span>{labels.focusEyebrow}</span>
               <h2>{spotlightTitle}</h2>
               <p>{spotlightBody}</p>
             </div>
@@ -93,15 +89,15 @@ export function ContentPage({
         <section className={styles.ctaSection}>
           <article className={styles.ctaCard}>
             <div>
-              <span>Next step</span>
-              <h2>Continue deeper into the TMC SMART experience</h2>
+              <span>{labels.nextStepEyebrow}</span>
+              <h2>{labels.nextStepTitle}</h2>
             </div>
-            <Link href={ctaHref}>{ctaLabel}</Link>
+            <Link href={localizeHref(locale, ctaHref)}>{ctaLabel}</Link>
           </article>
         </section>
       </main>
 
-      <PortalFooter />
+      <PortalFooter locale={locale} nav={dict.nav} />
     </div>
   );
 }
