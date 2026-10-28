@@ -216,9 +216,7 @@ export function HomePortal({ locale, dict }: HomePortalProps) {
         </span>
       ) : (
         <span key={run.key} className={className}>
-          {run.characters
-            .map((character) => (character.value === " " ? "\u00A0" : character.value))
-            .join("")}
+          {run.characters.map((character) => character.value).join("")}
         </span>
       ),
     );
@@ -334,7 +332,7 @@ export function HomePortal({ locale, dict }: HomePortalProps) {
       }
 
       const nextScale = Math.max(
-        0.76,
+        0.6,
         Math.min(1, headlineScale * (availableWidth / measuredWidth)),
       );
 

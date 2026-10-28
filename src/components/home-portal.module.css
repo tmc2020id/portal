@@ -208,6 +208,8 @@
 .headlineLine {
   position: relative;
   display: block;
+  /* Line boxes take their height from the segments, not the h1's own size. */
+  line-height: 0;
   width: fit-content;
   max-width: 100%;
   text-align: start;
@@ -220,18 +222,18 @@
   white-space: pre;
 }
 
+/* The typed layer sits over the hidden measure and wraps the same way. */
 .headlineTyped {
   position: absolute;
   inset-block-start: 0;
-  inset-inline-start: 0;
-  display: inline-flex;
-  align-items: baseline;
+  inset-inline: 0;
+  display: block;
   white-space: pre;
   min-height: 1em;
 }
 
 .typedSegment {
-  display: inline-block;
+  display: inline;
   font-size: calc(clamp(2.4rem, 4.15vw, 4.65rem) * var(--headline-scale, 1));
   font-weight: 500;
   line-height: var(--leading-display);
@@ -241,6 +243,7 @@
 
 /* The brand run keeps the Latin brand face on Arabic pages too. */
 .typedSegment[dir="ltr"] {
+  unicode-bidi: isolate;
   font-family: var(--font-outfit), sans-serif;
 }
 
@@ -261,10 +264,12 @@
   width: 0.08em;
   height: 0.95em;
   margin-inline-start: 0.08em;
-  transform: translateY(-0.02em);
+  /* Zero net advance and zero line height, so the cursor never changes where
+     lines wrap or how tall they are. */
+  margin-inline-end: -0.16em;
+  margin-block-start: -0.95em;
+  vertical-align: -0.1em;
   position: relative;
-  flex-shrink: 0;
-  align-self: flex-end;
 }
 
 .typingActive {
@@ -288,16 +293,12 @@
   to {
     opacity: 0;
     width: 0;
-    margin: 0;
+    margin-inline: 0;
   }
 }
 
 .sloganLine {
   margin-top: -0.02em;
-}
-
-.sloganTyped {
-  align-items: center;
 }
 
 .sloganLetter {
@@ -1075,7 +1076,7 @@
   }
 
   .typedSegment {
-    font-size: clamp(2.45rem, 4.3vw, 4.45rem);
+    font-size: calc(clamp(2.45rem, 4.3vw, 4.45rem) * var(--headline-scale, 1));
   }
 }
 
@@ -1114,6 +1115,12 @@
 
   .hero h1 {
     font-size: clamp(2.5rem, 12vw, 4rem);
+  }
+
+  /* Phones wrap the headline instead of shrinking it further. */
+  .headlineMeasure,
+  .headlineTyped {
+    white-space: pre-wrap;
   }
 
   .typedSegment {
