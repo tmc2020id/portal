@@ -408,6 +408,7 @@
 }
 
 .heroChip {
+  white-space: nowrap;
   text-shadow: 0 0 24px rgba(var(--glow-indigo-rgb), 0.06);
   box-shadow: var(--shadow-chip);
 }

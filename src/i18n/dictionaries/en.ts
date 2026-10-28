@@ -1,16 +1,26 @@
 export type NavItem = { href: string; label: string };
 
 export type ContentPageData = {
-  title: string;
+  metaTitle: string;
   eyebrow: string;
+  title: string;
   summary: string;
-  intro: string;
   metrics: Array<{ value: string; label: string }>;
+  introTitle: string;
+  intro: string;
   highlights: Array<{ title: string; body: string }>;
-  spotlightTitle: string;
-  spotlightBody: string;
-  checklistTitle: string;
-  checklist: string[];
+  spotlight?: {
+    title: string;
+    body: string;
+    listTitle: string;
+    list: string[];
+  };
+  // Long-form content: FAQ groups or legal clauses.
+  sections?: Array<{
+    title: string;
+    items: Array<{ title: string; body: string }>;
+  }>;
+  ctaTitle: string;
   ctaLabel: string;
   ctaHref: string;
 };
@@ -28,7 +38,8 @@ export type PageKey =
 export const en = {
   meta: {
     title: "TMC SMART",
-    description: "Elevate execution with the next-generation workspace",
+    description:
+      "TMC – Technology Metro Company supplies networking equipment, security systems, servers and smart home devices to companies, technicians and resellers, with special orders for anything not in stock.",
   },
   nav: {
     homeLabel: "TMC SMART home",
@@ -57,122 +68,125 @@ export const en = {
     ] as NavItem[],
   },
   home: {
-    heroLead: "Take performance to the next-generation with ",
+    heroLead: "Reliable network and security equipment with ",
     heroBrand: "TMC",
     heroSlogan: "Your Keys for Business",
     login: "Login",
     exploreProducts: "Explore Products",
-    previousFeature: "Previous feature",
-    nextFeature: "Next feature",
+    previousFeature: "Previous category",
+    nextFeature: "Next category",
     featureSlides: [
       {
-        title: "An orchestration core",
+        title: "Wired and wireless networks",
         body:
-          "Coordinate delivery, approvals, and project signals from one premium control layer built for modern teams.",
-        eyebrow: "TMC SMART",
+          "Switches, routers, access points and long-range wireless links, plus the cabling, tools and rack cabinets to install them.",
+        eyebrow: "Networking",
       },
       {
-        title: "Higher-level workflows",
+        title: "Security and surveillance",
         body:
-          "Move from isolated tasks to reusable execution paths with structured states, predictable ownership, and clear results.",
-        eyebrow: "Structured Delivery",
+          "Surveillance cameras and access control systems for offices, shops and facilities.",
+        eyebrow: "Security",
       },
       {
-        title: "Cross-surface visibility",
+        title: "Servers and computing",
         body:
-          "Unify browser activity, project updates, and operational context so teams can act faster with less switching.",
-        eyebrow: "Unified Context",
+          "Servers, components, laptops and desktop computers for businesses and server rooms.",
+        eyebrow: "Computing",
       },
       {
-        title: "Feedback with traceability",
-        body:
-          "Capture review notes, QA signals, and decision history in a system that keeps every release accountable.",
-        eyebrow: "Built for Trust",
+        title: "Smart home",
+        body: "Sensors and controllers to automate homes and offices.",
+        eyebrow: "Smart Home",
       },
     ],
-    statementTitle: "Built for modern teams in the delivery-first era",
+    statementTitle: "A technology supply partner for your business",
     statementBody:
-      "TMC SMART is designed to keep execution visible, premium, and trustworthy whether you are shipping a focused product update or coordinating a complex enterprise program.",
-    routesEyebrow: "Site map",
-    routesTitle: "Actual pages now replace internal-only navigation",
+      "TMC is a store specializing in networking equipment, security systems, servers and smart home solutions. We work with companies, technicians, system integrators and resellers to supply reliable equipment at competitive prices, and we source what is not in stock through special orders.",
+    routesEyebrow: "Explore",
+    routesTitle: "Everything you need from TMC in one place",
     routeOpen: "Open page",
-    useCasesEyebrow: "Watch the flow",
-    useCasesTitle: "Use cases shaped for different delivery modes",
+    useCasesEyebrow: "Who we work with",
+    useCasesTitle: "Supply that fits the way you work",
     useCases: [
       {
-        title: "Frontend teams",
+        title: "Companies",
         summary:
-          "Streamline UX delivery with clearer handoff states, reusable patterns, and a review loop that stays visible.",
-        cta: "View case",
+          "Network and surveillance equipment for offices and branches, with company invoices on request.",
+        cta: "Contact us",
+        href: "/contact",
       },
       {
-        title: "Full-stack delivery",
+        title: "Technicians and integrators",
         summary:
-          "Ship production work with artifact tracking, verifiable checkpoints, and one shared timeline across disciplines.",
-        cta: "View case",
+          "Original equipment from trusted suppliers, and help choosing the right parts for each project.",
+        cta: "Browse products",
+        href: "/products",
       },
       {
-        title: "Enterprise programs",
+        title: "Resellers",
         summary:
-          "Reduce coordination overhead by managing workspaces, dependencies, and approvals from one command layer.",
-        cta: "View case",
+          "Wholesale and partner pricing for resellers and technical partners through a partner account.",
+        cta: "Ask for a partner account",
+        href: "/contact",
       },
     ],
     plans: [
       {
         badge: "Available now",
-        label: "For teams",
-        title: "Launch with clarity",
+        label: "Special Orders",
+        title: "Request any product we don't stock",
       },
       {
-        badge: "Coming soon",
-        label: "For organizations",
-        title: "Scale with governance",
+        badge: "Companies and resellers",
+        label: "Wholesale pricing",
+        title: "Special prices for partner accounts",
       },
     ],
-    blogEyebrow: "Latest notes",
-    blogTitle: "Fresh thinking from the TMC SMART system",
+    blogEyebrow: "From the blog",
+    blogTitle: "Technical articles from the TMC team",
+    // Latest posts from the Odoo blog; phase 4 loads these live.
     blogPosts: [
       {
-        title: "Designing a premium TMC SMART system for cross-team delivery",
-        category: "Product",
-        date: "Mar 21, 2026",
+        title: "The best network structure for an office with cameras, printers, computers and WiFi",
+        category: "Tech Blog",
+        date: "Jun 7, 2026",
+        href: "https://erp.tmcsmart.com/en/blog/tech-blog-4/the-best-network-structure-for-an-office-with-cameras-printers-computers-and-wifi-120",
       },
       {
-        title: "Making approval flows feel instant without losing traceability",
-        category: "Engineering",
-        date: "Mar 12, 2026",
+        title: "Expanding the network without chaos: when to add a switch and when you need a redesign",
+        category: "Tech Blog",
+        date: "Jun 7, 2026",
+        href: "https://erp.tmcsmart.com/en/blog/tech-blog-4/expanding-the-network-without-chaos-when-to-add-a-switch-and-when-you-need-a-redesign-119",
       },
       {
-        title: "How motion supports clarity in enterprise-facing interfaces",
-        category: "Design",
-        date: "Feb 27, 2026",
+        title: "How do you know your switch can't handle the number of devices on your network?",
+        category: "Tech Blog",
+        date: "Jun 7, 2026",
+        href: "https://erp.tmcsmart.com/en/blog/tech-blog-4/how-do-you-know-that-the-switch-cannot-handle-the-number-of-devices-on-your-network-118",
       },
       {
-        title: "Building scalable component states for TMC operations",
-        category: "System",
-        date: "Feb 11, 2026",
+        title: "Internet speed vs. network speed: why your speed isn't what you expect",
+        category: "Tech Blog",
+        date: "Jun 7, 2026",
+        href: "https://erp.tmcsmart.com/en/blog/tech-blog-4/the-difference-between-internet-speed-and-network-speed-why-is-your-speed-not-what-you-expect-117",
       },
     ],
-    cookieBody:
-      "TMC SMART uses cookies to improve performance, understand traffic patterns, and support a more polished experience.",
+    cookieBody: "TMC SMART uses cookies to improve the site and understand how it is used.",
     cookieHide: "Hide",
   },
   contentPage: {
     overviewEyebrow: "Overview",
-    overviewTitle: "Built from the current ERP presence",
-    focusEyebrow: "Focus",
+    focusEyebrow: "In detail",
     nextStepEyebrow: "Next step",
-    nextStepTitle: "Continue deeper into the TMC SMART experience",
   },
   returnPolicy: {
     metaTitle: "Return Policy | TMC SMART",
     metaDescription:
-      "Review the TMC SMART return policy, including final-sale conditions, defective item handling, and support contact details.",
+      "TMC's return policy: final-sale conditions, how to report defective or damaged items within 24 hours, and how to contact us.",
     eyebrow: "Return Policy",
-    title: "Return policy written for clarity, trust, and crawler-friendly indexing",
-    lead:
-      "This page presents TMC's return policy in a stable, readable format designed to fit the TMC SMART experience while staying easy for search engines and policy crawlers to parse.",
+    title: "Return policy",
+    lead: "These conditions apply to all orders placed with TMC, through the store or by contacting our team.",
     summary: [
       {
         title: "All sales are final",
@@ -189,7 +203,7 @@ export const en = {
     ],
     statementTitle: "Policy statement",
     statementBody:
-      "At TMC (Technology Metro Company), we strive to provide high-quality technical solutions and products. To keep expectations clear for customers, partners, and procurement teams, the return policy below applies to orders placed through our channels.",
+      "At TMC (Technology Metro Company), we strive to provide high-quality technical products. To keep expectations clear, the return policy below applies to all orders placed through our channels.",
     conditionsTitle: "Return conditions",
     conditions: [
       "All sales are final. TMC does not accept returns or exchanges once an order has been completed and delivered.",
@@ -197,324 +211,398 @@ export const en = {
       "Customers must notify TMC within 24 hours of receiving a defective or damaged item.",
       "To qualify for an exchange because of a defect, the product must remain in its original packaging and include all accessories.",
     ],
-    noteTitle: "Operational note",
+    noteTitle: "Check your order on arrival",
     noteBody:
-      "This policy page is intentionally delivered as stable, semantic content with clear headings and list structure so the legal content remains easy to read for both visitors and indexing systems. It complements the more interactive areas of the site without depending on motion-heavy presentation.",
+      "Inspect your order as soon as it arrives. If something is damaged or not working, keep the item with its packaging and accessories and contact us right away, so we can review it within the 24-hour window.",
     supportTitle: "Need support about an order?",
-    supportBody:
-      "For questions related to defects, damaged deliveries, or policy clarification, contact the TMC support team through the official sales inbox.",
+    supportBody: "For questions about defects, damaged deliveries or this policy, contact our sales team.",
     contactPage: "Contact page",
   },
   pages: {
     about: {
+      metaTitle: "About us | TMC SMART",
       eyebrow: "About TMC",
-      title: "A strategic technical partner built for long-term growth",
+      title: "A technology equipment supplier for your success",
       summary:
-        "TMC combines supply capability, operational reliability, and tailored digital execution to support companies, technicians, and resellers.",
-      intro:
-        "Our current ERP presence presents TMC as both a trusted technology supplier and a digital solutions partner. This experience unifies that positioning into one premium operational layer.",
+        "TMC – Technology Metro Company specializes in networking equipment, security systems, servers, smart home solutions and technical infrastructure products.",
       metrics: [
-        { value: "6", label: "core capability pillars" },
-        { value: "24/7", label: "business continuity mindset" },
-        { value: "B2B", label: "partner-first orientation" },
+        { value: "2", label: "branches, in Sarmada and Maarat al-Numan" },
+        { value: "B2B + B2C", label: "we sell to companies and individuals" },
+        { value: "Wholesale", label: "partner pricing for resellers" },
       ],
+      introTitle: "Who we are",
+      intro:
+        "We work with companies, technicians, system integrators and resellers to provide reliable equipment, competitive pricing and sourcing for technical projects of all sizes. Our goal is not only to sell products, but to be a supply partner that businesses and technical professionals can rely on.",
       highlights: [
         {
-          title: "Tailored digital solutions",
-          body: "We shape strategy, systems, and execution around the actual needs of each business instead of offering one generic delivery path.",
+          title: "Our mission",
+          body: "To provide high-quality technical equipment and reliable sourcing for companies, technicians and technical projects, with competitive pricing and professional support.",
         },
         {
-          title: "Security with innovation",
-          body: "TMC balances practical protection, operational trust, and modern implementation standards across infrastructure and product journeys.",
+          title: "Our vision",
+          body: "To become a trusted technology supply partner for businesses and technical professionals in the region, supporting infrastructure, networking and security projects.",
         },
         {
-          title: "Reliable sourcing and support",
-          body: "From core equipment to special requests, the company is positioned as an ongoing partner rather than a one-time store.",
+          title: "Special orders",
+          body: "When a product is not in our store, we source it from our suppliers to the specifications you need.",
         },
       ],
-      spotlightTitle: "Why companies choose TMC",
-      spotlightBody:
-        "The current site emphasizes competitive pricing, dependable sourcing, special order handling, and support for companies and technicians. This page translates those strengths into a clearer premium narrative.",
-      checklistTitle: "Core advantages",
-      checklist: [
-        "Professional networking and technical equipment",
-        "Competitive pricing and partner models",
-        "Special order sourcing for unavailable products",
-        "Support for companies, technicians, and resellers",
-      ],
-      ctaLabel: "Explore services",
-      ctaHref: "/services",
+      spotlight: {
+        title: "Why TMC",
+        body: "We supply what technical projects need, from a single access point to a full server room, and we stay available after the sale for the next order.",
+        listTitle: "What you get",
+        list: [
+          "Professional networking and technical equipment",
+          "Competitive pricing",
+          "Special order service",
+          "Support for companies and technicians",
+          "Reliable sourcing and supply",
+          "Wholesale and partner pricing",
+        ],
+      },
+      ctaTitle: "See what we can supply for your next project",
+      ctaLabel: "Browse products",
+      ctaHref: "/products",
     },
     products: {
-      eyebrow: "Product Catalog",
-      title: "A curated catalog for networking, security, servers, and smart systems",
+      metaTitle: "Products | TMC SMART",
+      eyebrow: "Products",
+      title: "Networking, security, servers and smart home equipment",
       summary:
-        "The ERP storefront already organizes a broad range of technical inventory. This page reframes the catalog into a more premium, decision-friendly experience.",
-      intro:
-        "The live store highlights categories such as wireless, cabling tools, switches, routers, servers, security, smart home, and rack cabinets, with visible pricing and promotional positioning.",
+        "Our store covers the equipment technical projects need, from cabling and switches to cameras and servers. Prices and availability are in the online store.",
       metrics: [
-        { value: "8+", label: "main product families" },
-        { value: "100+", label: "visible catalog items" },
-        { value: "B2B/B2C", label: "supported buying modes" },
+        { value: "Networking", label: "wireless, switches, routers and racks" },
+        { value: "Security", label: "cameras and access control" },
+        { value: "Computing", label: "servers, components and PCs" },
       ],
+      introTitle: "Original products from trusted suppliers",
+      intro:
+        "We supply original, quality products from trusted suppliers and manufacturers. If you are not sure which device fits your network, our team can share product information and help you choose.",
       highlights: [
         {
-          title: "Networking infrastructure",
-          body: "Routers, switches, wireless links, accessories, and professional cabling cover a wide operational range.",
+          title: "Networking",
+          body: "Wireless equipment, switches, routers, cabling and tools, and rack cabinets.",
         },
         {
-          title: "Security and surveillance",
-          body: "Camera and security-oriented inventory supports practical deployment needs for facilities and businesses.",
+          title: "Security",
+          body: "Surveillance cameras and access control systems.",
         },
         {
-          title: "Servers and smart systems",
-          body: "The catalog extends into computing, power, and smart environment devices for broader technical programs.",
+          title: "Servers, computing and smart home",
+          body: "Servers, components, laptops and PCs, plus smart home sensors and controllers.",
         },
       ],
-      spotlightTitle: "How the catalog is organized",
-      spotlightBody:
-        "The current ERP structure suggests a strong category-led browsing model. This page makes that structure easier to scan, easier to trust, and better aligned with enterprise purchase behavior.",
-      checklistTitle: "Primary categories",
-      checklist: [
-        "Wireless and point-to-point equipment",
-        "Cabling tools and connectors",
-        "Switches, routers, and access layers",
-        "Servers, components, cameras, and smart home devices",
-      ],
-      ctaLabel: "Request special sourcing",
+      spotlight: {
+        title: "Can't find a product?",
+        body: "Some projects need a specific model. Send us the product name or link and we will source it through a special order.",
+        listTitle: "Store categories",
+        list: [
+          "Wireless, cabling and tools, rack cabinets",
+          "Switches and routers",
+          "Servers, components, laptops and PCs",
+          "Cameras and access control",
+          "Smart home sensors and controllers",
+        ],
+      },
+      ctaTitle: "Need something that isn't in the store?",
+      ctaLabel: "Request a special order",
       ctaHref: "/special-orders",
     },
     services: {
+      metaTitle: "Services | TMC SMART",
       eyebrow: "Services",
-      title: "Services that extend from consulting to implementation design",
+      title: "Digital services alongside the equipment",
       summary:
-        "The About page on the current site presents a distinct service layer that includes consulting, application delivery, security, cloud, and UI/UX design.",
-      intro:
-        "Rather than treating services as secondary, this page gives them a dedicated structure that matches the broader premium direction of the site.",
+        "Beyond supplying equipment, TMC builds digital systems for businesses: apps and websites, booking systems, hosting and electronic payments.",
       metrics: [
-        { value: "6", label: "featured service lines" },
-        { value: "UX + Infra", label: "cross-discipline scope" },
-        { value: "Secure", label: "delivery posture" },
+        { value: "Apps", label: "web and mobile development" },
+        { value: "Hosting", label: "for sites and systems" },
+        { value: "Payments", label: "electronic payment integration" },
       ],
+      introTitle: "One partner for equipment and software",
+      intro:
+        "Many businesses that buy networks and devices from us also need software that runs on them. We take care of both, so you deal with one team from the first cable to the finished system.",
       highlights: [
         {
-          title: "Technology consulting",
-          body: "TMC helps businesses choose the right direction, architecture, and roadmap before implementation begins.",
+          title: "App and website development",
+          body: "Websites and mobile apps built around how your business works.",
         },
         {
-          title: "Web and mobile delivery",
-          body: "Responsive digital products and implementation guidance support organizations that need modern customer-facing systems.",
+          title: "Booking systems",
+          body: "Online booking and scheduling for businesses that work by appointment.",
         },
         {
-          title: "Cloud, IT management, and security",
-          body: "The current positioning includes infrastructure management, database security, and cloud-oriented operational flexibility.",
+          title: "Hosting and electronic payments",
+          body: "Hosting for your site and systems, and electronic payment integration so customers can pay online.",
         },
       ],
-      spotlightTitle: "Service model",
-      spotlightBody:
-        "The most valuable refinement here is clarity: consulting, delivery, security, and operational support are shown as coordinated capabilities rather than disconnected cards.",
-      checklistTitle: "Featured services",
-      checklist: [
-        "Technology consulting",
-        "Website and mobile app development",
-        "Database security",
-        "Cloud solutions, IT management, and UI/UX design",
-      ],
+      spotlight: {
+        title: "Tell us what you need",
+        body: "Every project starts with a conversation about your business, your customers and your budget. We then suggest the scope and timeline that fit.",
+        listTitle: "Our services",
+        list: [
+          "Website and mobile app development",
+          "Booking systems",
+          "Hosting",
+          "Electronic payment integration",
+        ],
+      },
+      ctaTitle: "Planning a website, app or booking system?",
       ctaLabel: "Talk to TMC",
       ctaHref: "/contact",
     },
     specialOrders: {
+      metaTitle: "Special Orders | TMC SMART",
       eyebrow: "Special Orders",
-      title: "Request specialized products even when they are not in standard stock",
+      title: "Request what you need, and we will source it for you",
       summary:
-        "The current ERP site clearly positions special orders as a core differentiator for TMC, especially for projects requiring precise technical specifications.",
-      intro:
-        "This page elevates that capability from a simple text page into a premium workflow-oriented destination focused on project confidence.",
+        "Some projects need specialized equipment that is not in our regular inventory. With special orders, you can order products and technical equipment to the exact specifications you need.",
       metrics: [
-        { value: "Custom", label: "spec-driven sourcing" },
-        { value: "Project", label: "fit for infrastructure needs" },
-        { value: "Flexible", label: "beyond visible stock" },
+        { value: "Any product", label: "even if it isn't in the store" },
+        { value: "Your specs", label: "model, quantity and details" },
+        { value: "Confirmed", label: "price and time before you commit" },
       ],
+      introTitle: "How it works",
+      intro:
+        "Send us the product name, a link or a photo, with the quantity and any details. Our team checks it with our suppliers and gets back to you with availability, price and the expected delivery time.",
       highlights: [
         {
-          title: "Specialized sourcing",
-          body: "Teams can request networking, server, surveillance, and technical products that are not immediately listed in the standard catalog.",
+          title: "1. Send your request",
+          body: "Tell us what you need: product name, link or photo, and the quantity.",
         },
         {
-          title: "Specification-first handling",
-          body: "Requests can be shaped around exact business or infrastructure requirements instead of generic product suggestions.",
+          title: "2. We source it",
+          body: "We check availability and price with our suppliers.",
         },
         {
-          title: "Partner-grade support",
-          body: "This capability is especially relevant for integrators, companies, and resellers managing technical procurement at scale.",
+          title: "3. Confirm and receive",
+          body: "We confirm the price and delivery time with you, then deliver the order.",
         },
       ],
-      spotlightTitle: "What can be requested",
-      spotlightBody:
-        "The current site lists networking equipment, professional cabling, routing and switching hardware, servers, monitoring systems, and other specialized technical products as valid request types.",
-      checklistTitle: "Typical request areas",
-      checklist: [
-        "Networking and communication equipment",
-        "Professional cables and infrastructure components",
-        "Advanced routing and switching hardware",
-        "Servers, monitoring equipment, and specialized technology products",
-      ],
-      ctaLabel: "Contact the sourcing team",
+      spotlight: {
+        title: "What can I order?",
+        body: "Any technical product that is not available in the store. Delivery time depends on the product and the supplier, and our team tells you the expected time before you confirm.",
+        listTitle: "Common requests",
+        list: [
+          "Networking and telecommunications equipment",
+          "Professional cables and network infrastructure components",
+          "Advanced routers, switches and networking devices",
+          "Server and data center equipment",
+          "Monitoring equipment and specialized technology",
+        ],
+      },
+      ctaTitle: "Send us your request",
+      ctaLabel: "Contact us",
       ctaHref: "/contact",
     },
     contact: {
+      metaTitle: "Contact | TMC SMART",
       eyebrow: "Contact",
-      title: "Reach TMC through one clear communication channel",
+      title: "Talk to the TMC team",
       summary:
-        "The current ERP contact page provides address, phone, email, and an inquiry form. This page reframes that information with a clearer operational layout.",
-      intro:
-        "A premium experience should make outreach feel direct and reliable, especially when the next step may involve quoting, sourcing, or project support.",
+        "For orders, prices, special orders or partner accounts, call us, email us or visit one of our branches.",
       metrics: [
-        { value: "+963", label: "phone channel" },
-        { value: "Email", label: "sales inbox" },
-        { value: "Fast", label: "response-oriented flow" },
+        { value: "+963 965 445 580", label: "Sarmada branch" },
+        { value: "+963 992 130 005", label: "Maarat al-Numan branch" },
+        { value: "sales@tmcsmart.shop", label: "sales and inquiries" },
       ],
+      introTitle: "How can we help?",
+      intro:
+        "Tell us what you are looking for, and if you can, include the product name or link, the quantity and your company name. That helps us reply with price and availability faster.",
       highlights: [
         {
-          title: "Phone-first communication",
-          body: "The ERP site prominently exposes a direct phone number for quick inquiry handling and ongoing business communication.",
+          title: "Sarmada branch",
+          body: "Idlib – Sarmada, 100 m after the car roundabout towards Sarmada, Syria. Phone: +963 965 445 580.",
         },
         {
-          title: "Sales and inquiries",
-          body: "The listed email supports pricing requests, support needs, and general coordination with the TMC team.",
+          title: "Maarat al-Numan branch",
+          body: "Maarat al-Numan, Idlib, Syria. Phone: +963 992 130 005.",
         },
         {
-          title: "Structured inquiry flow",
-          body: "Name, company, contact details, subject, and question fields make it easier to capture practical request context.",
+          title: "Email",
+          body: "sales@tmcsmart.shop for prices, orders, invoices and partner accounts.",
         },
       ],
-      spotlightTitle: "Contact details surfaced from the current site",
-      spotlightBody:
-        "The live ERP content references the Sermada / Idlib location, the public phone number, and the sales email address. These details are translated here into a cleaner presentation model.",
-      checklistTitle: "Available channels",
-      checklist: [
-        "Phone: +963965445580",
-        "Email: sales@tmcsmart.shop",
-        "Location: Idlib - Sarmada area",
-        "Structured inquiry form for companies and individuals",
-      ],
-      ctaLabel: "Open FAQ",
+      ctaTitle: "Have a question first?",
+      ctaLabel: "Read the FAQ",
       ctaHref: "/faq",
     },
     faq: {
+      metaTitle: "FAQ | TMC SMART",
       eyebrow: "FAQ",
-      title: "Answers that reduce friction before purchase or partnership",
-      summary:
-        "The current ERP experience includes a FAQ presence and a help-oriented forum area. This page consolidates that intent into a clearer support-oriented destination.",
-      intro:
-        "For a premium experience, FAQ content should not feel secondary. It should actively remove uncertainty around products, services, ordering, and support.",
-      metrics: [
-        { value: "Help", label: "self-service layer" },
-        { value: "Clear", label: "pre-sales guidance" },
-        { value: "Support", label: "post-inquiry readiness" },
-      ],
-      highlights: [
+      title: "Frequently asked questions",
+      summary: "Answers about what we sell, how to order, delivery, our products and special orders.",
+      metrics: [],
+      introTitle: "Didn't find your answer?",
+      intro: "Call or email us and our team will help you.",
+      highlights: [],
+      sections: [
         {
-          title: "Business questions",
-          body: "Clarify what TMC supplies, how services relate to the catalog, and what types of clients the company supports.",
+          title: "General",
+          items: [
+            {
+              title: "What does TMC sell?",
+              body: "Networking equipment, security systems, servers, smart home devices, cabling products and technical equipment for companies, technicians and technical projects.",
+            },
+            {
+              title: "Do you sell to individuals or companies?",
+              body: "Both. We also offer special pricing for companies, resellers and technical partners.",
+            },
+            {
+              title: "Do you offer wholesale pricing?",
+              body: "Yes, for companies, resellers and technical partners. Contact us to open a partner account.",
+            },
+            {
+              title: "Can I request products that are not in the store?",
+              body: "Yes, through our special order service. Send us the product and we will source it for you.",
+            },
+          ],
         },
         {
-          title: "Ordering questions",
-          body: "Explain standard purchases, special orders, pricing expectations, and what information should be included in a request.",
+          title: "Orders",
+          items: [
+            {
+              title: "How can I place an order?",
+              body: "Order directly through the online store, or contact us by phone or email.",
+            },
+            {
+              title: "Can I modify or cancel my order?",
+              body: "Contact us as soon as possible. Orders can be modified or cancelled before shipping.",
+            },
+            {
+              title: "Do you provide invoices for companies?",
+              body: "Yes, we provide company invoices on request.",
+            },
+          ],
         },
         {
-          title: "Trust questions",
-          body: "Reinforce how sourcing reliability, support, and long-term partnership are handled across the business.",
+          title: "Shipping and delivery",
+          items: [
+            {
+              title: "Do you deliver?",
+              body: "Yes. Delivery time depends on product availability and your location, and our team tells you the time after the order is confirmed.",
+            },
+          ],
+        },
+        {
+          title: "Products",
+          items: [
+            {
+              title: "Are the products original?",
+              body: "Yes. We supply original, quality products from trusted suppliers and manufacturers.",
+            },
+            {
+              title: "Do you provide technical support?",
+              body: "We provide basic guidance and product information, and help you choose the right equipment for your needs.",
+            },
+          ],
+        },
+        {
+          title: "Special orders",
+          items: [
+            {
+              title: "What is a special order?",
+              body: "A service for requesting products that are not available in the store. We source them from our suppliers.",
+            },
+            {
+              title: "How long do special orders take?",
+              body: "It depends on the product and the supplier. Our team tells you the expected delivery time before you confirm.",
+            },
+          ],
         },
       ],
-      spotlightTitle: "Support direction",
-      spotlightBody:
-        "The ERP structure suggests FAQ and help as supporting layers. In the new structure, they become part of a more deliberate trust-building experience.",
-      checklistTitle: "Suggested FAQ themes",
-      checklist: [
-        "What industries and customers does TMC serve?",
-        "How do special orders work?",
-        "What product categories are available?",
-        "How can businesses request support or pricing?",
-      ],
+      ctaTitle: "Still have a question?",
       ctaLabel: "Get in touch",
       ctaHref: "/contact",
     },
     terms: {
+      metaTitle: "Terms of Use | TMC SMART",
       eyebrow: "Terms of Use",
-      title: "Usage terms aligned with a clearer enterprise-facing experience",
+      title: "Terms of use",
       summary:
-        "The current ERP site exposes terms pages in navigation and footer areas. This version presents them in the same visual system as the rest of the experience.",
+        "By accessing and using this website, you agree to the following terms. Please read them carefully before using the website.",
+      metrics: [],
+      introTitle: "About these terms",
       intro:
-        "Legal and usage information should feel trustworthy, readable, and structurally consistent with the rest of the interface rather than feeling detached from the product experience.",
-      metrics: [
-        { value: "Clear", label: "readability focus" },
-        { value: "Trusted", label: "brand consistency" },
-        { value: "Aligned", label: "shared workspace system" },
-      ],
-      highlights: [
+        "This website is operated by TMC and provides information, products and services related to technical equipment and our online store.",
+      highlights: [],
+      sections: [
         {
-          title: "Consistent presentation",
-          body: "Terms should use the same spacing, hierarchy, and navigation structure used across the rest of the TMC SMART system.",
-        },
-        {
-          title: "Business-facing clarity",
-          body: "Enterprise users need legal references to be easy to scan during evaluation, quoting, and ongoing account activity.",
-        },
-        {
-          title: "Operational confidence",
-          body: "A premium interface strengthens trust when legal and policy content feels properly integrated into the product environment.",
+          title: "Terms",
+          items: [
+            {
+              title: "Website use",
+              body: "You agree to use this website only for lawful purposes and in a way that does not infringe the rights of others or restrict their use of the website.",
+            },
+            {
+              title: "Product information",
+              body: "We make every effort to keep product descriptions, prices and availability accurate. We reserve the right to correct any errors, inaccuracies or omissions at any time without prior notice.",
+            },
+            {
+              title: "Orders and payments",
+              body: "By placing an order, you agree that the information you provide is accurate and complete, that orders are subject to availability, that we may cancel or refuse an order if necessary, and that prices and availability may change without prior notice.",
+            },
+            {
+              title: "Intellectual property",
+              body: "All content on this website, including text, images, logos, graphics and design, is the property of TMC and may not be copied, reproduced or used without permission.",
+            },
+            {
+              title: "Limitation of liability",
+              body: "TMC is not liable for any direct or indirect damages resulting from the use of, or inability to use, this website or any products purchased through it.",
+            },
+            {
+              title: "External links",
+              body: "This website may link to external websites. We are not responsible for their content or policies.",
+            },
+            {
+              title: "Changes to these terms",
+              body: "We may modify these terms at any time. Changes take effect as soon as they are posted on the website.",
+            },
+          ],
         },
       ],
-      spotlightTitle: "What this page represents",
-      spotlightBody:
-        "This route acts as a structured placeholder for the terms content already referenced from the current ERP experience, ready for formal legal copy when finalized.",
-      checklistTitle: "Recommended legal sections",
-      checklist: [
-        "Use of the website and workspace",
-        "Order and pricing conditions",
-        "Account and access responsibilities",
-        "Limitation, compliance, and contact references",
-      ],
-      ctaLabel: "Review privacy policy",
-      ctaHref: "/privacy-policy",
+      ctaTitle: "Questions about these terms?",
+      ctaLabel: "Contact TMC",
+      ctaHref: "/contact",
     },
     privacy: {
+      metaTitle: "Privacy Policy | TMC SMART",
       eyebrow: "Privacy Policy",
-      title: "A privacy surface that matches the quality of the workspace experience",
+      title: "Privacy policy",
       summary:
-        "The live ERP site already links to privacy information. This page carries that requirement into a cleaner, more coherent experience.",
-      intro:
-        "Privacy content becomes easier to trust when it is presented inside the same calm, structured system used everywhere else in the site.",
-      metrics: [
-        { value: "Policy", label: "data handling layer" },
-        { value: "Readable", label: "customer-friendly format" },
-        { value: "Consistent", label: "shared UI treatment" },
-      ],
-      highlights: [
+        "TMC is committed to protecting your privacy. This policy explains how we collect, use and protect your information when you use our website.",
+      metrics: [],
+      introTitle: "Your consent",
+      intro: "By using our website, you consent to this privacy policy.",
+      highlights: [],
+      sections: [
         {
-          title: "Data transparency",
-          body: "Visitors should quickly understand what details may be collected through forms, inquiries, orders, or account activity.",
-        },
-        {
-          title: "Operational relevance",
-          body: "Policy language should align with practical business actions such as contact requests, catalog browsing, and sourcing workflows.",
-        },
-        {
-          title: "Design consistency",
-          body: "Even policy pages benefit from premium structure, restrained motion, and a reliable navigation model.",
+          title: "Policy",
+          items: [
+            {
+              title: "Information we collect",
+              body: "When you use our website or place an order, we may collect your name, phone number, email address, shipping address, billing information, order details and anything you send through contact forms.",
+            },
+            {
+              title: "How we use it",
+              body: "To process and deliver orders, contact you about your order, provide customer support, improve our website and services, send updates related to your order, and respond to inquiries and special order requests.",
+            },
+            {
+              title: "Protecting your information",
+              body: "We take appropriate security measures to protect your personal information from unauthorized access, alteration, disclosure or destruction.",
+            },
+            {
+              title: "Sharing information",
+              body: "We do not sell, trade or rent your personal information. We share only what is needed with shipping companies or service providers to complete your order or provide our services.",
+            },
+            {
+              title: "Cookies",
+              body: "Our website may use cookies to improve your experience, analyze traffic and improve our services.",
+            },
+          ],
         },
       ],
-      spotlightTitle: "Privacy within TMC SMART",
-      spotlightBody:
-        "This route is prepared as a design-consistent privacy destination that can later receive approved legal text while preserving the site's visual quality.",
-      checklistTitle: "Recommended privacy sections",
-      checklist: [
-        "Collected contact and business data",
-        "Use of cookies and analytics signals",
-        "Communication and support workflows",
-        "Retention, rights, and policy updates",
-      ],
+      ctaTitle: "Questions about your data?",
       ctaLabel: "Contact TMC",
       ctaHref: "/contact",
     },

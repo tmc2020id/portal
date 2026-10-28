@@ -774,7 +774,7 @@ export function HomePortal({ locale, dict }: HomePortalProps) {
                 <div className={styles.useCaseContent}>
                   <h3>{item.title}</h3>
                   <p>{item.summary}</p>
-                  <Link href={localizeHref(locale, "/services")}>{item.cta}</Link>
+                  <Link href={localizeHref(locale, item.href)}>{item.cta}</Link>
                 </div>
               </article>
             ))}
@@ -822,7 +822,7 @@ export function HomePortal({ locale, dict }: HomePortalProps) {
                   <span>{post.category}</span>
                   <small>{post.date}</small>
                 </div>
-                <Link href={localizeHref(locale, "/about-us")}>{post.title}</Link>
+                <a href={post.href}>{post.title}</a>
               </article>
             ))}
           </div>
