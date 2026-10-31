@@ -4,16 +4,22 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { footerNavigation, primaryNavigation } from "@/data/site-pages";
+import { localizeHref, stripLocale, type Locale } from "@/i18n/config";
+import type { Dictionary } from "@/i18n/dictionaries/en";
 import styles from "./portal-nav.module.css";
 
 const AI_PORTAL_URL = "https://ai.tmcsmart.com";
 
-function BrandMark() {
+type NavProps = {
+  locale: Locale;
+  nav: Dictionary["nav"];
+};
+
+function BrandMark({ alt }: { alt: string }) {
   return (
     <Image
       src="/logo-transparent.png"
-      alt="TMC SMART Logo"
+      alt={alt}
       className={styles.brandMark}
       width={1024}
       height={597}
@@ -32,26 +38,33 @@ function SparkIcon() {
   );
 }
 
-export function PortalNav() {
+export function PortalNav({ locale, nav }: NavProps) {
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
+  const otherLocale: Locale = locale === "ar" ? "en" : "ar";
+  const switchHref = localizeHref(otherLocale, stripLocale(pathname));
 
   return (
     <header className={styles.header}>
       <div className={styles.headerBar}>
-        <Link className={styles.brand} href="/" aria-label="TMC SMART home">
-          <BrandMark />
+        <Link
+          className={styles.brand}
+          href={localizeHref(locale, "/")}
+          aria-label={nav.homeLabel}
+        >
+          <BrandMark alt={nav.logoAlt} />
         </Link>
 
-        <nav className={styles.desktopNav} aria-label="Primary">
-          {primaryNavigation.map((item) => {
-            const active = pathname === item.href;
+        <nav className={styles.desktopNav} aria-label={nav.primaryLabel}>
+          {nav.primary.map((item) => {
+            const href = localizeHref(locale, item.href);
+            const active = pathname === href;
 
             return (
               <Link
                 key={item.href}
                 className={`${styles.navLink} ${active ? styles.navLinkActive : ""}`}
-                href={item.href}
+                href={href}
               >
                 {item.label}
               </Link>
@@ -65,17 +78,28 @@ export function PortalNav() {
             href={AI_PORTAL_URL}
             target="_blank"
             rel="noreferrer"
-            aria-label="Open TMC AI"
+            aria-label={`${nav.aiLabel} (${nav.aiBadge})`}
           >
             <SparkIcon />
             <span className={styles.aiShortcutLabel}>TMC AI</span>
+            <span className={styles.aiBadge}>{nav.aiBadge}</span>
+          </a>
+
+          <a
+            className={styles.localeSwitch}
+            href={switchHref}
+            hrefLang={otherLocale}
+            lang={otherLocale}
+            aria-label={nav.switchAriaLabel}
+          >
+            {nav.switchLabel}
           </a>
 
           <button
             className={styles.menuButton}
             type="button"
             aria-expanded={menuOpen}
-            aria-label="Toggle navigation"
+            aria-label={nav.toggleLabel}
             onClick={() => setMenuOpen((current) => !current)}
           >
             <span />
@@ -87,16 +111,17 @@ export function PortalNav() {
 
       <nav
         className={`${styles.mobilePanel} ${menuOpen ? styles.mobilePanelOpen : ""}`}
-        aria-label="Mobile"
+        aria-label={nav.mobileLabel}
       >
-        {primaryNavigation.map((item) => {
-          const active = pathname === item.href;
+        {nav.primary.map((item) => {
+          const href = localizeHref(locale, item.href);
+          const active = pathname === href;
 
           return (
             <Link
               key={item.href}
               className={`${styles.mobileLink} ${active ? styles.mobileLinkActive : ""}`}
-              href={item.href}
+              href={href}
               onClick={() => setMenuOpen(false)}
             >
               {item.label}
@@ -112,25 +137,26 @@ export function PortalNav() {
         >
           <SparkIcon />
           <span>TMC AI</span>
+          <span className={styles.aiBadge}>{nav.aiBadge}</span>
         </a>
       </nav>
     </header>
   );
 }
 
-export function PortalFooter() {
+export function PortalFooter({ locale, nav }: NavProps) {
   return (
     <footer className={styles.footer}>
       <div className={styles.footerPrimary}>
-        {primaryNavigation.map((item) => (
-          <Link key={item.href} href={item.href}>
+        {nav.primary.map((item) => (
+          <Link key={item.href} href={localizeHref(locale, item.href)}>
             {item.label}
           </Link>
         ))}
       </div>
       <div className={styles.footerSecondary}>
-        {footerNavigation.map((item) => (
-          <Link key={item.href} href={item.href}>
+        {nav.footer.map((item) => (
+          <Link key={item.href} href={localizeHref(locale, item.href)}>
             {item.label}
           </Link>
         ))}

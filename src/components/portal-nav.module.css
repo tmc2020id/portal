@@ -13,20 +13,20 @@
   justify-content: space-between;
   gap: 18px;
   padding: 14px 18px;
-  border: 1px solid rgba(17, 17, 17, 0.08);
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.72);
-  backdrop-filter: blur(18px);
-  box-shadow: 0 12px 34px rgba(17, 17, 17, 0.06);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-pill);
+  background: var(--surface-glass);
+  backdrop-filter: blur(var(--blur-bar));
+  box-shadow: var(--shadow-nav);
 }
 
 .brand {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  font-size: 1rem;
+  font-size: var(--text-body);
   font-weight: 500;
-  letter-spacing: -0.03em;
+  letter-spacing: var(--tracking-ui);
 }
 
 .brandMark {
@@ -49,7 +49,7 @@
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  margin-left: auto;
+  margin-inline-start: auto;
 }
 
 .navLink,
@@ -60,15 +60,16 @@
   justify-content: center;
   min-height: 42px;
   padding: 0 16px;
-  border-radius: 999px;
+  border-radius: var(--radius-pill);
   color: var(--muted);
-  font-size: 0.95rem;
+  font-size: var(--text-label);
   font-weight: 500;
-  letter-spacing: -0.03em;
+  letter-spacing: var(--tracking-ui);
+  white-space: nowrap;
   transition:
-    color 180ms ease,
-    background-color 180ms ease,
-    transform 180ms ease;
+    color var(--duration-fast) var(--ease-standard),
+    background-color var(--duration-fast) var(--ease-standard),
+    transform var(--duration-fast) var(--ease-standard);
 }
 
 .aiShortcut,
@@ -79,23 +80,53 @@
   gap: 10px;
   min-height: 46px;
   padding: 0 16px;
-  border: 1px solid rgba(17, 17, 17, 0.08);
-  border-radius: 999px;
-  background: linear-gradient(135deg, rgba(11, 105, 178, 0.12), rgba(255, 142, 35, 0.16));
+  border: 1px solid var(--line);
+  border-radius: var(--radius-pill);
+  background: linear-gradient(135deg, rgba(var(--brand-blue-rgb), 0.12), rgba(var(--brand-orange-rgb), 0.16));
   color: var(--ink);
-  box-shadow: 0 10px 24px rgba(17, 17, 17, 0.08);
+  box-shadow: var(--shadow-control);
   transition:
-    transform 180ms ease,
-    box-shadow 180ms ease,
-    border-color 180ms ease,
-    background 180ms ease;
+    transform var(--duration-fast) var(--ease-standard),
+    box-shadow var(--duration-fast) var(--ease-standard),
+    border-color var(--duration-fast) var(--ease-standard),
+    background var(--duration-fast) var(--ease-standard);
 }
 
 .aiShortcutLabel {
-  font-size: 0.92rem;
+  font-size: var(--text-caption);
   font-weight: 600;
-  letter-spacing: -0.03em;
+  letter-spacing: var(--tracking-ui);
   white-space: nowrap;
+}
+
+.aiBadge {
+  padding: 2px 8px;
+  border-radius: var(--radius-pill);
+  background: var(--surface-glass-strong);
+  color: var(--muted);
+  font-size: var(--text-caption);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.localeSwitch {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 0 16px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-pill);
+  background: var(--surface-glass);
+  backdrop-filter: blur(var(--blur-control));
+  color: var(--ink);
+  font-size: var(--text-caption);
+  font-weight: 600;
+  white-space: nowrap;
+  box-shadow: var(--shadow-control);
+  transition:
+    transform var(--duration-fast) var(--ease-standard),
+    box-shadow var(--duration-fast) var(--ease-standard);
 }
 
 .sparkIcon {
@@ -109,10 +140,14 @@
   stroke-linejoin: round;
 }
 
+:global([dir="rtl"]) .navLink {
+  padding: 0 12px;
+}
+
 .navLinkActive,
 .mobileLinkActive {
   color: var(--ink);
-  background: rgba(17, 17, 17, 0.06);
+  background: var(--fill-active);
 }
 
 .menuButton {
@@ -121,9 +156,9 @@
   justify-content: center;
   width: 48px;
   height: 48px;
-  border: 1px solid rgba(17, 17, 17, 0.08);
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-pill);
+  background: var(--surface-glass);
   cursor: pointer;
 }
 
@@ -131,8 +166,8 @@
   position: absolute;
   width: 18px;
   height: 1.5px;
-  background: #111;
-  border-radius: 999px;
+  background: var(--ink);
+  border-radius: var(--radius-pill);
 }
 
 .menuButton span:nth-child(1) {
@@ -148,17 +183,17 @@
   gap: 8px;
   margin-top: 12px;
   padding: 14px;
-  border: 1px solid rgba(17, 17, 17, 0.08);
-  border-radius: 28px;
-  background: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(18px);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-menu);
+  background: var(--surface-glass-menu);
+  backdrop-filter: blur(var(--blur-bar));
   opacity: 0;
   visibility: hidden;
   transform: translateY(-10px);
   transition:
-    opacity 180ms ease,
-    transform 180ms ease,
-    visibility 180ms ease;
+    opacity var(--duration-fast) var(--ease-standard),
+    transform var(--duration-fast) var(--ease-standard),
+    visibility var(--duration-fast) var(--ease-standard);
 }
 
 .mobilePanelOpen {
@@ -177,7 +212,7 @@
 }
 
 .footer {
-  width: min(1240px, calc(100% - 48px));
+  width: min(var(--container), calc(100% - var(--page-inset)));
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -197,16 +232,21 @@
   .navLink:hover,
   .mobileLink:hover {
     color: var(--ink);
-    background: rgba(17, 17, 17, 0.05);
+    background: var(--fill-hover);
     transform: translateY(-1px);
   }
 
   .aiShortcut:hover,
   .mobileExternalLink:hover {
     transform: translateY(-1px);
-    border-color: rgba(17, 17, 17, 0.14);
-    background: linear-gradient(135deg, rgba(11, 105, 178, 0.18), rgba(255, 142, 35, 0.22));
-    box-shadow: 0 14px 28px rgba(17, 17, 17, 0.1);
+    border-color: var(--line-strong);
+    background: linear-gradient(135deg, rgba(var(--brand-blue-rgb), 0.18), rgba(var(--brand-orange-rgb), 0.22));
+    box-shadow: var(--shadow-control-hover);
+  }
+
+  .localeSwitch:hover {
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-control-hover);
   }
 }
 
@@ -243,8 +283,13 @@
     padding: 0;
   }
 
-  .aiShortcutLabel {
+  .aiShortcutLabel,
+  .aiShortcut .aiBadge {
     display: none;
+  }
+
+  .localeSwitch {
+    padding: 0 14px;
   }
 
   .footer {

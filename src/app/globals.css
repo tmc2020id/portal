@@ -1,8 +1,158 @@
+/*
+ * TMC SMART design tokens.
+ * Mirrors tmc-design-system/tokens.json. Raw palette channels first (for rgba()),
+ * then semantic roles that components use. Components never use literal colors.
+ */
 :root {
+  /* ---------- Palette channels ---------- */
+  --palette-ink-rgb: 17, 17, 17;
+  --palette-night-rgb: 16, 17, 20;
+  --palette-white-rgb: 255, 255, 255;
+  --brand-blue-rgb: 11, 105, 178;
+  --brand-orange-rgb: 255, 142, 35;
+  --glow-periwinkle-rgb: 99, 118, 255;
+  --glow-indigo-rgb: 95, 124, 255;
+  --glow-violet-rgb: 103, 116, 255;
+  --glow-pink-rgb: 255, 109, 145;
+
+  /* ---------- Brand ---------- */
+  --brand-blue: #0b69b2;
+  --brand-orange: #ff8e23;
+
+  /* ---------- Surfaces ---------- */
   --background: #fbfbfa;
+  --surface: #ffffff;
+  --surface-wash-top: #fafaf9;
+  --surface-wash-mid: #f7f7f6;
+  --surface-wash-mid-lilac: #f6f4fa;
+  --surface-wash-mid-policy: #f5f2f8;
+  --surface-glass: rgba(var(--palette-white-rgb), 0.72);
+  --surface-glass-card: rgba(var(--palette-white-rgb), 0.76);
+  --surface-glass-strong: rgba(var(--palette-white-rgb), 0.86);
+  --surface-glass-menu: rgba(var(--palette-white-rgb), 0.88);
+  --surface-banner: rgba(var(--palette-white-rgb), 0.94);
+  --surface-tint: rgba(var(--palette-ink-rgb), 0.03);
+  --surface-tint-end: rgba(var(--palette-ink-rgb), 0.01);
+
+  /* ---------- Text ---------- */
   --ink: #111111;
+  --ink-soft: rgba(var(--palette-ink-rgb), 0.72);
   --muted: #5d626c;
-  --line: rgba(17, 17, 17, 0.08);
+
+  /* ---------- Lines and state fills ---------- */
+  --line: rgba(var(--palette-ink-rgb), 0.08);
+  --line-subtle: rgba(var(--palette-ink-rgb), 0.06);
+  --line-strong: rgba(var(--palette-ink-rgb), 0.14);
+  --fill-hover: rgba(var(--palette-ink-rgb), 0.05);
+  --fill-active: rgba(var(--palette-ink-rgb), 0.06);
+
+  /* ---------- Actions ---------- */
+  --action: #101114;
+  --action-hover: #1b1d24;
+  --consent: #2672ec;
+  --focus-ring: var(--brand-blue);
+
+  /* ---------- Inverse (dark panels) ---------- */
+  --inverse: #101114;
+  --inverse-end: #1b1e25;
+  --inverse-card: #15171c;
+  --inverse-card-end: #22262f;
+  --inverse-blog-end: #2a2f39;
+  --on-inverse: #ffffff;
+  --on-inverse-muted: rgba(var(--palette-white-rgb), 0.75);
+  --on-inverse-pill: rgba(var(--palette-white-rgb), 0.12);
+  --on-inverse-line: rgba(var(--palette-white-rgb), 0.12);
+  --on-inverse-line-subtle: rgba(var(--palette-white-rgb), 0.06);
+  --on-inverse-panel: rgba(var(--palette-white-rgb), 0.08);
+
+  /* ---------- Typography ---------- */
+  --text-display-1: clamp(3.6rem, 6vw, 6.2rem);
+  --text-display-2: clamp(2.8rem, 5vw, 5.4rem);
+  --text-display-3: clamp(2.4rem, 4vw, 4.3rem);
+  --text-display-4: clamp(2.2rem, 3.4vw, 3.7rem);
+  --text-display-5: clamp(2rem, 3vw, 3.2rem);
+  --text-title-lg: 1.8rem;
+  --text-title: 1.55rem;
+  --text-title-sm: 1.25rem;
+  --text-button: 1.18rem;
+  --text-lead: 1.12rem;
+  --text-body-lg: 1.08rem;
+  --text-body: 1rem;
+  --text-label: 0.95rem;
+  --text-caption: 0.92rem;
+  --tracking-ui: -0.03em;
+  --tracking-tight: -0.04em;
+  --tracking-title: -0.05em;
+  --tracking-display: -0.06em;
+  --tracking-heading: -0.065em;
+  --tracking-hero: -0.07em;
+  --leading-display: 0.96;
+  --leading-title: 1.02;
+
+  /* ---------- Layout ---------- */
+  --container: 1240px;
+  --container-narrow: 1120px;
+  --page-inset: 48px;
+  --gutter: clamp(24px, 4vw, 52px);
+  --section-gap: clamp(88px, 10vw, 140px);
+  --section-gap-content: clamp(72px, 8vw, 124px);
+
+  /* ---------- Radius ---------- */
+  --radius-pill: 999px;
+  --radius-disc: 50%;
+  --radius-panel: 40px;
+  --radius-card-lg: 34px;
+  --radius-card: 32px;
+  --radius-menu: 28px;
+  --radius-inset-lg: 26px;
+  --radius-inset: 22px;
+  --radius-tile: 14px;
+  --radius-cursor: 4px;
+
+  /* ---------- Elevation ---------- */
+  --shadow-nav: 0 12px 34px rgba(var(--palette-ink-rgb), 0.06);
+  --shadow-control: 0 10px 24px rgba(var(--palette-ink-rgb), 0.08);
+  --shadow-control-hover: 0 14px 28px rgba(var(--palette-ink-rgb), 0.1);
+  --shadow-primary: 0 14px 34px rgba(var(--palette-night-rgb), 0.18);
+  --shadow-card-hover: 0 20px 40px rgba(var(--palette-ink-rgb), 0.06);
+  --shadow-card-active: 0 24px 48px rgba(var(--palette-ink-rgb), 0.08);
+  --shadow-menu: 0 24px 60px rgba(var(--palette-ink-rgb), 0.08);
+  --shadow-chip: 0 12px 26px rgba(var(--palette-ink-rgb), 0.05);
+  --shadow-cursor: 0 0 24px rgba(var(--brand-blue-rgb), 0.24);
+
+  /* ---------- Glass blur ---------- */
+  --blur-control: 12px;
+  --blur-button: 14px;
+  --blur-card: 16px;
+  --blur-bar: 18px;
+  --blur-menu: 20px;
+
+  /* ---------- Motion ---------- */
+  --duration-fast: 180ms;
+  --duration-reveal: 800ms;
+  --ease-standard: ease;
+  --ease-out-soft: cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+/*
+ * Arabic: no tracking (negative letter-spacing breaks letter joins) and looser
+ * leading for its taller ascenders and descenders.
+ */
+:root[dir="rtl"] {
+  --tracking-ui: 0;
+  --tracking-tight: 0;
+  --tracking-title: 0;
+  --tracking-display: 0;
+  --tracking-heading: 0;
+  --tracking-hero: 0;
+  --leading-display: 1.3;
+  --leading-title: 1.35;
+}
+
+@media (max-width: 720px) {
+  :root {
+    --page-inset: 24px;
+  }
 }
 
 html {
@@ -25,6 +175,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+:root[dir="rtl"] body {
+  font-family: var(--font-arabic), var(--font-outfit), Arial, Helvetica, sans-serif;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -34,4 +188,9 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
 }

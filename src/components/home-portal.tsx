@@ -4,14 +4,9 @@ import type { CSSProperties } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useMemo, useRef, useState } from "react";
-import {
-  blogPosts,
-  featureSlides,
-  heroChips,
-  plans,
-  useCases,
-} from "@/data/home";
-import { primaryNavigation } from "@/data/site-pages";
+import { heroChips } from "@/data/home";
+import { localizeHref, type Locale } from "@/i18n/config";
+import type { Dictionary } from "@/i18n/dictionaries/en";
 import { PortalFooter, PortalNav } from "./portal-nav";
 import styles from "./home-portal.module.css";
 
@@ -34,11 +29,23 @@ type ParticleConfig = {
   drift: number;
 };
 
-function BrandMark() {
+type HomePortalProps = {
+  locale: Locale;
+  dict: Dictionary;
+};
+
+type HeadlineCharacter = {
+  key: string;
+  value: string;
+  segment: "lead" | "brand" | "slogan";
+  tone: "default" | "logoBlue" | "logoOrange";
+};
+
+function BrandMark({ alt }: { alt: string }) {
   return (
     <Image
       src="/logo-transparent.png"
-      alt="TMC SMART Logo"
+      alt={alt}
       className={styles.brandMark}
       width={1024}
       height={597}
@@ -71,7 +78,9 @@ function GridIcon() {
   );
 }
 
-export function HomePortal() {
+export function HomePortal({ locale, dict }: HomePortalProps) {
+  const home = dict.home;
+  const { featureSlides, useCases, plans, blogPosts } = home;
   const [featureIndex, setFeatureIndex] = useState(0);
   const [cookieVisible, setCookieVisible] = useState(true);
   const [typedCount, setTypedCount] = useState(0);
@@ -84,38 +93,43 @@ export function HomePortal() {
   const headlineRef = useRef<HTMLHeadingElement>(null);
   const firstLineMeasureRef = useRef<HTMLSpanElement>(null);
   const particleRefs = useRef<Array<HTMLSpanElement | null>>([]);
-  const heroLeadLine = "Take performance to the next-generation with ";
-  const heroBrand = "TMC";
-  const heroSlogan = "Your Keys for Business";
+  const heroLeadLine = home.heroLead;
+  const heroBrand = home.heroBrand;
+  const heroSlogan = home.heroSlogan;
   const heroTitle = `${heroLeadLine}${heroBrand} ${heroSlogan}`;
   const TYPING_START_DELAY = 140;
   const TARGET_TYPING_TIME_MS = 3600;
   const CURSOR_SETTLE_TIME_MS = 220;
   const CURSOR_EXIT_TIME_MS = 220;
 
-  const firstLineCharacters = useMemo(
+  const firstLineCharacters = useMemo<HeadlineCharacter[]>(
     () => [
       ...heroLeadLine.split("").map((value, index) => ({
         key: `lead-${index}`,
         value,
-        tone: "default",
+        segment: "lead" as const,
+        tone: "default" as const,
       })),
       ...heroBrand.split("").map((value, index) => ({
         key: `brand-${index}`,
         value,
+        segment: "brand" as const,
         tone:
-          index === heroBrand.length - 1 ? "logoOrange" : "logoBlue",
+          index === heroBrand.length - 1
+            ? ("logoOrange" as const)
+            : ("logoBlue" as const),
       })),
     ],
     [heroBrand, heroLeadLine],
   );
 
-  const sloganCharacters = useMemo(
+  const sloganCharacters = useMemo<HeadlineCharacter[]>(
     () =>
       [...heroSlogan.split("").map((value, index) => ({
         key: `slogan-${index}`,
         value,
-        tone: "default",
+        segment: "slogan" as const,
+        tone: "default" as const,
       }))],
     [heroSlogan],
   );
@@ -163,28 +177,50 @@ export function HomePortal() {
   const totalTypingTimeMs =
     (characterRevealDelays.at(-1) ?? TYPING_START_DELAY) + CURSOR_SETTLE_TIME_MS;
 
+  // Typed text is rendered in runs, not one element per letter, so Arabic
+  // letters keep their joined forms. The brand run stays LTR inside RTL text.
   const renderHeadlineCharacters = (
-    characters: typeof firstLineCharacters,
+    characters: HeadlineCharacter[],
     limit = characters.length,
     variantClassName = "",
-  ) =>
-    characters.slice(0, limit).map((character) => {
-      const toneClass =
-        character.tone === "logoBlue"
-          ? styles.logoBlueLetter
-          : character.tone === "logoOrange"
-            ? styles.logoOrangeLetter
-            : "";
-      const className = [styles.typedLetter, variantClassName, toneClass]
-        .filter(Boolean)
-        .join(" ");
+  ) => {
+    const runs: Array<{ key: string; segment: string; characters: HeadlineCharacter[] }> = [];
 
-      return (
-        <span key={character.key} className={className}>
-          {character.value === " " ? "\u00A0" : character.value}
-        </span>
-      );
+    characters.slice(0, limit).forEach((character) => {
+      const lastRun = runs.at(-1);
+
+      if (lastRun && lastRun.segment === character.segment) {
+        lastRun.characters.push(character);
+      } else {
+        runs.push({ key: character.key, segment: character.segment, characters: [character] });
+      }
     });
+
+    const className = [styles.typedSegment, variantClassName].filter(Boolean).join(" ");
+
+    return runs.map((run) =>
+      run.segment === "brand" ? (
+        <span key={run.key} className={className} dir="ltr">
+          {run.characters.map((character) => (
+            <span
+              key={character.key}
+              className={
+                character.tone === "logoOrange"
+                  ? styles.logoOrangeLetter
+                  : styles.logoBlueLetter
+              }
+            >
+              {character.value}
+            </span>
+          ))}
+        </span>
+      ) : (
+        <span key={run.key} className={className}>
+          {run.characters.map((character) => character.value).join("")}
+        </span>
+      ),
+    );
+  };
 
   const particles = useMemo(
     () =>
@@ -296,7 +332,7 @@ export function HomePortal() {
       }
 
       const nextScale = Math.max(
-        0.76,
+        0.6,
         Math.min(1, headlineScale * (availableWidth / measuredWidth)),
       );
 
@@ -510,7 +546,7 @@ export function HomePortal() {
 
   return (
     <div ref={pageRef} className={styles.pageShell}>
-      <PortalNav />
+      <PortalNav locale={locale} nav={dict.nav} />
 
       <main id="top" className={styles.main}>
         <section ref={heroRef} className={`${styles.hero} ${styles.cinematicSection}`}>
@@ -536,7 +572,7 @@ export function HomePortal() {
 
           <div className={styles.heroCenter}>
             <div className={styles.eyebrow}>
-              <BrandMark />
+              <BrandMark alt={dict.nav.logoAlt} />
             </div>
             <h1
               ref={headlineRef}
@@ -589,13 +625,13 @@ export function HomePortal() {
             <div className={`${styles.heroActions} ${heroActionsVisible ? styles.heroActionsVisible : ''}`}>
               <a className={styles.primaryAction} href={LOGIN_URL}>
                 <GridIcon />
-                <span>Login</span>
+                <span>{home.login}</span>
               </a>
               <a
                 className={styles.secondaryAction}
                 href={STORE_URL}
               >
-                Explore Products
+                {home.exploreProducts}
               </a>
             </div>
           </div>
@@ -643,7 +679,7 @@ export function HomePortal() {
                 className={styles.railButton}
                 type="button"
                 onClick={goPrev}
-                aria-label="Previous feature"
+                aria-label={home.previousFeature}
               >
                 <ArrowLeft />
               </button>
@@ -651,7 +687,7 @@ export function HomePortal() {
                 className={styles.railButton}
                 type="button"
                 onClick={goNext}
-                aria-label="Next feature"
+                aria-label={home.nextFeature}
               >
                 <ArrowRight />
               </button>
@@ -680,36 +716,32 @@ export function HomePortal() {
 
         <section className={`${styles.statementBlock} ${styles.cinematicSection}`}>
           <div className={`${styles.statementCopy} ${styles.reveal}`}>
-            <h2>Built for modern teams in the delivery-first era</h2>
-            <p>
-              TMC SMART is designed to keep execution visible, premium, and
-              trustworthy whether you are shipping a focused product update or
-              coordinating a complex enterprise program.
-            </p>
+            <h2>{home.statementTitle}</h2>
+            <p>{home.statementBody}</p>
           </div>
         </section>
 
         <section className={`${styles.routeSection} ${styles.cinematicSection}`}>
           <div className={`${styles.sectionIntro} ${styles.reveal}`}>
-            <span>Site map</span>
-            <h2>Actual pages now replace internal-only navigation</h2>
+            <span>{home.routesEyebrow}</span>
+            <h2>{home.routesTitle}</h2>
           </div>
           <div className={styles.routeGrid}>
-            {primaryNavigation
+            {dict.nav.primary
               .filter((item) => item.href !== "/")
-              .map((item) => (
+              .map((item, index) => (
                 <Link
                   key={item.href}
                   className={`${styles.routeCard} ${styles.reveal}`}
-                  href={item.href}
+                  href={localizeHref(locale, item.href)}
                   style={
                     {
-                      transitionDelay: `${primaryNavigation.indexOf(item) * 100}ms`,
+                      transitionDelay: `${(index + 1) * 100}ms`,
                     } as CSSProperties
                   }
                 >
                   <strong>{item.label}</strong>
-                  <small>Open page</small>
+                  <small>{home.routeOpen}</small>
                 </Link>
               ))}
           </div>
@@ -717,8 +749,8 @@ export function HomePortal() {
 
         <section id="use-cases" className={`${styles.useCasesSection} ${styles.cinematicSection}`}>
           <div className={`${styles.sectionIntro} ${styles.reveal}`}>
-            <span>Watch the flow</span>
-            <h2>Use cases shaped for different delivery modes</h2>
+            <span>{home.useCasesEyebrow}</span>
+            <h2>{home.useCasesTitle}</h2>
           </div>
           <div className={styles.useCaseGrid}>
             {useCases.map((item) => (
@@ -742,7 +774,7 @@ export function HomePortal() {
                 <div className={styles.useCaseContent}>
                   <h3>{item.title}</h3>
                   <p>{item.summary}</p>
-                  <Link href="/services">{item.cta}</Link>
+                  <Link href={localizeHref(locale, item.href)}>{item.cta}</Link>
                 </div>
               </article>
             ))}
@@ -771,8 +803,8 @@ export function HomePortal() {
 
         <section id="blogs" className={`${styles.blogSection} ${styles.cinematicSection}`}>
           <div className={`${styles.sectionIntro} ${styles.reveal}`}>
-            <span>Latest notes</span>
-            <h2>Fresh thinking from the TMC SMART system</h2>
+            <span>{home.blogEyebrow}</span>
+            <h2>{home.blogTitle}</h2>
           </div>
           <div className={styles.blogGrid}>
             {blogPosts.map((post) => (
@@ -790,23 +822,20 @@ export function HomePortal() {
                   <span>{post.category}</span>
                   <small>{post.date}</small>
                 </div>
-                <Link href="/about-us">{post.title}</Link>
+                <a href={post.href}>{post.title}</a>
               </article>
             ))}
           </div>
         </section>
       </main>
 
-      <PortalFooter />
+      <PortalFooter locale={locale} nav={dict.nav} />
 
       {cookieVisible ? (
         <aside className={styles.cookieBanner}>
-          <p>
-            TMC SMART uses cookies to improve performance, understand
-            traffic patterns, and support a more polished experience.
-          </p>
+          <p>{home.cookieBody}</p>
           <button type="button" onClick={() => setCookieVisible(false)}>
-            Hide
+            {home.cookieHide}
           </button>
         </aside>
       ) : null}

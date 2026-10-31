@@ -1,28 +1,42 @@
-import Image from 'next/image';
-import styles from './product-grid.module.css';
-import { OdooProduct } from '@/lib/odoo';
+import type { Dictionary } from "@/i18n/dictionaries/en";
+import type { OdooProduct } from "@/lib/odoo";
+import styles from "./product-grid.module.css";
 
-export function ProductGrid({ products }: { products: OdooProduct[] }) {
+type ProductGridProps = {
+  labels: Dictionary["store"];
+  products: OdooProduct[];
+};
+
+export function ProductGrid({ labels, products }: ProductGridProps) {
+  if (!products.length) {
+    return null;
+  }
+
   return (
-    <div className={styles.grid}>
-      {products.map((product) => (
-        <article key={product.id} className={styles.card}>
-          <div className={styles.imageWrapper}>
-            {product.image ? (
-              <img src={product.image} alt={product.name} className={styles.image} />
-            ) : (
-              <div className={styles.placeholder}>No Image</div>
-            )}
-          </div>
-          <div className={styles.info}>
-            <h3>{product.name}</h3>
-            <p className={styles.price}>{product.price} USD</p>
-            {product.description && (
-              <p className={styles.description}>{product.description.substring(0, 100)}...</p>
-            )}
-          </div>
-        </article>
-      ))}
-    </div>
+    <section className={styles.storeSection}>
+      <div className={styles.storeHeader}>
+        <div>
+          <span>{labels.eyebrow}</span>
+          <h2>{labels.title}</h2>
+          <p>{labels.body}</p>
+        </div>
+        <a href={labels.href}>{labels.viewAll}</a>
+      </div>
+
+      <div className={styles.grid}>
+        {products.map((product) => (
+          <a key={product.id} href={product.href} className={styles.card}>
+            <div className={styles.imageWrapper}>
+              {/* Served straight from the Odoo shop, so next/image would only add a proxy hop. */}
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={product.image} alt="" loading="lazy" />
+            </div>
+            <h3>
+              <bdi>{product.name}</bdi>
+            </h3>
+          </a>
+        ))}
+      </div>
+    </section>
   );
 }

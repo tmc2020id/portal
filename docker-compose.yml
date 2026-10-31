@@ -22,6 +22,11 @@ services:
       - "3000:3000"
     environment:
       NODE_ENV: production
+      # Odoo store section on /products (runtime, read from .env; never commit the key).
+      ODOO_URL: ${ODOO_URL:-https://erp.tmcsmart.com}
+      ODOO_DB: ${ODOO_DB:-}
+      ODOO_USER: ${ODOO_USER:-}
+      ODOO_API_KEY: ${ODOO_API_KEY:-}
     restart: unless-stopped
     healthcheck:
       test: ["CMD-SHELL", "wget --no-verbose --tries=1 --spider http://localhost:3000/ || exit 1"]
