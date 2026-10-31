@@ -139,6 +139,13 @@ export const ar: Dictionary = {
     focusEyebrow: "بالتفصيل",
     nextStepEyebrow: "الخطوة التالية",
   },
+  store: {
+    eyebrow: "من المتجر",
+    title: "أحدث المنتجات في المتجر",
+    body: "منتجات أُضيفت مؤخرًا إلى متجر TMC SMART الإلكتروني. افتح المنتج لمعرفة سعره وتوفره.",
+    viewAll: "تصفح المتجر كاملًا",
+    href: "https://erp.tmcsmart.com/shop",
+  },
   returnPolicy: {
     metaTitle: "سياسة الإرجاع | TMC SMART",
     metaDescription:

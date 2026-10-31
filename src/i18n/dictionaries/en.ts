@@ -180,6 +180,13 @@ export const en = {
     focusEyebrow: "In detail",
     nextStepEyebrow: "Next step",
   },
+  store: {
+    eyebrow: "From the store",
+    title: "Latest products in the store",
+    body: "Recently added to the TMC SMART online store. Open a product to see its price and availability.",
+    viewAll: "Browse the full store",
+    href: "https://erp.tmcsmart.com/en/shop",
+  },
   returnPolicy: {
     metaTitle: "Return Policy | TMC SMART",
     metaDescription:

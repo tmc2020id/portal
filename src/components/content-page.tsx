@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import type { ReactNode } from "react";
 import { localizeHref, type Locale } from "@/i18n/config";
 import { resolveLocale } from "@/i18n/dictionaries";
 import type { ContentPageData, Dictionary, PageKey } from "@/i18n/dictionaries/en";
@@ -10,6 +11,7 @@ type ContentPageProps = {
   locale: Locale;
   dict: Dictionary;
   page: ContentPageData;
+  children?: ReactNode;
 };
 
 export async function contentPageMetadata(
@@ -22,7 +24,7 @@ export async function contentPageMetadata(
   return { title: page.metaTitle, description: page.summary };
 }
 
-export function ContentPage({ locale, dict, page }: ContentPageProps) {
+export function ContentPage({ locale, dict, page, children }: ContentPageProps) {
   const {
     eyebrow,
     title,
@@ -87,6 +89,8 @@ export function ContentPage({ locale, dict, page }: ContentPageProps) {
             <p>{intro}</p>
           </div>
         </section>
+
+        {children}
 
         {highlights.length ? (
           <section className={styles.highlightSection}>
