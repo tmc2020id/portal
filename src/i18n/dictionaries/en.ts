@@ -735,7 +735,7 @@ export const en = {
             },
             {
               title: "Information collected automatically",
-              body: "Basic technical data such as your IP address, browser and device type, the pages you visit and the time of your visit, kept in server and security logs. On the online store, Google Analytics also measures visits, as our cookie policy explains.",
+              body: "Basic technical data such as your IP address, browser and device type, the pages you visit and the time of your visit, kept in server and security logs. On the online store, Google Analytics and, if you accept cookies there, the Meta pixel also measure visits, as our cookie policy explains.",
             },
             {
               title: "Information from other services",
@@ -803,7 +803,7 @@ export const en = {
           items: [
             {
               title: "Who we share data with",
-              body: "We do not sell or rent your personal data. We share only what is needed with delivery and shipping companies, payment providers, the hosting and cloud providers that run our servers, artificial intelligence providers for the assistant, and accountants or authorities when the law requires it.",
+              body: "We do not sell or rent your personal data. We share only what is needed with delivery and shipping companies, payment providers, the hosting and cloud providers that run our servers, artificial intelligence providers for the assistant, Google and Meta when you accept analytics or advertising cookies on the store, and accountants or authorities when the law requires it.",
             },
             {
               title: "Where your data is stored",
@@ -967,7 +967,7 @@ export const en = {
       metrics: [],
       introTitle: "Our approach",
       intro:
-        "Cookies are small files a website saves in your browser. tmcsmart.com does not use advertising or tracking cookies. Our online store uses the cookies it needs to work, and analytics cookies only if you accept them.",
+        "Cookies are small files a website saves in your browser. tmcsmart.com does not use advertising or tracking cookies. Our online store uses the cookies it needs to work, and analytics and advertising cookies only if you accept them.",
       highlights: [],
       sections: [
         {
@@ -986,8 +986,8 @@ export const en = {
               body: "The store at erp.tmcsmart.com uses necessary cookies to keep your session, cart and language, such as session_id and frontend_lang. The store cannot work without them.",
             },
             {
-              title: "Store analytics",
-              body: "The store uses Google Analytics to understand how it is used. It sets analytics cookies only if you accept them in the store's cookie bar; otherwise Google receives only anonymous measurements without cookies. Advertising cookies stay off.",
+              title: "Store analytics and advertising",
+              body: "The store uses Google Analytics to understand how it is used, and the Meta (Facebook) pixel to measure visits and the results of our ads. Both work only after you accept cookies in the store's cookie bar. Until then, Google receives only anonymous measurements without cookies, and the Meta pixel does not load.",
             },
             {
               title: "Other websites",
