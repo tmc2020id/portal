@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { localizeHref, type Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/dictionaries/en";
+import { LegalCompany } from "./legal-company";
 import { PortalFooter, PortalNav } from "./portal-nav";
 import styles from "./policy-page.module.css";
 
@@ -22,6 +23,9 @@ export function PolicyPage({ locale, dict }: PolicyPageProps) {
             <span className={styles.eyebrow}>{policy.eyebrow}</span>
             <h1>{policy.title}</h1>
             <p className={styles.heroLead}>{policy.lead}</p>
+            <p className={styles.updated}>
+              {dict.legal.updatedLabel}: <bdi>{policy.updated}</bdi>
+            </p>
 
             <div className={styles.summaryGrid}>
               {policy.summary.map((item) => (
@@ -47,10 +51,23 @@ export function PolicyPage({ locale, dict }: PolicyPageProps) {
             </ul>
           </section>
 
+          {policy.sections.map((section) => (
+            <section key={section.title} className={styles.section}>
+              <h2>{section.title}</h2>
+              <ul className={styles.policyList}>
+                {section.items.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </section>
+          ))}
+
           <section className={styles.section}>
             <h2>{policy.noteTitle}</h2>
             <p>{policy.noteBody}</p>
           </section>
+
+          <LegalCompany legal={dict.legal} />
 
           <section className={styles.contactCard}>
             <div>

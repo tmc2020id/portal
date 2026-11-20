@@ -14,6 +14,10 @@ const routes = [
   "/terms-of-use",
   "/privacy-policy",
   "/return-policy",
+  "/shipping-policy",
+  "/cookie-policy",
+  "/data-deletion",
+  "/legal",
 ];
 
 const absolute = (path: string) => `${siteUrl}${path === "/" ? "" : path}`;
@@ -23,7 +27,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: absolute(localizeHref("ar", route)),
     lastModified: new Date(),
     changeFrequency: route === "/" ? "weekly" : "monthly",
-    priority: route === "/" ? 1 : route.includes("policy") || route.includes("terms") ? 0.7 : 0.8,
+    priority: route === "/" ? 1 : route.includes("policy") || route.includes("terms") || route === "/legal" || route === "/data-deletion" ? 0.7 : 0.8,
     alternates: {
       languages: {
         ar: absolute(localizeHref("ar", route)),

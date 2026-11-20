@@ -31,7 +31,8 @@ type ParticleConfig = {
 
 type HomePortalProps = {
   locale: Locale;
-  dict: Dictionary;
+  // Only what the home page renders, so the policy text isn't sent to the browser.
+  dict: Pick<Dictionary, "home" | "nav">;
 };
 
 type HeadlineCharacter = {
@@ -833,7 +834,10 @@ export function HomePortal({ locale, dict }: HomePortalProps) {
 
       {cookieVisible ? (
         <aside className={styles.cookieBanner}>
-          <p>{home.cookieBody}</p>
+          <p>
+            {home.cookieBody}{" "}
+            <Link href={localizeHref(locale, "/cookie-policy")}>{home.cookieLink}</Link>
+          </p>
           <button type="button" onClick={() => setCookieVisible(false)}>
             {home.cookieHide}
           </button>

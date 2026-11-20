@@ -924,6 +924,12 @@
   line-height: 1.55;
 }
 
+.cookieBanner a {
+  color: var(--ink);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .cookieBanner button {
   min-width: 102px;
   min-height: 54px;

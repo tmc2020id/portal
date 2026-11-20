@@ -19,6 +19,7 @@
 .entrySection,
 .highlightSection,
 .spotlightSection,
+.companySection,
 .ctaSection {
   width: min(var(--container), calc(100% - var(--page-inset)));
   margin: 0 auto;
@@ -101,6 +102,10 @@
 
 .heroCopy p {
   max-width: 760px;
+}
+
+.heroCopy .updated {
+  font-size: var(--text-label);
 }
 
 .metricGrid {
@@ -234,6 +239,23 @@
   line-height: 1.8;
 }
 
+.linkCard {
+  display: block;
+  color: inherit;
+  transition:
+    transform var(--duration-fast) var(--ease-standard),
+    border-color var(--duration-fast) var(--ease-standard);
+}
+
+.linkCard h3::after {
+  content: " →";
+  color: var(--action);
+}
+
+:global([dir="rtl"]) .linkCard h3::after {
+  content: " ←";
+}
+
 .spotlightCard {
   display: grid;
   grid-template-columns: minmax(0, 1.2fr) minmax(280px, 420px);
@@ -335,8 +357,13 @@
   .highlightCard:hover,
   .checklistCard:hover,
   .ctaCard:hover,
-  .ctaCard a:hover {
+  .ctaCard a:hover,
+  .linkCard:hover {
     transform: translateY(-2px);
+  }
+
+  .linkCard:hover {
+    border-color: var(--action);
   }
 
   .metricCard:hover::before,
@@ -386,6 +413,7 @@
   .entrySection,
   .highlightSection,
   .spotlightSection,
+  .companySection,
   .ctaSection {
     width: min(100%, calc(100% - 24px));
   }
