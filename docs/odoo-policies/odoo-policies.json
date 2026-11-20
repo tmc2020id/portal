@@ -1,0 +1,1438 @@
+{
+  "about": "TMC policy pages for the Odoo store, generated from the tmcsmart.com dictionaries by scripts/export-odoo-policies.mjs. arch_en is the view source (en_US); terms_ar maps each English block to its Arabic translation (ar_001, the website's default language). arch_ar is the full Arabic page for manual pasting.",
+  "generated": "2026-11-20T22:05:01.653Z",
+  "odoo": {
+    "url": "https://erp.tmcsmart.com",
+    "website_id": 1,
+    "default_lang": "ar_001",
+    "other_langs": [
+      "en_US"
+    ]
+  },
+  "pages": [
+    {
+      "key": "terms",
+      "odoo": {
+        "url": "/terms-of-use-for-tmc",
+        "view_key": "website.terms-of-use-for-tmc",
+        "view_id": 3755,
+        "action": "update",
+        "optional": false
+      },
+      "portal": "https://tmcsmart.com/terms-of-use",
+      "name": {
+        "en": "Terms of use",
+        "ar": "شروط الاستخدام"
+      },
+      "meta_title": {
+        "en": "Terms of Use | TMC SMART",
+        "ar": "شروط الاستخدام | TMC SMART"
+      },
+      "arch_en": "<t t-name=\"website.terms-of-use-for-tmc\">\n  <t t-call=\"website.layout\">\n    <div id=\"wrap\" class=\"oe_structure oe_empty\">\n      <section class=\"s_text_block o_colored_level pt64 pb32\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <p class=\"text-muted mb-2\">Terms of Use</p>\n          <h1 class=\"display-5\">Terms of use</h1>\n          <p class=\"lead\">The rules for using TMC's website, online store, assistant and services. By using them, you agree to these terms.</p>\n          <p class=\"text-muted small\">Last updated: 21 November 2026</p>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt48 pb48\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h3\">About these terms</h2>\n          <p>These terms are an agreement between you and TMC – Technology Metro Company (TMC SMART), Sarmada, Idlib, Syria. They cover tmcsmart.com, our online store at erp.tmcsmart.com, our WhatsApp channels, the TMC assistant and our digital services. Our privacy, return, shipping and cookie policies are part of these terms.</p>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt32 pb32\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h3\">Using the website and your account</h2>\n          <h3 class=\"h5 mt-4\">Acceptable use</h3>\n          <p>Use the website and services only for lawful purposes. Do not try to break into our systems, overload them, collect data automatically, or use them to send spam or harmful content.</p>\n          <h3 class=\"h5 mt-4\">Customer accounts</h3>\n          <p>Give accurate information and keep your login details and one-time codes private. You are responsible for activity on your account, and we may suspend an account that is misused.</p>\n          <h3 class=\"h5 mt-4\">Who can use our services</h3>\n          <p>You must be at least 18 years old, or use our services with the consent of a parent, guardian or your employer.</p>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt32 pb32\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h3\">Products, prices and orders</h2>\n          <h3 class=\"h5 mt-4\">Product information</h3>\n          <p>We make every effort to keep product descriptions, prices and availability accurate. We reserve the right to correct any errors, inaccuracies or omissions at any time without prior notice.</p>\n          <h3 class=\"h5 mt-4\">Prices</h3>\n          <p>Prices are shown in the online store or in the quotation we send you, and may change until your order is confirmed. Wholesale and partner prices apply only to approved partner accounts.</p>\n          <h3 class=\"h5 mt-4\">Orders</h3>\n          <p>An order is binding once we confirm it. We may refuse or cancel an order, for example if a product is unavailable or a price was shown in error. If you have already paid, we refund you in full.</p>\n          <h3 class=\"h5 mt-4\">Payment and invoices</h3>\n          <p>You pay using the methods we offer when you order. We issue an invoice for every order, and company invoices on request.</p>\n          <h3 class=\"h5 mt-4\">Special orders</h3>\n          <p>We source special orders from our suppliers for you. We confirm the price and expected delivery time before you commit, and may ask for an advance payment. Once we have ordered from the supplier, a special order cannot be cancelled or returned, unless it arrives defective.</p>\n          <h3 class=\"h5 mt-4\">Delivery, returns and warranty</h3>\n          <p>Delivery is covered by our shipping policy, and returns, refunds, cancellations and warranty by our return and refund policy.</p>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt32 pb32\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h3\">Digital services</h2>\n          <h3 class=\"h5 mt-4\">Scope and payment</h3>\n          <p>Websites, apps, booking systems, hosting and payment integration are provided under a written quotation or agreement that sets the scope, price and timeline. If that agreement conflicts with these terms, the agreement applies.</p>\n          <h3 class=\"h5 mt-4\">Your content</h3>\n          <p>You keep ownership of the content you give us and confirm you have the right to use it. You allow us to use it only to deliver the service you ordered.</p>\n          <h3 class=\"h5 mt-4\">Hosting</h3>\n          <p>Hosted services may not be used for illegal content, spam, malware or attacks. We may suspend a service that puts our systems or other customers at risk.</p>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt32 pb32\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h3\">The TMC assistant</h2>\n          <h3 class=\"h5 mt-4\">Automated answers</h3>\n          <p>The TMC assistant uses artificial intelligence and can make mistakes. Prices, availability and technical specifications are confirmed only by our team or the online store, and you can ask for a person at any time.</p>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt32 pb32\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h3\">Legal</h2>\n          <h3 class=\"h5 mt-4\">Intellectual property</h3>\n          <p>All content on this website, including text, images, logos, graphics and design, belongs to TMC and may not be copied, reproduced or used without permission. TMC and TMC SMART are our trade names.</p>\n          <h3 class=\"h5 mt-4\">External links and platforms</h3>\n          <p>This website may link to other websites, and we are not responsible for their content or policies. Your use of WhatsApp, Facebook, Google and other platforms is also subject to their own terms.</p>\n          <h3 class=\"h5 mt-4\">Limitation of liability</h3>\n          <p>As far as the law allows, TMC is not liable for indirect or consequential losses, or for loss of data, profit or business, arising from the use of the website or our services. Our total liability for an order is limited to the amount you paid for it. Nothing in these terms limits rights you have by law.</p>\n          <h3 class=\"h5 mt-4\">Governing law</h3>\n          <p>These terms are governed by the laws in force in Syria. We aim to settle any dispute amicably first; otherwise it is referred to the competent courts where TMC is located.</p>\n          <h3 class=\"h5 mt-4\">Changes to these terms</h3>\n          <p>We may update these terms. The new version is posted on this page with a new date, and applies from the date it is posted.</p>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt40 pb40 o_cc o_cc2\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <p class=\"text-muted mb-2\">Company details</p>\n          <h2 class=\"h4\">TMC – Technology Metro Company</h2>\n          <p>Trading as TMC SMART. These policies are issued by and apply to this company.</p>\n          <ul class=\"list-unstyled\">\n            <li><strong>Address:</strong> Idlib – Sarmada, 100 m after the car roundabout towards Sarmada, Syria</li>\n            <li><strong>Email:</strong> <a href=\"mailto:sales@tmcsmart.shop\">sales@tmcsmart.shop</a></li>\n            <li><strong>Phone and WhatsApp:</strong> <a href=\"tel:+963965445580\">+963 965 445 580</a></li>\n            <li><strong>Website:</strong> <a href=\"https://tmcsmart.com\">tmcsmart.com</a></li>\n          </ul>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt40 pb64 text-center\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h4\">Questions about these terms?</h2>\n          <p><a class=\"btn btn-primary btn-lg\" href=\"/contactus\">Contact TMC</a></p>\n        </div>\n      </section>\n    </div>\n  </t>\n</t>",
+      "arch_ar": "<t t-name=\"website.terms-of-use-for-tmc\">\n  <t t-call=\"website.layout\">\n    <div id=\"wrap\" class=\"oe_structure oe_empty\">\n      <section class=\"s_text_block o_colored_level pt64 pb32\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <p class=\"text-muted mb-2\">شروط الاستخدام</p>\n          <h1 class=\"display-5\">شروط الاستخدام</h1>\n          <p class=\"lead\">القواعد التي تنظّم استخدام موقع TMC ومتجرها الإلكتروني ومساعدها وخدماتها. باستخدامك لها فإنك توافق على هذه الشروط.</p>\n          <p class=\"text-muted small\">آخر تحديث: 21 تشرين الثاني 2026</p>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt48 pb48\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h3\">عن هذه الشروط</h2>\n          <p>هذه الشروط اتفاق بينك وبين TMC – Technology Metro Company (TMC SMART)، سرمدا، إدلب، سوريا. وتشمل موقع tmcsmart.com، ومتجرنا الإلكتروني على erp.tmcsmart.com، وقنوات واتساب الخاصة بنا، ومساعد TMC، وخدماتنا الرقمية. وتُعدّ سياسات الخصوصية والإرجاع والشحن وملفات تعريف الارتباط جزءًا من هذه الشروط.</p>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt32 pb32\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h3\">استخدام الموقع وحسابك</h2>\n          <h3 class=\"h5 mt-4\">الاستخدام المقبول</h3>\n          <p>استخدم الموقع والخدمات لأغراض مشروعة فقط. لا تحاول اختراق أنظمتنا أو إثقالها أو جمع البيانات منها آليًا، ولا تستخدمها لإرسال رسائل مزعجة أو محتوى ضار.</p>\n          <h3 class=\"h5 mt-4\">حسابات العملاء</h3>\n          <p>قدّم معلومات صحيحة، وحافظ على سرية بيانات الدخول والرموز المؤقتة. أنت مسؤول عن النشاط على حسابك، ويحق لنا إيقاف أي حساب يُساء استخدامه.</p>\n          <h3 class=\"h5 mt-4\">من يمكنه استخدام خدماتنا</h3>\n          <p>يجب أن يكون عمرك 18 سنة على الأقل، أو أن تستخدم خدماتنا بموافقة وليّ أمرك أو جهة عملك.</p>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt32 pb32\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h3\">المنتجات والأسعار والطلبات</h2>\n          <h3 class=\"h5 mt-4\">معلومات المنتجات</h3>\n          <p>نبذل كل جهد لتكون أوصاف المنتجات وأسعارها وتوفرها دقيقة، ونحتفظ بحق تصحيح أي خطأ أو نقص في أي وقت دون إشعار مسبق.</p>\n          <h3 class=\"h5 mt-4\">الأسعار</h3>\n          <p>تظهر الأسعار في المتجر الإلكتروني أو في عرض السعر الذي نرسله لك، وقد تتغير حتى تأكيد طلبك. وتنطبق أسعار الجملة والشركاء على حسابات الشركاء المعتمدة فقط.</p>\n          <h3 class=\"h5 mt-4\">الطلبات</h3>\n          <p>يصبح الطلب ملزمًا عند تأكيده من قبلنا. ويحق لنا رفض أي طلب أو إلغاؤه، مثلًا إذا لم يكن المنتج متوفرًا أو ظهر سعره بالخطأ. وإذا كنت قد دفعت، نعيد لك المبلغ كاملًا.</p>\n          <h3 class=\"h5 mt-4\">الدفع والفواتير</h3>\n          <p>تدفع بإحدى طرق الدفع التي نوفرها عند الطلب. نصدر فاتورة لكل طلب، وفاتورة باسم الشركة عند الطلب.</p>\n          <h3 class=\"h5 mt-4\">الطلبات الخاصة</h3>\n          <p>نؤمّن الطلبات الخاصة من موردينا لأجلك. نؤكد لك السعر ومدة التوريد المتوقعة قبل التزامك، وقد نطلب دفعة مقدمة. وبعد طلب المنتج من المورد لا يمكن إلغاء الطلب الخاص أو إرجاعه، إلا إذا وصل معيبًا.</p>\n          <h3 class=\"h5 mt-4\">التوصيل والإرجاع والكفالة</h3>\n          <p>تنظّم سياسة الشحن عملية التوصيل، وتنظّم سياسة الإرجاع والاسترداد الإرجاع واسترداد المبالغ وإلغاء الطلبات والكفالة.</p>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt32 pb32\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h3\">الخدمات الرقمية</h2>\n          <h3 class=\"h5 mt-4\">نطاق العمل والدفع</h3>\n          <p>نقدّم المواقع والتطبيقات وأنظمة الحجز والاستضافة وربط الدفع الإلكتروني بموجب عرض سعر أو اتفاق مكتوب يحدد نطاق العمل والسعر والمدة. وإذا تعارض هذا الاتفاق مع هذه الشروط، يُعمل بالاتفاق.</p>\n          <h3 class=\"h5 mt-4\">المحتوى الخاص بك</h3>\n          <p>يبقى المحتوى الذي تقدّمه لنا ملكًا لك، وتؤكد أن لديك حق استخدامه. وتسمح لنا باستخدامه فقط لتقديم الخدمة التي طلبتها.</p>\n          <h3 class=\"h5 mt-4\">الاستضافة</h3>\n          <p>لا يجوز استخدام خدمات الاستضافة لمحتوى غير قانوني أو رسائل مزعجة أو برمجيات خبيثة أو هجمات. ويحق لنا إيقاف أي خدمة تعرّض أنظمتنا أو عملاءنا الآخرين للخطر.</p>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt32 pb32\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h3\">مساعد TMC</h2>\n          <h3 class=\"h5 mt-4\">الإجابات الآلية</h3>\n          <p>يعمل مساعد TMC بالذكاء الاصطناعي وقد يخطئ. لا يُعتمد السعر أو التوفر أو المواصفات الفنية إلا بتأكيد من فريقنا أو من المتجر الإلكتروني، ويمكنك طلب التحدث مع موظف في أي وقت.</p>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt32 pb32\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h3\">أحكام قانونية</h2>\n          <h3 class=\"h5 mt-4\">الملكية الفكرية</h3>\n          <p>جميع محتويات هذا الموقع، من نصوص وصور وشعارات ورسومات وتصميم، ملك لـ TMC ولا يجوز نسخها أو إعادة إنتاجها أو استخدامها دون إذن. و TMC و TMC SMART اسمان تجاريان لنا.</p>\n          <h3 class=\"h5 mt-4\">الروابط والمنصات الخارجية</h3>\n          <p>قد يحتوي هذا الموقع على روابط لمواقع أخرى، ولسنا مسؤولين عن محتواها أو سياساتها. ويخضع استخدامك لواتساب وفيسبوك وغوغل وغيرها من المنصات لشروطها الخاصة أيضًا.</p>\n          <h3 class=\"h5 mt-4\">حدود المسؤولية</h3>\n          <p>في الحدود التي يسمح بها القانون، لا تتحمل TMC مسؤولية الأضرار غير المباشرة أو التبعية، ولا خسارة البيانات أو الأرباح أو الأعمال، الناتجة عن استخدام الموقع أو خدماتنا. وتقتصر مسؤوليتنا الكاملة عن أي طلب على المبلغ الذي دفعته مقابله. ولا يحدّ شيء في هذه الشروط من حقوقك التي يكفلها القانون.</p>\n          <h3 class=\"h5 mt-4\">القانون المطبّق</h3>\n          <p>تخضع هذه الشروط للقوانين النافذة في سوريا. نسعى لحل أي خلاف وديًا أولًا، وإلا يُحال إلى المحاكم المختصة في مكان TMC.</p>\n          <h3 class=\"h5 mt-4\">تعديل الشروط</h3>\n          <p>يحق لنا تعديل هذه الشروط. ننشر النسخة الجديدة في هذه الصفحة مع تاريخ جديد، وتسري من تاريخ نشرها.</p>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt40 pb40 o_cc o_cc2\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <p class=\"text-muted mb-2\">بيانات الشركة</p>\n          <h2 class=\"h4\">TMC – Technology Metro Company</h2>\n          <p>تعمل باسم TMC SMART، وتصدر هذه السياسات عنها وتنطبق عليها.</p>\n          <ul class=\"list-unstyled\">\n            <li><strong>العنوان:</strong> إدلب – سرمدا، بعد دوار السيارات باتجاه سرمدا بـ 100 متر، سوريا</li>\n            <li><strong>البريد الإلكتروني:</strong> <a href=\"mailto:sales@tmcsmart.shop\">sales@tmcsmart.shop</a></li>\n            <li><strong>الهاتف وواتساب:</strong> <a href=\"tel:+963965445580\">+963 965 445 580</a></li>\n            <li><strong>الموقع:</strong> <a href=\"https://tmcsmart.com\">tmcsmart.com</a></li>\n          </ul>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt40 pb64 text-center\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h4\">لديك سؤال عن هذه الشروط؟</h2>\n          <p><a class=\"btn btn-primary btn-lg\" href=\"/contactus\">تواصل مع TMC</a></p>\n        </div>\n      </section>\n    </div>\n  </t>\n</t>",
+      "terms_ar": [
+        [
+          "Terms of Use",
+          "شروط الاستخدام"
+        ],
+        [
+          "Terms of use",
+          "شروط الاستخدام"
+        ],
+        [
+          "The rules for using TMC's website, online store, assistant and services. By using them, you agree to these terms.",
+          "القواعد التي تنظّم استخدام موقع TMC ومتجرها الإلكتروني ومساعدها وخدماتها. باستخدامك لها فإنك توافق على هذه الشروط."
+        ],
+        [
+          "Last updated: 21 November 2026",
+          "آخر تحديث: 21 تشرين الثاني 2026"
+        ],
+        [
+          "About these terms",
+          "عن هذه الشروط"
+        ],
+        [
+          "These terms are an agreement between you and TMC – Technology Metro Company (TMC SMART), Sarmada, Idlib, Syria. They cover tmcsmart.com, our online store at erp.tmcsmart.com, our WhatsApp channels, the TMC assistant and our digital services. Our privacy, return, shipping and cookie policies are part of these terms.",
+          "هذه الشروط اتفاق بينك وبين TMC – Technology Metro Company (TMC SMART)، سرمدا، إدلب، سوريا. وتشمل موقع tmcsmart.com، ومتجرنا الإلكتروني على erp.tmcsmart.com، وقنوات واتساب الخاصة بنا، ومساعد TMC، وخدماتنا الرقمية. وتُعدّ سياسات الخصوصية والإرجاع والشحن وملفات تعريف الارتباط جزءًا من هذه الشروط."
+        ],
+        [
+          "Using the website and your account",
+          "استخدام الموقع وحسابك"
+        ],
+        [
+          "Acceptable use",
+          "الاستخدام المقبول"
+        ],
+        [
+          "Use the website and services only for lawful purposes. Do not try to break into our systems, overload them, collect data automatically, or use them to send spam or harmful content.",
+          "استخدم الموقع والخدمات لأغراض مشروعة فقط. لا تحاول اختراق أنظمتنا أو إثقالها أو جمع البيانات منها آليًا، ولا تستخدمها لإرسال رسائل مزعجة أو محتوى ضار."
+        ],
+        [
+          "Customer accounts",
+          "حسابات العملاء"
+        ],
+        [
+          "Give accurate information and keep your login details and one-time codes private. You are responsible for activity on your account, and we may suspend an account that is misused.",
+          "قدّم معلومات صحيحة، وحافظ على سرية بيانات الدخول والرموز المؤقتة. أنت مسؤول عن النشاط على حسابك، ويحق لنا إيقاف أي حساب يُساء استخدامه."
+        ],
+        [
+          "Who can use our services",
+          "من يمكنه استخدام خدماتنا"
+        ],
+        [
+          "You must be at least 18 years old, or use our services with the consent of a parent, guardian or your employer.",
+          "يجب أن يكون عمرك 18 سنة على الأقل، أو أن تستخدم خدماتنا بموافقة وليّ أمرك أو جهة عملك."
+        ],
+        [
+          "Products, prices and orders",
+          "المنتجات والأسعار والطلبات"
+        ],
+        [
+          "Product information",
+          "معلومات المنتجات"
+        ],
+        [
+          "We make every effort to keep product descriptions, prices and availability accurate. We reserve the right to correct any errors, inaccuracies or omissions at any time without prior notice.",
+          "نبذل كل جهد لتكون أوصاف المنتجات وأسعارها وتوفرها دقيقة، ونحتفظ بحق تصحيح أي خطأ أو نقص في أي وقت دون إشعار مسبق."
+        ],
+        [
+          "Prices",
+          "الأسعار"
+        ],
+        [
+          "Prices are shown in the online store or in the quotation we send you, and may change until your order is confirmed. Wholesale and partner prices apply only to approved partner accounts.",
+          "تظهر الأسعار في المتجر الإلكتروني أو في عرض السعر الذي نرسله لك، وقد تتغير حتى تأكيد طلبك. وتنطبق أسعار الجملة والشركاء على حسابات الشركاء المعتمدة فقط."
+        ],
+        [
+          "Orders",
+          "الطلبات"
+        ],
+        [
+          "An order is binding once we confirm it. We may refuse or cancel an order, for example if a product is unavailable or a price was shown in error. If you have already paid, we refund you in full.",
+          "يصبح الطلب ملزمًا عند تأكيده من قبلنا. ويحق لنا رفض أي طلب أو إلغاؤه، مثلًا إذا لم يكن المنتج متوفرًا أو ظهر سعره بالخطأ. وإذا كنت قد دفعت، نعيد لك المبلغ كاملًا."
+        ],
+        [
+          "Payment and invoices",
+          "الدفع والفواتير"
+        ],
+        [
+          "You pay using the methods we offer when you order. We issue an invoice for every order, and company invoices on request.",
+          "تدفع بإحدى طرق الدفع التي نوفرها عند الطلب. نصدر فاتورة لكل طلب، وفاتورة باسم الشركة عند الطلب."
+        ],
+        [
+          "Special orders",
+          "الطلبات الخاصة"
+        ],
+        [
+          "We source special orders from our suppliers for you. We confirm the price and expected delivery time before you commit, and may ask for an advance payment. Once we have ordered from the supplier, a special order cannot be cancelled or returned, unless it arrives defective.",
+          "نؤمّن الطلبات الخاصة من موردينا لأجلك. نؤكد لك السعر ومدة التوريد المتوقعة قبل التزامك، وقد نطلب دفعة مقدمة. وبعد طلب المنتج من المورد لا يمكن إلغاء الطلب الخاص أو إرجاعه، إلا إذا وصل معيبًا."
+        ],
+        [
+          "Delivery, returns and warranty",
+          "التوصيل والإرجاع والكفالة"
+        ],
+        [
+          "Delivery is covered by our shipping policy, and returns, refunds, cancellations and warranty by our return and refund policy.",
+          "تنظّم سياسة الشحن عملية التوصيل، وتنظّم سياسة الإرجاع والاسترداد الإرجاع واسترداد المبالغ وإلغاء الطلبات والكفالة."
+        ],
+        [
+          "Digital services",
+          "الخدمات الرقمية"
+        ],
+        [
+          "Scope and payment",
+          "نطاق العمل والدفع"
+        ],
+        [
+          "Websites, apps, booking systems, hosting and payment integration are provided under a written quotation or agreement that sets the scope, price and timeline. If that agreement conflicts with these terms, the agreement applies.",
+          "نقدّم المواقع والتطبيقات وأنظمة الحجز والاستضافة وربط الدفع الإلكتروني بموجب عرض سعر أو اتفاق مكتوب يحدد نطاق العمل والسعر والمدة. وإذا تعارض هذا الاتفاق مع هذه الشروط، يُعمل بالاتفاق."
+        ],
+        [
+          "Your content",
+          "المحتوى الخاص بك"
+        ],
+        [
+          "You keep ownership of the content you give us and confirm you have the right to use it. You allow us to use it only to deliver the service you ordered.",
+          "يبقى المحتوى الذي تقدّمه لنا ملكًا لك، وتؤكد أن لديك حق استخدامه. وتسمح لنا باستخدامه فقط لتقديم الخدمة التي طلبتها."
+        ],
+        [
+          "Hosting",
+          "الاستضافة"
+        ],
+        [
+          "Hosted services may not be used for illegal content, spam, malware or attacks. We may suspend a service that puts our systems or other customers at risk.",
+          "لا يجوز استخدام خدمات الاستضافة لمحتوى غير قانوني أو رسائل مزعجة أو برمجيات خبيثة أو هجمات. ويحق لنا إيقاف أي خدمة تعرّض أنظمتنا أو عملاءنا الآخرين للخطر."
+        ],
+        [
+          "The TMC assistant",
+          "مساعد TMC"
+        ],
+        [
+          "Automated answers",
+          "الإجابات الآلية"
+        ],
+        [
+          "The TMC assistant uses artificial intelligence and can make mistakes. Prices, availability and technical specifications are confirmed only by our team or the online store, and you can ask for a person at any time.",
+          "يعمل مساعد TMC بالذكاء الاصطناعي وقد يخطئ. لا يُعتمد السعر أو التوفر أو المواصفات الفنية إلا بتأكيد من فريقنا أو من المتجر الإلكتروني، ويمكنك طلب التحدث مع موظف في أي وقت."
+        ],
+        [
+          "Legal",
+          "أحكام قانونية"
+        ],
+        [
+          "Intellectual property",
+          "الملكية الفكرية"
+        ],
+        [
+          "All content on this website, including text, images, logos, graphics and design, belongs to TMC and may not be copied, reproduced or used without permission. TMC and TMC SMART are our trade names.",
+          "جميع محتويات هذا الموقع، من نصوص وصور وشعارات ورسومات وتصميم، ملك لـ TMC ولا يجوز نسخها أو إعادة إنتاجها أو استخدامها دون إذن. و TMC و TMC SMART اسمان تجاريان لنا."
+        ],
+        [
+          "External links and platforms",
+          "الروابط والمنصات الخارجية"
+        ],
+        [
+          "This website may link to other websites, and we are not responsible for their content or policies. Your use of WhatsApp, Facebook, Google and other platforms is also subject to their own terms.",
+          "قد يحتوي هذا الموقع على روابط لمواقع أخرى، ولسنا مسؤولين عن محتواها أو سياساتها. ويخضع استخدامك لواتساب وفيسبوك وغوغل وغيرها من المنصات لشروطها الخاصة أيضًا."
+        ],
+        [
+          "Limitation of liability",
+          "حدود المسؤولية"
+        ],
+        [
+          "As far as the law allows, TMC is not liable for indirect or consequential losses, or for loss of data, profit or business, arising from the use of the website or our services. Our total liability for an order is limited to the amount you paid for it. Nothing in these terms limits rights you have by law.",
+          "في الحدود التي يسمح بها القانون، لا تتحمل TMC مسؤولية الأضرار غير المباشرة أو التبعية، ولا خسارة البيانات أو الأرباح أو الأعمال، الناتجة عن استخدام الموقع أو خدماتنا. وتقتصر مسؤوليتنا الكاملة عن أي طلب على المبلغ الذي دفعته مقابله. ولا يحدّ شيء في هذه الشروط من حقوقك التي يكفلها القانون."
+        ],
+        [
+          "Governing law",
+          "القانون المطبّق"
+        ],
+        [
+          "These terms are governed by the laws in force in Syria. We aim to settle any dispute amicably first; otherwise it is referred to the competent courts where TMC is located.",
+          "تخضع هذه الشروط للقوانين النافذة في سوريا. نسعى لحل أي خلاف وديًا أولًا، وإلا يُحال إلى المحاكم المختصة في مكان TMC."
+        ],
+        [
+          "Changes to these terms",
+          "تعديل الشروط"
+        ],
+        [
+          "We may update these terms. The new version is posted on this page with a new date, and applies from the date it is posted.",
+          "يحق لنا تعديل هذه الشروط. ننشر النسخة الجديدة في هذه الصفحة مع تاريخ جديد، وتسري من تاريخ نشرها."
+        ],
+        [
+          "Company details",
+          "بيانات الشركة"
+        ],
+        [
+          "Trading as TMC SMART. These policies are issued by and apply to this company.",
+          "تعمل باسم TMC SMART، وتصدر هذه السياسات عنها وتنطبق عليها."
+        ],
+        [
+          "<strong>Address:</strong> Idlib – Sarmada, 100 m after the car roundabout towards Sarmada, Syria",
+          "<strong>العنوان:</strong> إدلب – سرمدا، بعد دوار السيارات باتجاه سرمدا بـ 100 متر، سوريا"
+        ],
+        [
+          "<strong>Email:</strong> <a href=\"mailto:sales@tmcsmart.shop\">sales@tmcsmart.shop</a>",
+          "<strong>البريد الإلكتروني:</strong> <a href=\"mailto:sales@tmcsmart.shop\">sales@tmcsmart.shop</a>"
+        ],
+        [
+          "<strong>Phone and WhatsApp:</strong> <a href=\"tel:+963965445580\">+963 965 445 580</a>",
+          "<strong>الهاتف وواتساب:</strong> <a href=\"tel:+963965445580\">+963 965 445 580</a>"
+        ],
+        [
+          "<strong>Website:</strong> <a href=\"https://tmcsmart.com\">tmcsmart.com</a>",
+          "<strong>الموقع:</strong> <a href=\"https://tmcsmart.com\">tmcsmart.com</a>"
+        ],
+        [
+          "Questions about these terms?",
+          "لديك سؤال عن هذه الشروط؟"
+        ],
+        [
+          "<a class=\"btn btn-primary btn-lg\" href=\"/contactus\">Contact TMC</a>",
+          "<a class=\"btn btn-primary btn-lg\" href=\"/contactus\">تواصل مع TMC</a>"
+        ]
+      ]
+    },
+    {
+      "key": "privacy",
+      "odoo": {
+        "url": "/privacy",
+        "view_key": "website.privacy",
+        "view_id": 2668,
+        "action": "update",
+        "optional": false
+      },
+      "portal": "https://tmcsmart.com/privacy-policy",
+      "name": {
+        "en": "Privacy policy",
+        "ar": "سياسة الخصوصية"
+      },
+      "meta_title": {
+        "en": "Privacy Policy | TMC SMART",
+        "ar": "سياسة الخصوصية | TMC SMART"
+      },
+      "arch_en": "<t t-name=\"website.privacy\">\n  <t t-call=\"website.layout\">\n    <div id=\"wrap\" class=\"oe_structure oe_empty\">\n      <section class=\"s_text_block o_colored_level pt64 pb32\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <p class=\"text-muted mb-2\">Privacy Policy</p>\n          <h1 class=\"display-5\">Privacy policy</h1>\n          <p class=\"lead\">How TMC collects, uses, shares and protects your personal data across our website, online store, WhatsApp, social media pages and the TMC assistant.</p>\n          <p class=\"text-muted small\">Last updated: 21 November 2026</p>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt48 pb48\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h3\">About this policy</h2>\n          <p>This policy explains what personal data TMC – Technology Metro Company collects, why we collect it, who we share it with, how long we keep it and the choices you have. It applies to visitors, customers and partners.</p>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt32 pb32\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h3\">Who we are and where this applies</h2>\n          <h3 class=\"h5 mt-4\">Who is responsible for your data</h3>\n          <p>TMC – Technology Metro Company (TMC SMART), Sarmada, Idlib, Syria. You can reach us at sales@tmcsmart.shop or on +963 965 445 580.</p>\n          <h3 class=\"h5 mt-4\">Where this policy applies</h3>\n          <p>On tmcsmart.com, our online store at erp.tmcsmart.com, our WhatsApp numbers, our pages on social networks, the TMC assistant, and our digital services such as websites, apps, booking systems, hosting and payments.</p>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt32 pb32\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h3\">Information we collect</h2>\n          <h3 class=\"h5 mt-4\">Information you give us</h3>\n          <p>Your name, phone number, email address, company name, delivery and billing address, order and special order details, and anything you send us in forms, emails or WhatsApp chats, including voice notes, photos and files.</p>\n          <h3 class=\"h5 mt-4\">Information collected automatically</h3>\n          <p>Basic technical data such as your IP address, browser and device type, the pages you visit and the time of your visit, kept in server and security logs. On the online store, Google Analytics also measures visits, as our cookie policy explains.</p>\n          <h3 class=\"h5 mt-4\">Information from other services</h3>\n          <p>When you message our pages on Facebook, Instagram or other networks, or connect one of your accounts to our tools, we receive the information that platform shares under the permissions you approve, such as your name, profile picture, page details and messages. Payment providers tell us whether a payment succeeded; we never receive or store full card numbers.</p>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt32 pb32\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h3\">How we use your information</h2>\n          <h3 class=\"h5 mt-4\">To serve you</h3>\n          <p>To process, deliver and support orders and special orders, issue invoices, answer your questions, follow up on warranty and give technical help.</p>\n          <h3 class=\"h5 mt-4\">Your account and verification</h3>\n          <p>To create your customer account, verify your phone number or email with a one-time code, and show you only your own orders, invoices and support requests.</p>\n          <h3 class=\"h5 mt-4\">Improving our service</h3>\n          <p>To understand which products and questions come up most often, improve our website, store and answers, and keep our systems secure.</p>\n          <h3 class=\"h5 mt-4\">Messages and offers</h3>\n          <p>We send order and service updates to customers. We send offers only to people who agreed to receive them or who already buy from us, and you can stop them at any time by replying STOP or contacting us.</p>\n          <h3 class=\"h5 mt-4\">Legal basis</h3>\n          <p>We use your data to fulfil our agreement with you, for our legitimate interest in running and improving our business, to meet legal and accounting obligations, and with your consent where it is required. You can withdraw your consent at any time.</p>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt32 pb32\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h3\">The TMC assistant</h2>\n          <h3 class=\"h5 mt-4\">How the assistant works</h3>\n          <p>Our website and WhatsApp assistant can answer questions automatically. To write a reply, your messages are processed by artificial intelligence providers such as OpenAI, Anthropic, Google or OpenRouter, and we send them only what the conversation needs.</p>\n          <h3 class=\"h5 mt-4\">Your orders in the assistant</h3>\n          <p>Before the assistant discusses your orders or invoices, it verifies your phone number with a one-time code. You can ask for a person at any time. Please don't share passwords or card numbers in a chat.</p>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt32 pb32\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h3\">Social networks and connected accounts</h2>\n          <h3 class=\"h5 mt-4\">How we use platform data</h3>\n          <p>When you connect a Facebook, Instagram, TikTok, LinkedIn, Google, YouTube or other account to a TMC tool, we use the permissions you approve only to provide the feature you asked for, such as publishing or scheduling posts, replying to messages and showing page statistics. We do not sell this data, use it for advertising, or share it with data brokers.</p>\n          <h3 class=\"h5 mt-4\">Google user data</h3>\n          <p>TMC's use and transfer of information received from Google APIs adheres to the Google API Services User Data Policy, including the Limited Use requirements.</p>\n          <h3 class=\"h5 mt-4\">Removing our access</h3>\n          <p>You can remove our access at any time from your account settings on the platform, for example in Facebook under Settings › Apps and websites, and ask us to delete the data we received, as explained on our data deletion page.</p>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt32 pb32\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h3\">Sharing, storage and security</h2>\n          <h3 class=\"h5 mt-4\">Who we share data with</h3>\n          <p>We do not sell or rent your personal data. We share only what is needed with delivery and shipping companies, payment providers, the hosting and cloud providers that run our servers, artificial intelligence providers for the assistant, and accountants or authorities when the law requires it.</p>\n          <h3 class=\"h5 mt-4\">Where your data is stored</h3>\n          <p>Our servers and service providers may be outside Syria, for example in Europe. We choose providers that protect data with appropriate safeguards.</p>\n          <h3 class=\"h5 mt-4\">How long we keep it</h3>\n          <p>We keep invoices and transaction records for as long as accounting and legal obligations require. We keep chats and account data while you are a customer, and delete or anonymize them on request or when they are no longer needed. Security logs are kept for a limited time.</p>\n          <h3 class=\"h5 mt-4\">How we protect it</h3>\n          <p>We use encrypted connections (HTTPS), access controls, protected admin panels and regular backups. No system is perfectly secure, so please tell us right away if you suspect your data has been misused.</p>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt32 pb32\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h3\">Your rights</h2>\n          <h3 class=\"h5 mt-4\">Your choices</h3>\n          <p>You can ask to access, correct, export or delete your data, object to how we use it, stop offers and withdraw your consent. Contact us at sales@tmcsmart.shop or on WhatsApp at +963 965 445 580, and we will reply within 30 days.</p>\n          <h3 class=\"h5 mt-4\">Deleting your data</h3>\n          <p>Our data deletion page (tmcsmart.com/en/data-deletion) explains how to send a request and which records we must keep by law.</p>\n          <h3 class=\"h5 mt-4\">Children</h3>\n          <p>Our services are meant for businesses and adults. We do not knowingly collect data from children under 13. If you believe a child has sent us personal data, contact us and we will delete it.</p>\n          <h3 class=\"h5 mt-4\">Changes to this policy</h3>\n          <p>We may update this policy. The new version is posted on this page with a new date, and we tell customers about important changes.</p>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt40 pb40 o_cc o_cc2\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <p class=\"text-muted mb-2\">Company details</p>\n          <h2 class=\"h4\">TMC – Technology Metro Company</h2>\n          <p>Trading as TMC SMART. These policies are issued by and apply to this company.</p>\n          <ul class=\"list-unstyled\">\n            <li><strong>Address:</strong> Idlib – Sarmada, 100 m after the car roundabout towards Sarmada, Syria</li>\n            <li><strong>Email:</strong> <a href=\"mailto:sales@tmcsmart.shop\">sales@tmcsmart.shop</a></li>\n            <li><strong>Phone and WhatsApp:</strong> <a href=\"tel:+963965445580\">+963 965 445 580</a></li>\n            <li><strong>Website:</strong> <a href=\"https://tmcsmart.com\">tmcsmart.com</a></li>\n          </ul>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt40 pb64 text-center\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h4\">Questions about your data?</h2>\n          <p><a class=\"btn btn-primary btn-lg\" href=\"/contactus\">Contact TMC</a></p>\n        </div>\n      </section>\n    </div>\n  </t>\n</t>",
+      "arch_ar": "<t t-name=\"website.privacy\">\n  <t t-call=\"website.layout\">\n    <div id=\"wrap\" class=\"oe_structure oe_empty\">\n      <section class=\"s_text_block o_colored_level pt64 pb32\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <p class=\"text-muted mb-2\">سياسة الخصوصية</p>\n          <h1 class=\"display-5\">سياسة الخصوصية</h1>\n          <p class=\"lead\">كيف تجمع TMC بياناتك الشخصية وتستخدمها وتشاركها وتحميها، عبر موقعنا ومتجرنا الإلكتروني وواتساب وصفحاتنا على مواقع التواصل ومساعد TMC.</p>\n          <p class=\"text-muted small\">آخر تحديث: 21 تشرين الثاني 2026</p>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt48 pb48\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h3\">عن هذه السياسة</h2>\n          <p>توضح هذه السياسة البيانات الشخصية التي تجمعها TMC – Technology Metro Company، ولماذا نجمعها، ومع من نشاركها، وكم نحتفظ بها، والخيارات المتاحة لك. وتنطبق على الزوار والعملاء والشركاء.</p>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt32 pb32\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h3\">من نحن وأين تنطبق السياسة</h2>\n          <h3 class=\"h5 mt-4\">الجهة المسؤولة عن بياناتك</h3>\n          <p>TMC – Technology Metro Company (TMC SMART)، سرمدا، إدلب، سوريا. يمكنك التواصل معنا على sales@tmcsmart.shop أو على الرقم ‎+963 965 445 580.</p>\n          <h3 class=\"h5 mt-4\">أين تنطبق هذه السياسة</h3>\n          <p>على موقع tmcsmart.com، ومتجرنا الإلكتروني على erp.tmcsmart.com، وأرقام واتساب الخاصة بنا، وصفحاتنا على مواقع التواصل، ومساعد TMC، وخدماتنا الرقمية مثل المواقع والتطبيقات وأنظمة الحجز والاستضافة والدفع.</p>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt32 pb32\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h3\">المعلومات التي نجمعها</h2>\n          <h3 class=\"h5 mt-4\">معلومات تقدّمها لنا</h3>\n          <p>اسمك ورقم هاتفك وبريدك الإلكتروني واسم شركتك وعنوان التوصيل والفوترة، وتفاصيل الطلبات والطلبات الخاصة، وكل ما ترسله لنا عبر النماذج أو البريد أو محادثات واتساب، بما فيها الرسائل الصوتية والصور والملفات.</p>\n          <h3 class=\"h5 mt-4\">معلومات تُجمع تلقائيًا</h3>\n          <p>بيانات تقنية أساسية مثل عنوان IP ونوع المتصفح والجهاز والصفحات التي تزورها ووقت الزيارة، وتُحفظ في سجلات الخادم والحماية. وفي المتجر الإلكتروني يقيس Google Analytics الزيارات أيضًا، كما توضح سياسة ملفات تعريف الارتباط.</p>\n          <h3 class=\"h5 mt-4\">معلومات من خدمات أخرى</h3>\n          <p>عندما تراسل صفحاتنا على فيسبوك أو إنستغرام أو غيرها، أو تربط أحد حساباتك بأدواتنا، نستلم المعلومات التي تشاركها تلك المنصة ضمن الصلاحيات التي توافق عليها، مثل اسمك وصورة ملفك وتفاصيل الصفحة والرسائل. ويخبرنا مزودو الدفع بنجاح الدفع أو فشله، ولا نستلم أرقام البطاقات الكاملة ولا نخزنها.</p>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt32 pb32\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h3\">كيف نستخدم معلوماتك</h2>\n          <h3 class=\"h5 mt-4\">لخدمتك</h3>\n          <p>لمعالجة الطلبات والطلبات الخاصة وتوصيلها ومتابعتها، وإصدار الفواتير، والإجابة عن أسئلتك، ومتابعة الكفالة، وتقديم المساعدة الفنية.</p>\n          <h3 class=\"h5 mt-4\">حسابك والتحقق</h3>\n          <p>لإنشاء حسابك كعميل، والتحقق من رقم هاتفك أو بريدك برمز مؤقت، وعرض طلباتك وفواتيرك وطلبات الدعم الخاصة بك فقط.</p>\n          <h3 class=\"h5 mt-4\">تحسين خدماتنا</h3>\n          <p>لمعرفة المنتجات والأسئلة الأكثر تكرارًا، وتحسين موقعنا ومتجرنا وإجاباتنا، والحفاظ على أمان أنظمتنا.</p>\n          <h3 class=\"h5 mt-4\">الرسائل والعروض</h3>\n          <p>نرسل للعملاء تحديثات الطلبات والخدمة. ونرسل العروض فقط لمن وافق على استلامها أو لمن يشتري منا، ويمكنك إيقافها في أي وقت بالرد بكلمة «إيقاف» أو بالتواصل معنا.</p>\n          <h3 class=\"h5 mt-4\">الأساس القانوني</h3>\n          <p>نستخدم بياناتك لتنفيذ اتفاقنا معك، ولمصلحتنا المشروعة في إدارة أعمالنا وتحسينها، وللوفاء بالالتزامات القانونية والمحاسبية، وبموافقتك حين تكون الموافقة مطلوبة. ويمكنك سحب موافقتك في أي وقت.</p>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt32 pb32\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h3\">مساعد TMC</h2>\n          <h3 class=\"h5 mt-4\">كيف يعمل المساعد</h3>\n          <p>يمكن لمساعدنا على الموقع وواتساب الإجابة عن الأسئلة آليًا. ولكتابة الرد، تُعالج رسائلك لدى مزودي خدمات الذكاء الاصطناعي مثل OpenAI و Anthropic و Google و OpenRouter، ولا نرسل لهم إلا ما تحتاجه المحادثة.</p>\n          <h3 class=\"h5 mt-4\">طلباتك في المساعد</h3>\n          <p>قبل أن يتحدث المساعد عن طلباتك أو فواتيرك، يتحقق من رقم هاتفك برمز مؤقت. ويمكنك طلب التحدث مع موظف في أي وقت. لا تشارك كلمات المرور أو أرقام البطاقات في المحادثة.</p>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt32 pb32\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h3\">مواقع التواصل والحسابات المرتبطة</h2>\n          <h3 class=\"h5 mt-4\">كيف نستخدم بيانات المنصات</h3>\n          <p>عندما تربط حسابًا على فيسبوك أو إنستغرام أو تيك توك أو لينكدإن أو غوغل أو يوتيوب أو غيرها بإحدى أدوات TMC، نستخدم الصلاحيات التي توافق عليها فقط لتقديم الميزة التي طلبتها، مثل نشر المنشورات أو جدولتها، والرد على الرسائل، وعرض إحصاءات الصفحة. لا نبيع هذه البيانات، ولا نستخدمها للإعلانات، ولا نشاركها مع وسطاء البيانات.</p>\n          <h3 class=\"h5 mt-4\">بيانات مستخدمي غوغل</h3>\n          <p>يلتزم استخدام TMC للمعلومات التي تصلها من واجهات Google البرمجية ونقلها بسياسة بيانات المستخدمين لخدمات Google API، بما فيها متطلبات الاستخدام المحدود (Limited Use).</p>\n          <h3 class=\"h5 mt-4\">إلغاء صلاحياتنا</h3>\n          <p>يمكنك إلغاء وصولنا في أي وقت من إعدادات حسابك على المنصة، مثلًا في فيسبوك من الإعدادات › التطبيقات ومواقع الويب، وأن تطلب منا حذف البيانات التي وصلتنا، كما توضح صفحة حذف البيانات.</p>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt32 pb32\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h3\">المشاركة والتخزين والحماية</h2>\n          <h3 class=\"h5 mt-4\">مع من نشارك البيانات</h3>\n          <p>لا نبيع بياناتك الشخصية ولا نؤجرها. نشارك فقط ما يلزم مع شركات التوصيل والشحن، ومزودي الدفع، ومزودي الاستضافة والخدمات السحابية الذين يشغّلون خوادمنا، ومزودي الذكاء الاصطناعي للمساعد، والمحاسبين أو الجهات الرسمية عندما يفرض القانون ذلك.</p>\n          <h3 class=\"h5 mt-4\">أين تُخزَّن بياناتك</h3>\n          <p>قد تكون خوادمنا ومزودو خدماتنا خارج سوريا، في أوروبا مثلًا. ونختار مزودين يحمون البيانات بضمانات مناسبة.</p>\n          <h3 class=\"h5 mt-4\">كم نحتفظ بها</h3>\n          <p>نحتفظ بالفواتير وسجلات المعاملات طوال المدة التي تفرضها الالتزامات المحاسبية والقانونية. ونحتفظ بالمحادثات وبيانات الحساب ما دمت عميلًا لدينا، ونحذفها أو نجعلها مجهولة الهوية عند طلبك أو عند انتهاء الحاجة إليها. وتُحفظ سجلات الحماية لمدة محدودة.</p>\n          <h3 class=\"h5 mt-4\">كيف نحميها</h3>\n          <p>نستخدم اتصالات مشفّرة (HTTPS)، وصلاحيات وصول محددة، ولوحات إدارة محمية، ونسخًا احتياطية منتظمة. لا يوجد نظام آمن تمامًا، لذا أخبرنا فورًا إذا شككت في إساءة استخدام بياناتك.</p>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt32 pb32\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h3\">حقوقك</h2>\n          <h3 class=\"h5 mt-4\">خياراتك</h3>\n          <p>يمكنك طلب الاطلاع على بياناتك أو تصحيحها أو تصديرها أو حذفها، والاعتراض على طريقة استخدامها، وإيقاف العروض، وسحب موافقتك. تواصل معنا على sales@tmcsmart.shop أو عبر واتساب على ‎+963 965 445 580، وسنرد خلال 30 يومًا.</p>\n          <h3 class=\"h5 mt-4\">حذف بياناتك</h3>\n          <p>توضح صفحة حذف البيانات (tmcsmart.com/data-deletion) كيفية إرسال الطلب، والسجلات التي يلزمنا القانون بالاحتفاظ بها.</p>\n          <h3 class=\"h5 mt-4\">الأطفال</h3>\n          <p>خدماتنا موجهة للشركات والبالغين. لا نجمع عن قصد بيانات أطفال دون 13 سنة، وإذا كنت تعتقد أن طفلًا أرسل لنا بيانات شخصية، تواصل معنا وسنحذفها.</p>\n          <h3 class=\"h5 mt-4\">تعديل هذه السياسة</h3>\n          <p>قد نعدّل هذه السياسة. ننشر النسخة الجديدة في هذه الصفحة مع تاريخ جديد، ونُعلم العملاء بالتغييرات المهمة.</p>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt40 pb40 o_cc o_cc2\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <p class=\"text-muted mb-2\">بيانات الشركة</p>\n          <h2 class=\"h4\">TMC – Technology Metro Company</h2>\n          <p>تعمل باسم TMC SMART، وتصدر هذه السياسات عنها وتنطبق عليها.</p>\n          <ul class=\"list-unstyled\">\n            <li><strong>العنوان:</strong> إدلب – سرمدا، بعد دوار السيارات باتجاه سرمدا بـ 100 متر، سوريا</li>\n            <li><strong>البريد الإلكتروني:</strong> <a href=\"mailto:sales@tmcsmart.shop\">sales@tmcsmart.shop</a></li>\n            <li><strong>الهاتف وواتساب:</strong> <a href=\"tel:+963965445580\">+963 965 445 580</a></li>\n            <li><strong>الموقع:</strong> <a href=\"https://tmcsmart.com\">tmcsmart.com</a></li>\n          </ul>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt40 pb64 text-center\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h4\">لديك سؤال عن بياناتك؟</h2>\n          <p><a class=\"btn btn-primary btn-lg\" href=\"/contactus\">تواصل مع TMC</a></p>\n        </div>\n      </section>\n    </div>\n  </t>\n</t>",
+      "terms_ar": [
+        [
+          "Privacy Policy",
+          "سياسة الخصوصية"
+        ],
+        [
+          "Privacy policy",
+          "سياسة الخصوصية"
+        ],
+        [
+          "How TMC collects, uses, shares and protects your personal data across our website, online store, WhatsApp, social media pages and the TMC assistant.",
+          "كيف تجمع TMC بياناتك الشخصية وتستخدمها وتشاركها وتحميها، عبر موقعنا ومتجرنا الإلكتروني وواتساب وصفحاتنا على مواقع التواصل ومساعد TMC."
+        ],
+        [
+          "Last updated: 21 November 2026",
+          "آخر تحديث: 21 تشرين الثاني 2026"
+        ],
+        [
+          "About this policy",
+          "عن هذه السياسة"
+        ],
+        [
+          "This policy explains what personal data TMC – Technology Metro Company collects, why we collect it, who we share it with, how long we keep it and the choices you have. It applies to visitors, customers and partners.",
+          "توضح هذه السياسة البيانات الشخصية التي تجمعها TMC – Technology Metro Company، ولماذا نجمعها، ومع من نشاركها، وكم نحتفظ بها، والخيارات المتاحة لك. وتنطبق على الزوار والعملاء والشركاء."
+        ],
+        [
+          "Who we are and where this applies",
+          "من نحن وأين تنطبق السياسة"
+        ],
+        [
+          "Who is responsible for your data",
+          "الجهة المسؤولة عن بياناتك"
+        ],
+        [
+          "TMC – Technology Metro Company (TMC SMART), Sarmada, Idlib, Syria. You can reach us at sales@tmcsmart.shop or on +963 965 445 580.",
+          "TMC – Technology Metro Company (TMC SMART)، سرمدا، إدلب، سوريا. يمكنك التواصل معنا على sales@tmcsmart.shop أو على الرقم ‎+963 965 445 580."
+        ],
+        [
+          "Where this policy applies",
+          "أين تنطبق هذه السياسة"
+        ],
+        [
+          "On tmcsmart.com, our online store at erp.tmcsmart.com, our WhatsApp numbers, our pages on social networks, the TMC assistant, and our digital services such as websites, apps, booking systems, hosting and payments.",
+          "على موقع tmcsmart.com، ومتجرنا الإلكتروني على erp.tmcsmart.com، وأرقام واتساب الخاصة بنا، وصفحاتنا على مواقع التواصل، ومساعد TMC، وخدماتنا الرقمية مثل المواقع والتطبيقات وأنظمة الحجز والاستضافة والدفع."
+        ],
+        [
+          "Information we collect",
+          "المعلومات التي نجمعها"
+        ],
+        [
+          "Information you give us",
+          "معلومات تقدّمها لنا"
+        ],
+        [
+          "Your name, phone number, email address, company name, delivery and billing address, order and special order details, and anything you send us in forms, emails or WhatsApp chats, including voice notes, photos and files.",
+          "اسمك ورقم هاتفك وبريدك الإلكتروني واسم شركتك وعنوان التوصيل والفوترة، وتفاصيل الطلبات والطلبات الخاصة، وكل ما ترسله لنا عبر النماذج أو البريد أو محادثات واتساب، بما فيها الرسائل الصوتية والصور والملفات."
+        ],
+        [
+          "Information collected automatically",
+          "معلومات تُجمع تلقائيًا"
+        ],
+        [
+          "Basic technical data such as your IP address, browser and device type, the pages you visit and the time of your visit, kept in server and security logs. On the online store, Google Analytics also measures visits, as our cookie policy explains.",
+          "بيانات تقنية أساسية مثل عنوان IP ونوع المتصفح والجهاز والصفحات التي تزورها ووقت الزيارة، وتُحفظ في سجلات الخادم والحماية. وفي المتجر الإلكتروني يقيس Google Analytics الزيارات أيضًا، كما توضح سياسة ملفات تعريف الارتباط."
+        ],
+        [
+          "Information from other services",
+          "معلومات من خدمات أخرى"
+        ],
+        [
+          "When you message our pages on Facebook, Instagram or other networks, or connect one of your accounts to our tools, we receive the information that platform shares under the permissions you approve, such as your name, profile picture, page details and messages. Payment providers tell us whether a payment succeeded; we never receive or store full card numbers.",
+          "عندما تراسل صفحاتنا على فيسبوك أو إنستغرام أو غيرها، أو تربط أحد حساباتك بأدواتنا، نستلم المعلومات التي تشاركها تلك المنصة ضمن الصلاحيات التي توافق عليها، مثل اسمك وصورة ملفك وتفاصيل الصفحة والرسائل. ويخبرنا مزودو الدفع بنجاح الدفع أو فشله، ولا نستلم أرقام البطاقات الكاملة ولا نخزنها."
+        ],
+        [
+          "How we use your information",
+          "كيف نستخدم معلوماتك"
+        ],
+        [
+          "To serve you",
+          "لخدمتك"
+        ],
+        [
+          "To process, deliver and support orders and special orders, issue invoices, answer your questions, follow up on warranty and give technical help.",
+          "لمعالجة الطلبات والطلبات الخاصة وتوصيلها ومتابعتها، وإصدار الفواتير، والإجابة عن أسئلتك، ومتابعة الكفالة، وتقديم المساعدة الفنية."
+        ],
+        [
+          "Your account and verification",
+          "حسابك والتحقق"
+        ],
+        [
+          "To create your customer account, verify your phone number or email with a one-time code, and show you only your own orders, invoices and support requests.",
+          "لإنشاء حسابك كعميل، والتحقق من رقم هاتفك أو بريدك برمز مؤقت، وعرض طلباتك وفواتيرك وطلبات الدعم الخاصة بك فقط."
+        ],
+        [
+          "Improving our service",
+          "تحسين خدماتنا"
+        ],
+        [
+          "To understand which products and questions come up most often, improve our website, store and answers, and keep our systems secure.",
+          "لمعرفة المنتجات والأسئلة الأكثر تكرارًا، وتحسين موقعنا ومتجرنا وإجاباتنا، والحفاظ على أمان أنظمتنا."
+        ],
+        [
+          "Messages and offers",
+          "الرسائل والعروض"
+        ],
+        [
+          "We send order and service updates to customers. We send offers only to people who agreed to receive them or who already buy from us, and you can stop them at any time by replying STOP or contacting us.",
+          "نرسل للعملاء تحديثات الطلبات والخدمة. ونرسل العروض فقط لمن وافق على استلامها أو لمن يشتري منا، ويمكنك إيقافها في أي وقت بالرد بكلمة «إيقاف» أو بالتواصل معنا."
+        ],
+        [
+          "Legal basis",
+          "الأساس القانوني"
+        ],
+        [
+          "We use your data to fulfil our agreement with you, for our legitimate interest in running and improving our business, to meet legal and accounting obligations, and with your consent where it is required. You can withdraw your consent at any time.",
+          "نستخدم بياناتك لتنفيذ اتفاقنا معك، ولمصلحتنا المشروعة في إدارة أعمالنا وتحسينها، وللوفاء بالالتزامات القانونية والمحاسبية، وبموافقتك حين تكون الموافقة مطلوبة. ويمكنك سحب موافقتك في أي وقت."
+        ],
+        [
+          "The TMC assistant",
+          "مساعد TMC"
+        ],
+        [
+          "How the assistant works",
+          "كيف يعمل المساعد"
+        ],
+        [
+          "Our website and WhatsApp assistant can answer questions automatically. To write a reply, your messages are processed by artificial intelligence providers such as OpenAI, Anthropic, Google or OpenRouter, and we send them only what the conversation needs.",
+          "يمكن لمساعدنا على الموقع وواتساب الإجابة عن الأسئلة آليًا. ولكتابة الرد، تُعالج رسائلك لدى مزودي خدمات الذكاء الاصطناعي مثل OpenAI و Anthropic و Google و OpenRouter، ولا نرسل لهم إلا ما تحتاجه المحادثة."
+        ],
+        [
+          "Your orders in the assistant",
+          "طلباتك في المساعد"
+        ],
+        [
+          "Before the assistant discusses your orders or invoices, it verifies your phone number with a one-time code. You can ask for a person at any time. Please don't share passwords or card numbers in a chat.",
+          "قبل أن يتحدث المساعد عن طلباتك أو فواتيرك، يتحقق من رقم هاتفك برمز مؤقت. ويمكنك طلب التحدث مع موظف في أي وقت. لا تشارك كلمات المرور أو أرقام البطاقات في المحادثة."
+        ],
+        [
+          "Social networks and connected accounts",
+          "مواقع التواصل والحسابات المرتبطة"
+        ],
+        [
+          "How we use platform data",
+          "كيف نستخدم بيانات المنصات"
+        ],
+        [
+          "When you connect a Facebook, Instagram, TikTok, LinkedIn, Google, YouTube or other account to a TMC tool, we use the permissions you approve only to provide the feature you asked for, such as publishing or scheduling posts, replying to messages and showing page statistics. We do not sell this data, use it for advertising, or share it with data brokers.",
+          "عندما تربط حسابًا على فيسبوك أو إنستغرام أو تيك توك أو لينكدإن أو غوغل أو يوتيوب أو غيرها بإحدى أدوات TMC، نستخدم الصلاحيات التي توافق عليها فقط لتقديم الميزة التي طلبتها، مثل نشر المنشورات أو جدولتها، والرد على الرسائل، وعرض إحصاءات الصفحة. لا نبيع هذه البيانات، ولا نستخدمها للإعلانات، ولا نشاركها مع وسطاء البيانات."
+        ],
+        [
+          "Google user data",
+          "بيانات مستخدمي غوغل"
+        ],
+        [
+          "TMC's use and transfer of information received from Google APIs adheres to the Google API Services User Data Policy, including the Limited Use requirements.",
+          "يلتزم استخدام TMC للمعلومات التي تصلها من واجهات Google البرمجية ونقلها بسياسة بيانات المستخدمين لخدمات Google API، بما فيها متطلبات الاستخدام المحدود (Limited Use)."
+        ],
+        [
+          "Removing our access",
+          "إلغاء صلاحياتنا"
+        ],
+        [
+          "You can remove our access at any time from your account settings on the platform, for example in Facebook under Settings › Apps and websites, and ask us to delete the data we received, as explained on our data deletion page.",
+          "يمكنك إلغاء وصولنا في أي وقت من إعدادات حسابك على المنصة، مثلًا في فيسبوك من الإعدادات › التطبيقات ومواقع الويب، وأن تطلب منا حذف البيانات التي وصلتنا، كما توضح صفحة حذف البيانات."
+        ],
+        [
+          "Sharing, storage and security",
+          "المشاركة والتخزين والحماية"
+        ],
+        [
+          "Who we share data with",
+          "مع من نشارك البيانات"
+        ],
+        [
+          "We do not sell or rent your personal data. We share only what is needed with delivery and shipping companies, payment providers, the hosting and cloud providers that run our servers, artificial intelligence providers for the assistant, and accountants or authorities when the law requires it.",
+          "لا نبيع بياناتك الشخصية ولا نؤجرها. نشارك فقط ما يلزم مع شركات التوصيل والشحن، ومزودي الدفع، ومزودي الاستضافة والخدمات السحابية الذين يشغّلون خوادمنا، ومزودي الذكاء الاصطناعي للمساعد، والمحاسبين أو الجهات الرسمية عندما يفرض القانون ذلك."
+        ],
+        [
+          "Where your data is stored",
+          "أين تُخزَّن بياناتك"
+        ],
+        [
+          "Our servers and service providers may be outside Syria, for example in Europe. We choose providers that protect data with appropriate safeguards.",
+          "قد تكون خوادمنا ومزودو خدماتنا خارج سوريا، في أوروبا مثلًا. ونختار مزودين يحمون البيانات بضمانات مناسبة."
+        ],
+        [
+          "How long we keep it",
+          "كم نحتفظ بها"
+        ],
+        [
+          "We keep invoices and transaction records for as long as accounting and legal obligations require. We keep chats and account data while you are a customer, and delete or anonymize them on request or when they are no longer needed. Security logs are kept for a limited time.",
+          "نحتفظ بالفواتير وسجلات المعاملات طوال المدة التي تفرضها الالتزامات المحاسبية والقانونية. ونحتفظ بالمحادثات وبيانات الحساب ما دمت عميلًا لدينا، ونحذفها أو نجعلها مجهولة الهوية عند طلبك أو عند انتهاء الحاجة إليها. وتُحفظ سجلات الحماية لمدة محدودة."
+        ],
+        [
+          "How we protect it",
+          "كيف نحميها"
+        ],
+        [
+          "We use encrypted connections (HTTPS), access controls, protected admin panels and regular backups. No system is perfectly secure, so please tell us right away if you suspect your data has been misused.",
+          "نستخدم اتصالات مشفّرة (HTTPS)، وصلاحيات وصول محددة، ولوحات إدارة محمية، ونسخًا احتياطية منتظمة. لا يوجد نظام آمن تمامًا، لذا أخبرنا فورًا إذا شككت في إساءة استخدام بياناتك."
+        ],
+        [
+          "Your rights",
+          "حقوقك"
+        ],
+        [
+          "Your choices",
+          "خياراتك"
+        ],
+        [
+          "You can ask to access, correct, export or delete your data, object to how we use it, stop offers and withdraw your consent. Contact us at sales@tmcsmart.shop or on WhatsApp at +963 965 445 580, and we will reply within 30 days.",
+          "يمكنك طلب الاطلاع على بياناتك أو تصحيحها أو تصديرها أو حذفها، والاعتراض على طريقة استخدامها، وإيقاف العروض، وسحب موافقتك. تواصل معنا على sales@tmcsmart.shop أو عبر واتساب على ‎+963 965 445 580، وسنرد خلال 30 يومًا."
+        ],
+        [
+          "Deleting your data",
+          "حذف بياناتك"
+        ],
+        [
+          "Our data deletion page (tmcsmart.com/en/data-deletion) explains how to send a request and which records we must keep by law.",
+          "توضح صفحة حذف البيانات (tmcsmart.com/data-deletion) كيفية إرسال الطلب، والسجلات التي يلزمنا القانون بالاحتفاظ بها."
+        ],
+        [
+          "Children",
+          "الأطفال"
+        ],
+        [
+          "Our services are meant for businesses and adults. We do not knowingly collect data from children under 13. If you believe a child has sent us personal data, contact us and we will delete it.",
+          "خدماتنا موجهة للشركات والبالغين. لا نجمع عن قصد بيانات أطفال دون 13 سنة، وإذا كنت تعتقد أن طفلًا أرسل لنا بيانات شخصية، تواصل معنا وسنحذفها."
+        ],
+        [
+          "Changes to this policy",
+          "تعديل هذه السياسة"
+        ],
+        [
+          "We may update this policy. The new version is posted on this page with a new date, and we tell customers about important changes.",
+          "قد نعدّل هذه السياسة. ننشر النسخة الجديدة في هذه الصفحة مع تاريخ جديد، ونُعلم العملاء بالتغييرات المهمة."
+        ],
+        [
+          "Company details",
+          "بيانات الشركة"
+        ],
+        [
+          "Trading as TMC SMART. These policies are issued by and apply to this company.",
+          "تعمل باسم TMC SMART، وتصدر هذه السياسات عنها وتنطبق عليها."
+        ],
+        [
+          "<strong>Address:</strong> Idlib – Sarmada, 100 m after the car roundabout towards Sarmada, Syria",
+          "<strong>العنوان:</strong> إدلب – سرمدا، بعد دوار السيارات باتجاه سرمدا بـ 100 متر، سوريا"
+        ],
+        [
+          "<strong>Email:</strong> <a href=\"mailto:sales@tmcsmart.shop\">sales@tmcsmart.shop</a>",
+          "<strong>البريد الإلكتروني:</strong> <a href=\"mailto:sales@tmcsmart.shop\">sales@tmcsmart.shop</a>"
+        ],
+        [
+          "<strong>Phone and WhatsApp:</strong> <a href=\"tel:+963965445580\">+963 965 445 580</a>",
+          "<strong>الهاتف وواتساب:</strong> <a href=\"tel:+963965445580\">+963 965 445 580</a>"
+        ],
+        [
+          "<strong>Website:</strong> <a href=\"https://tmcsmart.com\">tmcsmart.com</a>",
+          "<strong>الموقع:</strong> <a href=\"https://tmcsmart.com\">tmcsmart.com</a>"
+        ],
+        [
+          "Questions about your data?",
+          "لديك سؤال عن بياناتك؟"
+        ],
+        [
+          "<a class=\"btn btn-primary btn-lg\" href=\"/contactus\">Contact TMC</a>",
+          "<a class=\"btn btn-primary btn-lg\" href=\"/contactus\">تواصل مع TMC</a>"
+        ]
+      ]
+    },
+    {
+      "key": "returns",
+      "odoo": {
+        "url": "/return-policy",
+        "view_key": "website.return-policy",
+        "view_id": 3765,
+        "action": "update",
+        "optional": false
+      },
+      "portal": "https://tmcsmart.com/return-policy",
+      "name": {
+        "en": "Return and refund policy",
+        "ar": "سياسة الإرجاع والاسترداد"
+      },
+      "meta_title": {
+        "en": "Return and Refund Policy | TMC SMART",
+        "ar": "سياسة الإرجاع والاسترداد | TMC SMART"
+      },
+      "arch_en": "<t t-name=\"website.return-policy\">\n  <t t-call=\"website.layout\">\n    <div id=\"wrap\" class=\"oe_structure oe_empty\">\n      <section class=\"s_text_block o_colored_level pt64 pb32\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <p class=\"text-muted mb-2\">Return Policy</p>\n          <h1 class=\"display-5\">Return and refund policy</h1>\n          <p class=\"lead\">[object Object],[object Object],[object Object]</p>\n          <p class=\"text-muted small\">Last updated: 21 November 2026</p>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt24 pb24 o_cc o_cc2\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h3 class=\"h5 mt-3 mb-1\">All sales are final</h3>\n          <p class=\"text-muted\">Orders are not eligible for return or exchange after completion and delivery.</p>\n          <h3 class=\"h5 mt-3 mb-1\">24-hour defect notice</h3>\n          <p class=\"text-muted\">Defective or damaged items must be reported within 24 hours of receipt.</p>\n          <h3 class=\"h5 mt-3 mb-1\">Original packaging required</h3>\n          <p class=\"text-muted\">Approved defect-based exchanges require original packaging and all included accessories.</p>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt32 pb16\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h3\">Policy statement</h2>\n          <p>At TMC (Technology Metro Company), we strive to provide high-quality technical products. To keep expectations clear, the return policy below applies to all orders placed through our channels.</p>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt16 pb16\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h3\">Return conditions</h2>\n          <ul>\n            <li>All sales are final. TMC does not accept returns or exchanges once an order has been completed and delivered.</li>\n            <li>Returns or exchanges are only considered when an item arrives defective or damaged.</li>\n            <li>Customers must notify TMC within 24 hours of receiving a defective or damaged item.</li>\n            <li>To qualify for an exchange because of a defect, the product must remain in its original packaging and include all accessories.</li>\n          </ul>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt16 pb16\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h3\">Cancelling an order</h2>\n          <ul>\n            <li>You can cancel an order free of charge before it is shipped or handed over. Contact us as soon as possible by phone, WhatsApp or email.</li>\n            <li>Special orders cannot be cancelled once we have ordered the product from the supplier, unless it arrives defective.</li>\n          </ul>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt16 pb16\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h3\">Refunds</h2>\n          <ul>\n            <li>If we approve a refund, for example for an order we cancelled or a defective product we cannot repair or replace, we refund the amount you paid for the product.</li>\n            <li>Refunds are made by the same payment method you used, or in cash at the branch for cash payments, within 14 days of approval.</li>\n            <li>Delivery costs are refunded when the return is caused by our error or by a defect.</li>\n          </ul>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt16 pb16\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h3\">Warranty</h2>\n          <ul>\n            <li>Many products carry a supplier or manufacturer warranty. Its period is stated on the invoice or the product page.</li>\n            <li>The warranty covers manufacturing defects. It does not cover misuse, physical or liquid damage, power surges, repairs by others, or normal wear.</li>\n            <li>To claim warranty, bring or send the product with its invoice. We inspect it and follow up with the supplier to repair or replace it.</li>\n          </ul>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt16 pb16\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h3\">How to report a problem</h2>\n          <ul>\n            <li>Contact us within 24 hours of receipt with your order number, a short description, and photos or a video of the problem.</li>\n            <li>Keep the product, its packaging and accessories until we finish reviewing your request.</li>\n          </ul>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt16 pb32\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h3\">Check your order on arrival</h2>\n          <p>Inspect your order as soon as it arrives. If something is damaged or not working, keep the item with its packaging and accessories and contact us right away, so we can review it within the 24-hour window.</p>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt40 pb40 o_cc o_cc2\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <p class=\"text-muted mb-2\">Company details</p>\n          <h2 class=\"h4\">TMC – Technology Metro Company</h2>\n          <p>Trading as TMC SMART. These policies are issued by and apply to this company.</p>\n          <ul class=\"list-unstyled\">\n            <li><strong>Address:</strong> Idlib – Sarmada, 100 m after the car roundabout towards Sarmada, Syria</li>\n            <li><strong>Email:</strong> <a href=\"mailto:sales@tmcsmart.shop\">sales@tmcsmart.shop</a></li>\n            <li><strong>Phone and WhatsApp:</strong> <a href=\"tel:+963965445580\">+963 965 445 580</a></li>\n            <li><strong>Website:</strong> <a href=\"https://tmcsmart.com\">tmcsmart.com</a></li>\n          </ul>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt40 pb64 text-center\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h4\">Need support about an order?</h2>\n          <p>For questions about defects, damaged deliveries or this policy, contact our sales team.</p>\n          <p><a class=\"btn btn-primary btn-lg\" href=\"mailto:sales@tmcsmart.shop\">sales@tmcsmart.shop</a></p>\n          <p><a href=\"/contactus\">Contact page</a></p>\n        </div>\n      </section>\n    </div>\n  </t>\n</t>",
+      "arch_ar": "<t t-name=\"website.return-policy\">\n  <t t-call=\"website.layout\">\n    <div id=\"wrap\" class=\"oe_structure oe_empty\">\n      <section class=\"s_text_block o_colored_level pt64 pb32\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <p class=\"text-muted mb-2\">سياسة الإرجاع</p>\n          <h1 class=\"display-5\">سياسة الإرجاع والاسترداد</h1>\n          <p class=\"lead\">[object Object],[object Object],[object Object]</p>\n          <p class=\"text-muted small\">آخر تحديث: 21 تشرين الثاني 2026</p>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt24 pb24 o_cc o_cc2\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h3 class=\"h5 mt-3 mb-1\">جميع المبيعات نهائية</h3>\n          <p class=\"text-muted\">لا تقبل الطلبات الإرجاع أو الاستبدال بعد إتمامها وتسليمها.</p>\n          <h3 class=\"h5 mt-3 mb-1\">الإبلاغ عن العيب خلال 24 ساعة</h3>\n          <p class=\"text-muted\">يجب الإبلاغ عن المنتجات المعيبة أو التالفة خلال 24 ساعة من استلامها.</p>\n          <h3 class=\"h5 mt-3 mb-1\">التغليف الأصلي شرط أساسي</h3>\n          <p class=\"text-muted\">يتطلب الاستبدال المعتمد بسبب عيب أن يكون المنتج في تغليفه الأصلي مع جميع ملحقاته.</p>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt32 pb16\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h3\">بيان السياسة</h2>\n          <p>نسعى في TMC (Technology Metro Company) إلى تقديم منتجات تقنية عالية الجودة. ولتكون التوقعات واضحة، تنطبق سياسة الإرجاع التالية على جميع الطلبات المقدمة عبر قنواتنا.</p>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt16 pb16\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h3\">شروط الإرجاع</h2>\n          <ul>\n            <li>جميع المبيعات نهائية. لا تقبل TMC الإرجاع أو الاستبدال بعد إتمام الطلب وتسليمه.</li>\n            <li>يُنظر في الإرجاع أو الاستبدال فقط إذا وصل المنتج معيبًا أو تالفًا.</li>\n            <li>يجب على العميل إبلاغ TMC خلال 24 ساعة من استلام المنتج المعيب أو التالف.</li>\n            <li>ليكون الاستبدال بسبب عيب مقبولًا، يجب أن يبقى المنتج في تغليفه الأصلي ومعه جميع الملحقات.</li>\n          </ul>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt16 pb16\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h3\">إلغاء الطلب</h2>\n          <ul>\n            <li>يمكنك إلغاء الطلب مجانًا قبل شحنه أو تسليمه. تواصل معنا بأسرع وقت عبر الهاتف أو واتساب أو البريد.</li>\n            <li>لا يمكن إلغاء الطلبات الخاصة بعد طلب المنتج من المورد، إلا إذا وصل معيبًا.</li>\n          </ul>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt16 pb16\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h3\">استرداد المبالغ</h2>\n          <ul>\n            <li>إذا وافقنا على الاسترداد، مثلًا لطلب ألغيناه أو لمنتج معيب لا يمكن إصلاحه أو استبداله، نعيد لك المبلغ الذي دفعته ثمنًا للمنتج.</li>\n            <li>نعيد المبلغ بنفس طريقة الدفع التي استخدمتها، أو نقدًا في الفرع إذا كان الدفع نقدًا، خلال 14 يومًا من الموافقة.</li>\n            <li>نعيد تكلفة التوصيل إذا كان الإرجاع بسبب خطأ منا أو بسبب عيب في المنتج.</li>\n          </ul>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt16 pb16\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h3\">الكفالة</h2>\n          <ul>\n            <li>تأتي منتجات كثيرة بكفالة من المورد أو الشركة المصنّعة، ومدتها مذكورة في الفاتورة أو في صفحة المنتج.</li>\n            <li>تغطي الكفالة عيوب التصنيع، ولا تغطي سوء الاستخدام، أو الكسر أو دخول السوائل، أو ارتفاع التيار الكهربائي، أو الإصلاح لدى جهة أخرى، أو الاهتلاك الطبيعي.</li>\n            <li>لطلب الكفالة، أحضر المنتج أو أرسله مع فاتورته. نفحصه ونتابع مع المورد لإصلاحه أو استبداله.</li>\n          </ul>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt16 pb16\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h3\">كيف تبلّغ عن مشكلة</h2>\n          <ul>\n            <li>تواصل معنا خلال 24 ساعة من الاستلام، مع رقم الطلب ووصف قصير وصور أو فيديو للمشكلة.</li>\n            <li>احتفظ بالمنتج وتغليفه وملحقاته حتى ننتهي من مراجعة طلبك.</li>\n          </ul>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt16 pb32\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h3\">افحص طلبك عند الاستلام</h2>\n          <p>افحص طلبك فور وصوله. إذا كان فيه تلف أو لا يعمل، احتفظ به مع تغليفه وملحقاته وتواصل معنا مباشرة، لنتمكن من مراجعته ضمن مهلة الـ 24 ساعة.</p>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt40 pb40 o_cc o_cc2\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <p class=\"text-muted mb-2\">بيانات الشركة</p>\n          <h2 class=\"h4\">TMC – Technology Metro Company</h2>\n          <p>تعمل باسم TMC SMART، وتصدر هذه السياسات عنها وتنطبق عليها.</p>\n          <ul class=\"list-unstyled\">\n            <li><strong>العنوان:</strong> إدلب – سرمدا، بعد دوار السيارات باتجاه سرمدا بـ 100 متر، سوريا</li>\n            <li><strong>البريد الإلكتروني:</strong> <a href=\"mailto:sales@tmcsmart.shop\">sales@tmcsmart.shop</a></li>\n            <li><strong>الهاتف وواتساب:</strong> <a href=\"tel:+963965445580\">+963 965 445 580</a></li>\n            <li><strong>الموقع:</strong> <a href=\"https://tmcsmart.com\">tmcsmart.com</a></li>\n          </ul>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt40 pb64 text-center\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h4\">تحتاج مساعدة بخصوص طلب؟</h2>\n          <p>للاستفسار عن العيوب أو الشحنات التالفة أو هذه السياسة، تواصل مع فريق المبيعات.</p>\n          <p><a class=\"btn btn-primary btn-lg\" href=\"mailto:sales@tmcsmart.shop\">sales@tmcsmart.shop</a></p>\n          <p><a href=\"/contactus\">صفحة التواصل</a></p>\n        </div>\n      </section>\n    </div>\n  </t>\n</t>",
+      "terms_ar": [
+        [
+          "Return Policy",
+          "سياسة الإرجاع"
+        ],
+        [
+          "Return and refund policy",
+          "سياسة الإرجاع والاسترداد"
+        ],
+        [
+          "Last updated: 21 November 2026",
+          "آخر تحديث: 21 تشرين الثاني 2026"
+        ],
+        [
+          "All sales are final",
+          "جميع المبيعات نهائية"
+        ],
+        [
+          "Orders are not eligible for return or exchange after completion and delivery.",
+          "لا تقبل الطلبات الإرجاع أو الاستبدال بعد إتمامها وتسليمها."
+        ],
+        [
+          "24-hour defect notice",
+          "الإبلاغ عن العيب خلال 24 ساعة"
+        ],
+        [
+          "Defective or damaged items must be reported within 24 hours of receipt.",
+          "يجب الإبلاغ عن المنتجات المعيبة أو التالفة خلال 24 ساعة من استلامها."
+        ],
+        [
+          "Original packaging required",
+          "التغليف الأصلي شرط أساسي"
+        ],
+        [
+          "Approved defect-based exchanges require original packaging and all included accessories.",
+          "يتطلب الاستبدال المعتمد بسبب عيب أن يكون المنتج في تغليفه الأصلي مع جميع ملحقاته."
+        ],
+        [
+          "Policy statement",
+          "بيان السياسة"
+        ],
+        [
+          "At TMC (Technology Metro Company), we strive to provide high-quality technical products. To keep expectations clear, the return policy below applies to all orders placed through our channels.",
+          "نسعى في TMC (Technology Metro Company) إلى تقديم منتجات تقنية عالية الجودة. ولتكون التوقعات واضحة، تنطبق سياسة الإرجاع التالية على جميع الطلبات المقدمة عبر قنواتنا."
+        ],
+        [
+          "Return conditions",
+          "شروط الإرجاع"
+        ],
+        [
+          "All sales are final. TMC does not accept returns or exchanges once an order has been completed and delivered.",
+          "جميع المبيعات نهائية. لا تقبل TMC الإرجاع أو الاستبدال بعد إتمام الطلب وتسليمه."
+        ],
+        [
+          "Returns or exchanges are only considered when an item arrives defective or damaged.",
+          "يُنظر في الإرجاع أو الاستبدال فقط إذا وصل المنتج معيبًا أو تالفًا."
+        ],
+        [
+          "Customers must notify TMC within 24 hours of receiving a defective or damaged item.",
+          "يجب على العميل إبلاغ TMC خلال 24 ساعة من استلام المنتج المعيب أو التالف."
+        ],
+        [
+          "To qualify for an exchange because of a defect, the product must remain in its original packaging and include all accessories.",
+          "ليكون الاستبدال بسبب عيب مقبولًا، يجب أن يبقى المنتج في تغليفه الأصلي ومعه جميع الملحقات."
+        ],
+        [
+          "Cancelling an order",
+          "إلغاء الطلب"
+        ],
+        [
+          "You can cancel an order free of charge before it is shipped or handed over. Contact us as soon as possible by phone, WhatsApp or email.",
+          "يمكنك إلغاء الطلب مجانًا قبل شحنه أو تسليمه. تواصل معنا بأسرع وقت عبر الهاتف أو واتساب أو البريد."
+        ],
+        [
+          "Special orders cannot be cancelled once we have ordered the product from the supplier, unless it arrives defective.",
+          "لا يمكن إلغاء الطلبات الخاصة بعد طلب المنتج من المورد، إلا إذا وصل معيبًا."
+        ],
+        [
+          "Refunds",
+          "استرداد المبالغ"
+        ],
+        [
+          "If we approve a refund, for example for an order we cancelled or a defective product we cannot repair or replace, we refund the amount you paid for the product.",
+          "إذا وافقنا على الاسترداد، مثلًا لطلب ألغيناه أو لمنتج معيب لا يمكن إصلاحه أو استبداله، نعيد لك المبلغ الذي دفعته ثمنًا للمنتج."
+        ],
+        [
+          "Refunds are made by the same payment method you used, or in cash at the branch for cash payments, within 14 days of approval.",
+          "نعيد المبلغ بنفس طريقة الدفع التي استخدمتها، أو نقدًا في الفرع إذا كان الدفع نقدًا، خلال 14 يومًا من الموافقة."
+        ],
+        [
+          "Delivery costs are refunded when the return is caused by our error or by a defect.",
+          "نعيد تكلفة التوصيل إذا كان الإرجاع بسبب خطأ منا أو بسبب عيب في المنتج."
+        ],
+        [
+          "Warranty",
+          "الكفالة"
+        ],
+        [
+          "Many products carry a supplier or manufacturer warranty. Its period is stated on the invoice or the product page.",
+          "تأتي منتجات كثيرة بكفالة من المورد أو الشركة المصنّعة، ومدتها مذكورة في الفاتورة أو في صفحة المنتج."
+        ],
+        [
+          "The warranty covers manufacturing defects. It does not cover misuse, physical or liquid damage, power surges, repairs by others, or normal wear.",
+          "تغطي الكفالة عيوب التصنيع، ولا تغطي سوء الاستخدام، أو الكسر أو دخول السوائل، أو ارتفاع التيار الكهربائي، أو الإصلاح لدى جهة أخرى، أو الاهتلاك الطبيعي."
+        ],
+        [
+          "To claim warranty, bring or send the product with its invoice. We inspect it and follow up with the supplier to repair or replace it.",
+          "لطلب الكفالة، أحضر المنتج أو أرسله مع فاتورته. نفحصه ونتابع مع المورد لإصلاحه أو استبداله."
+        ],
+        [
+          "How to report a problem",
+          "كيف تبلّغ عن مشكلة"
+        ],
+        [
+          "Contact us within 24 hours of receipt with your order number, a short description, and photos or a video of the problem.",
+          "تواصل معنا خلال 24 ساعة من الاستلام، مع رقم الطلب ووصف قصير وصور أو فيديو للمشكلة."
+        ],
+        [
+          "Keep the product, its packaging and accessories until we finish reviewing your request.",
+          "احتفظ بالمنتج وتغليفه وملحقاته حتى ننتهي من مراجعة طلبك."
+        ],
+        [
+          "Check your order on arrival",
+          "افحص طلبك عند الاستلام"
+        ],
+        [
+          "Inspect your order as soon as it arrives. If something is damaged or not working, keep the item with its packaging and accessories and contact us right away, so we can review it within the 24-hour window.",
+          "افحص طلبك فور وصوله. إذا كان فيه تلف أو لا يعمل، احتفظ به مع تغليفه وملحقاته وتواصل معنا مباشرة، لنتمكن من مراجعته ضمن مهلة الـ 24 ساعة."
+        ],
+        [
+          "Company details",
+          "بيانات الشركة"
+        ],
+        [
+          "Trading as TMC SMART. These policies are issued by and apply to this company.",
+          "تعمل باسم TMC SMART، وتصدر هذه السياسات عنها وتنطبق عليها."
+        ],
+        [
+          "<strong>Address:</strong> Idlib – Sarmada, 100 m after the car roundabout towards Sarmada, Syria",
+          "<strong>العنوان:</strong> إدلب – سرمدا، بعد دوار السيارات باتجاه سرمدا بـ 100 متر، سوريا"
+        ],
+        [
+          "<strong>Email:</strong> <a href=\"mailto:sales@tmcsmart.shop\">sales@tmcsmart.shop</a>",
+          "<strong>البريد الإلكتروني:</strong> <a href=\"mailto:sales@tmcsmart.shop\">sales@tmcsmart.shop</a>"
+        ],
+        [
+          "<strong>Phone and WhatsApp:</strong> <a href=\"tel:+963965445580\">+963 965 445 580</a>",
+          "<strong>الهاتف وواتساب:</strong> <a href=\"tel:+963965445580\">+963 965 445 580</a>"
+        ],
+        [
+          "<strong>Website:</strong> <a href=\"https://tmcsmart.com\">tmcsmart.com</a>",
+          "<strong>الموقع:</strong> <a href=\"https://tmcsmart.com\">tmcsmart.com</a>"
+        ],
+        [
+          "Need support about an order?",
+          "تحتاج مساعدة بخصوص طلب؟"
+        ],
+        [
+          "For questions about defects, damaged deliveries or this policy, contact our sales team.",
+          "للاستفسار عن العيوب أو الشحنات التالفة أو هذه السياسة، تواصل مع فريق المبيعات."
+        ],
+        [
+          "<a href=\"/contactus\">Contact page</a>",
+          "<a href=\"/contactus\">صفحة التواصل</a>"
+        ]
+      ]
+    },
+    {
+      "key": "shipping",
+      "odoo": {
+        "url": "/shipping-policy",
+        "view_key": "website.shipping-policy",
+        "view_id": null,
+        "action": "create",
+        "optional": false
+      },
+      "portal": "https://tmcsmart.com/shipping-policy",
+      "name": {
+        "en": "Shipping and delivery policy",
+        "ar": "سياسة الشحن والتوصيل"
+      },
+      "meta_title": {
+        "en": "Shipping Policy | TMC SMART",
+        "ar": "سياسة الشحن | TMC SMART"
+      },
+      "arch_en": "<t t-name=\"website.shipping-policy\">\n  <t t-call=\"website.layout\">\n    <div id=\"wrap\" class=\"oe_structure oe_empty\">\n      <section class=\"s_text_block o_colored_level pt64 pb32\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <p class=\"text-muted mb-2\">Shipping Policy</p>\n          <h1 class=\"display-5\">Shipping and delivery policy</h1>\n          <p class=\"lead\">How TMC prepares and delivers orders across Syria, how delivery costs are set, and what to check when your order arrives.</p>\n          <p class=\"text-muted small\">Last updated: 21 November 2026</p>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt48 pb48\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h3\">Where we deliver</h2>\n          <p>We deliver to all Syrian governorates through shipping companies. You can also collect your order free of charge from our Sarmada or Maarat al-Numan branch.</p>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt32 pb32\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h3\">Delivery</h2>\n          <h3 class=\"h5 mt-4\">Coverage</h3>\n          <p>All governorates of Syria. We do not currently ship outside Syria.</p>\n          <h3 class=\"h5 mt-4\">Preparing your order</h3>\n          <p>We prepare in-stock orders once the order is confirmed and, where required, paid. Special orders are shipped once they arrive from the supplier.</p>\n          <h3 class=\"h5 mt-4\">Delivery time</h3>\n          <p>It depends on the governorate and the shipping company. Our team tells you the expected time when confirming your order, and lets you know if anything changes.</p>\n          <h3 class=\"h5 mt-4\">Delivery cost</h3>\n          <p>It depends on the destination and on the size and weight of the order. We tell you the cost before shipping. Pickup from our branches is free.</p>\n          <h3 class=\"h5 mt-4\">Branch pickup</h3>\n          <p>Choose pickup when you order, and we will tell you when your order is ready at the Sarmada or Maarat al-Numan branch. Bring your order number or the phone number you ordered with.</p>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt32 pb32\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h3\">When your order arrives</h2>\n          <h3 class=\"h5 mt-4\">Address and phone</h3>\n          <p>Give a complete address and a phone number we can reach. If delivery fails because of a wrong address or no answer, delivering again may cost extra.</p>\n          <h3 class=\"h5 mt-4\">Inspect your order</h3>\n          <p>Check the package and the products when you receive them. Report any damage, missing item or defect within 24 hours with photos, as set out in our return and refund policy.</p>\n          <h3 class=\"h5 mt-4\">Responsibility for the order</h3>\n          <p>Responsibility for the order passes to you when it is delivered to you or your representative, or handed to you at the branch.</p>\n          <h3 class=\"h5 mt-4\">Delays</h3>\n          <p>Shipping companies, roads, weather or other events outside our control can cause delays. We keep you informed and follow up with the shipping company for you.</p>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt40 pb40 o_cc o_cc2\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <p class=\"text-muted mb-2\">Company details</p>\n          <h2 class=\"h4\">TMC – Technology Metro Company</h2>\n          <p>Trading as TMC SMART. These policies are issued by and apply to this company.</p>\n          <ul class=\"list-unstyled\">\n            <li><strong>Address:</strong> Idlib – Sarmada, 100 m after the car roundabout towards Sarmada, Syria</li>\n            <li><strong>Email:</strong> <a href=\"mailto:sales@tmcsmart.shop\">sales@tmcsmart.shop</a></li>\n            <li><strong>Phone and WhatsApp:</strong> <a href=\"tel:+963965445580\">+963 965 445 580</a></li>\n            <li><strong>Website:</strong> <a href=\"https://tmcsmart.com\">tmcsmart.com</a></li>\n          </ul>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt40 pb64 text-center\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h4\">Questions about a delivery?</h2>\n          <p><a class=\"btn btn-primary btn-lg\" href=\"/contactus\">Contact TMC</a></p>\n        </div>\n      </section>\n    </div>\n  </t>\n</t>",
+      "arch_ar": "<t t-name=\"website.shipping-policy\">\n  <t t-call=\"website.layout\">\n    <div id=\"wrap\" class=\"oe_structure oe_empty\">\n      <section class=\"s_text_block o_colored_level pt64 pb32\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <p class=\"text-muted mb-2\">سياسة الشحن</p>\n          <h1 class=\"display-5\">سياسة الشحن والتوصيل</h1>\n          <p class=\"lead\">كيف تجهّز TMC الطلبات وتوصلها إلى كل سوريا، وكيف تُحسب تكلفة التوصيل، وما الذي تفحصه عند وصول طلبك.</p>\n          <p class=\"text-muted small\">آخر تحديث: 21 تشرين الثاني 2026</p>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt48 pb48\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h3\">إلى أين نوصل</h2>\n          <p>نوصل الطلبات إلى جميع المحافظات السورية عبر شركات الشحن. ويمكنك أيضًا استلام طلبك مجانًا من فرعنا في سرمدا أو في معرة النعمان.</p>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt32 pb32\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h3\">التوصيل</h2>\n          <h3 class=\"h5 mt-4\">مناطق التوصيل</h3>\n          <p>جميع المحافظات السورية. لا نشحن حاليًا إلى خارج سوريا.</p>\n          <h3 class=\"h5 mt-4\">تجهيز الطلب</h3>\n          <p>نجهّز الطلبات المتوفرة بعد تأكيد الطلب ودفعه حين يكون الدفع مطلوبًا. وتُشحن الطلبات الخاصة بعد وصولها من المورد.</p>\n          <h3 class=\"h5 mt-4\">مدة التوصيل</h3>\n          <p>تختلف حسب المحافظة وشركة الشحن. يخبرك فريقنا بالمدة المتوقعة عند تأكيد طلبك، ويُعلمك بأي تغيير.</p>\n          <h3 class=\"h5 mt-4\">تكلفة التوصيل</h3>\n          <p>تختلف حسب الوجهة وحجم الطلب ووزنه. نخبرك بالتكلفة قبل الشحن، والاستلام من فروعنا مجاني.</p>\n          <h3 class=\"h5 mt-4\">الاستلام من الفرع</h3>\n          <p>اختر الاستلام عند الطلب، وسنخبرك عندما يصبح طلبك جاهزًا في فرع سرمدا أو معرة النعمان. أحضر رقم الطلب أو رقم الهاتف الذي طلبت به.</p>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt32 pb32\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h3\">عند وصول طلبك</h2>\n          <h3 class=\"h5 mt-4\">العنوان والهاتف</h3>\n          <p>أعطنا عنوانًا كاملًا ورقم هاتف يمكننا الوصول إليه. وإذا فشل التوصيل بسبب عنوان خاطئ أو عدم الرد، قد تترتب تكلفة إضافية على إعادة التوصيل.</p>\n          <h3 class=\"h5 mt-4\">افحص طلبك</h3>\n          <p>افحص الطرد والمنتجات عند الاستلام، وأبلغنا عن أي تلف أو نقص أو عيب خلال 24 ساعة مع صور، كما توضح سياسة الإرجاع والاسترداد.</p>\n          <h3 class=\"h5 mt-4\">المسؤولية عن الطلب</h3>\n          <p>تنتقل المسؤولية عن الطلب إليك عند تسليمه لك أو لمن ينوب عنك، أو عند استلامه من الفرع.</p>\n          <h3 class=\"h5 mt-4\">التأخير</h3>\n          <p>قد يحدث تأخير بسبب شركات الشحن أو الطرق أو الطقس أو ظروف أخرى خارجة عن إرادتنا. نُبقيك على اطلاع ونتابع مع شركة الشحن نيابة عنك.</p>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt40 pb40 o_cc o_cc2\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <p class=\"text-muted mb-2\">بيانات الشركة</p>\n          <h2 class=\"h4\">TMC – Technology Metro Company</h2>\n          <p>تعمل باسم TMC SMART، وتصدر هذه السياسات عنها وتنطبق عليها.</p>\n          <ul class=\"list-unstyled\">\n            <li><strong>العنوان:</strong> إدلب – سرمدا، بعد دوار السيارات باتجاه سرمدا بـ 100 متر، سوريا</li>\n            <li><strong>البريد الإلكتروني:</strong> <a href=\"mailto:sales@tmcsmart.shop\">sales@tmcsmart.shop</a></li>\n            <li><strong>الهاتف وواتساب:</strong> <a href=\"tel:+963965445580\">+963 965 445 580</a></li>\n            <li><strong>الموقع:</strong> <a href=\"https://tmcsmart.com\">tmcsmart.com</a></li>\n          </ul>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt40 pb64 text-center\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h4\">لديك سؤال عن التوصيل؟</h2>\n          <p><a class=\"btn btn-primary btn-lg\" href=\"/contactus\">تواصل مع TMC</a></p>\n        </div>\n      </section>\n    </div>\n  </t>\n</t>",
+      "terms_ar": [
+        [
+          "Shipping Policy",
+          "سياسة الشحن"
+        ],
+        [
+          "Shipping and delivery policy",
+          "سياسة الشحن والتوصيل"
+        ],
+        [
+          "How TMC prepares and delivers orders across Syria, how delivery costs are set, and what to check when your order arrives.",
+          "كيف تجهّز TMC الطلبات وتوصلها إلى كل سوريا، وكيف تُحسب تكلفة التوصيل، وما الذي تفحصه عند وصول طلبك."
+        ],
+        [
+          "Last updated: 21 November 2026",
+          "آخر تحديث: 21 تشرين الثاني 2026"
+        ],
+        [
+          "Where we deliver",
+          "إلى أين نوصل"
+        ],
+        [
+          "We deliver to all Syrian governorates through shipping companies. You can also collect your order free of charge from our Sarmada or Maarat al-Numan branch.",
+          "نوصل الطلبات إلى جميع المحافظات السورية عبر شركات الشحن. ويمكنك أيضًا استلام طلبك مجانًا من فرعنا في سرمدا أو في معرة النعمان."
+        ],
+        [
+          "Delivery",
+          "التوصيل"
+        ],
+        [
+          "Coverage",
+          "مناطق التوصيل"
+        ],
+        [
+          "All governorates of Syria. We do not currently ship outside Syria.",
+          "جميع المحافظات السورية. لا نشحن حاليًا إلى خارج سوريا."
+        ],
+        [
+          "Preparing your order",
+          "تجهيز الطلب"
+        ],
+        [
+          "We prepare in-stock orders once the order is confirmed and, where required, paid. Special orders are shipped once they arrive from the supplier.",
+          "نجهّز الطلبات المتوفرة بعد تأكيد الطلب ودفعه حين يكون الدفع مطلوبًا. وتُشحن الطلبات الخاصة بعد وصولها من المورد."
+        ],
+        [
+          "Delivery time",
+          "مدة التوصيل"
+        ],
+        [
+          "It depends on the governorate and the shipping company. Our team tells you the expected time when confirming your order, and lets you know if anything changes.",
+          "تختلف حسب المحافظة وشركة الشحن. يخبرك فريقنا بالمدة المتوقعة عند تأكيد طلبك، ويُعلمك بأي تغيير."
+        ],
+        [
+          "Delivery cost",
+          "تكلفة التوصيل"
+        ],
+        [
+          "It depends on the destination and on the size and weight of the order. We tell you the cost before shipping. Pickup from our branches is free.",
+          "تختلف حسب الوجهة وحجم الطلب ووزنه. نخبرك بالتكلفة قبل الشحن، والاستلام من فروعنا مجاني."
+        ],
+        [
+          "Branch pickup",
+          "الاستلام من الفرع"
+        ],
+        [
+          "Choose pickup when you order, and we will tell you when your order is ready at the Sarmada or Maarat al-Numan branch. Bring your order number or the phone number you ordered with.",
+          "اختر الاستلام عند الطلب، وسنخبرك عندما يصبح طلبك جاهزًا في فرع سرمدا أو معرة النعمان. أحضر رقم الطلب أو رقم الهاتف الذي طلبت به."
+        ],
+        [
+          "When your order arrives",
+          "عند وصول طلبك"
+        ],
+        [
+          "Address and phone",
+          "العنوان والهاتف"
+        ],
+        [
+          "Give a complete address and a phone number we can reach. If delivery fails because of a wrong address or no answer, delivering again may cost extra.",
+          "أعطنا عنوانًا كاملًا ورقم هاتف يمكننا الوصول إليه. وإذا فشل التوصيل بسبب عنوان خاطئ أو عدم الرد، قد تترتب تكلفة إضافية على إعادة التوصيل."
+        ],
+        [
+          "Inspect your order",
+          "افحص طلبك"
+        ],
+        [
+          "Check the package and the products when you receive them. Report any damage, missing item or defect within 24 hours with photos, as set out in our return and refund policy.",
+          "افحص الطرد والمنتجات عند الاستلام، وأبلغنا عن أي تلف أو نقص أو عيب خلال 24 ساعة مع صور، كما توضح سياسة الإرجاع والاسترداد."
+        ],
+        [
+          "Responsibility for the order",
+          "المسؤولية عن الطلب"
+        ],
+        [
+          "Responsibility for the order passes to you when it is delivered to you or your representative, or handed to you at the branch.",
+          "تنتقل المسؤولية عن الطلب إليك عند تسليمه لك أو لمن ينوب عنك، أو عند استلامه من الفرع."
+        ],
+        [
+          "Delays",
+          "التأخير"
+        ],
+        [
+          "Shipping companies, roads, weather or other events outside our control can cause delays. We keep you informed and follow up with the shipping company for you.",
+          "قد يحدث تأخير بسبب شركات الشحن أو الطرق أو الطقس أو ظروف أخرى خارجة عن إرادتنا. نُبقيك على اطلاع ونتابع مع شركة الشحن نيابة عنك."
+        ],
+        [
+          "Company details",
+          "بيانات الشركة"
+        ],
+        [
+          "Trading as TMC SMART. These policies are issued by and apply to this company.",
+          "تعمل باسم TMC SMART، وتصدر هذه السياسات عنها وتنطبق عليها."
+        ],
+        [
+          "<strong>Address:</strong> Idlib – Sarmada, 100 m after the car roundabout towards Sarmada, Syria",
+          "<strong>العنوان:</strong> إدلب – سرمدا، بعد دوار السيارات باتجاه سرمدا بـ 100 متر، سوريا"
+        ],
+        [
+          "<strong>Email:</strong> <a href=\"mailto:sales@tmcsmart.shop\">sales@tmcsmart.shop</a>",
+          "<strong>البريد الإلكتروني:</strong> <a href=\"mailto:sales@tmcsmart.shop\">sales@tmcsmart.shop</a>"
+        ],
+        [
+          "<strong>Phone and WhatsApp:</strong> <a href=\"tel:+963965445580\">+963 965 445 580</a>",
+          "<strong>الهاتف وواتساب:</strong> <a href=\"tel:+963965445580\">+963 965 445 580</a>"
+        ],
+        [
+          "<strong>Website:</strong> <a href=\"https://tmcsmart.com\">tmcsmart.com</a>",
+          "<strong>الموقع:</strong> <a href=\"https://tmcsmart.com\">tmcsmart.com</a>"
+        ],
+        [
+          "Questions about a delivery?",
+          "لديك سؤال عن التوصيل؟"
+        ],
+        [
+          "<a class=\"btn btn-primary btn-lg\" href=\"/contactus\">Contact TMC</a>",
+          "<a class=\"btn btn-primary btn-lg\" href=\"/contactus\">تواصل مع TMC</a>"
+        ]
+      ]
+    },
+    {
+      "key": "cookies",
+      "odoo": {
+        "url": "/cookie-policy",
+        "view_key": "website.cookie_policy",
+        "view_id": 3737,
+        "action": "update",
+        "optional": false
+      },
+      "portal": "https://tmcsmart.com/cookie-policy",
+      "name": {
+        "en": "Cookie policy",
+        "ar": "سياسة ملفات تعريف الارتباط"
+      },
+      "meta_title": {
+        "en": "Cookie Policy | TMC SMART",
+        "ar": "سياسة ملفات تعريف الارتباط | TMC SMART"
+      },
+      "arch_en": "<t t-name=\"website.cookie_policy\">\n  <t t-call=\"website.layout\">\n    <div id=\"wrap\" class=\"oe_structure oe_empty\">\n      <section class=\"s_text_block o_colored_level pt64 pb32\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <p class=\"text-muted mb-2\">Cookie Policy</p>\n          <h1 class=\"display-5\">Cookie policy</h1>\n          <p class=\"lead\">What cookies are, which ones tmcsmart.com and our online store use, and how you can control them.</p>\n          <p class=\"text-muted small\">Last updated: 21 November 2026</p>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt48 pb48\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h3\">Our approach</h2>\n          <p>Cookies are small files a website saves in your browser. tmcsmart.com does not use advertising or tracking cookies. Our online store uses the cookies it needs to work, and analytics cookies only if you accept them.</p>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt32 pb32\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h3\">Cookies we use</h2>\n          <h3 class=\"h5 mt-4\">On tmcsmart.com</h3>\n          <p>The website itself does not set advertising, analytics or tracking cookies.</p>\n          <h3 class=\"h5 mt-4\">Security</h3>\n          <p>Our security and delivery provider, Cloudflare, may set strictly necessary cookies to protect the site from attacks and abuse. They are not used to identify you or for advertising.</p>\n          <h3 class=\"h5 mt-4\">Online store</h3>\n          <p>The store at erp.tmcsmart.com uses necessary cookies to keep your session, cart and language, such as session_id and frontend_lang. The store cannot work without them.</p>\n          <h3 class=\"h5 mt-4\">Store analytics</h3>\n          <p>The store uses Google Analytics to understand how it is used. It sets analytics cookies only if you accept them in the store's cookie bar; otherwise Google receives only anonymous measurements without cookies. Advertising cookies stay off.</p>\n          <h3 class=\"h5 mt-4\">Other websites</h3>\n          <p>When you follow a link to WhatsApp, Facebook or another website, that website's own cookie policy applies.</p>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt32 pb32\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h3\">Your choices</h2>\n          <h3 class=\"h5 mt-4\">Controlling cookies</h3>\n          <p>You can block or delete cookies in your browser settings. Blocking necessary cookies may stop the store or parts of the site from working.</p>\n          <h3 class=\"h5 mt-4\">Changes</h3>\n          <p>If we add analytics or other optional cookies in the future, we will update this policy and ask for your consent first where required.</p>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt40 pb40 o_cc o_cc2\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <p class=\"text-muted mb-2\">Company details</p>\n          <h2 class=\"h4\">TMC – Technology Metro Company</h2>\n          <p>Trading as TMC SMART. These policies are issued by and apply to this company.</p>\n          <ul class=\"list-unstyled\">\n            <li><strong>Address:</strong> Idlib – Sarmada, 100 m after the car roundabout towards Sarmada, Syria</li>\n            <li><strong>Email:</strong> <a href=\"mailto:sales@tmcsmart.shop\">sales@tmcsmart.shop</a></li>\n            <li><strong>Phone and WhatsApp:</strong> <a href=\"tel:+963965445580\">+963 965 445 580</a></li>\n            <li><strong>Website:</strong> <a href=\"https://tmcsmart.com\">tmcsmart.com</a></li>\n          </ul>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt40 pb64 text-center\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h4\">Questions about cookies?</h2>\n          <p><a class=\"btn btn-primary btn-lg\" href=\"/contactus\">Contact TMC</a></p>\n        </div>\n      </section>\n    </div>\n  </t>\n</t>",
+      "arch_ar": "<t t-name=\"website.cookie_policy\">\n  <t t-call=\"website.layout\">\n    <div id=\"wrap\" class=\"oe_structure oe_empty\">\n      <section class=\"s_text_block o_colored_level pt64 pb32\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <p class=\"text-muted mb-2\">ملفات تعريف الارتباط</p>\n          <h1 class=\"display-5\">سياسة ملفات تعريف الارتباط</h1>\n          <p class=\"lead\">ما هي ملفات تعريف الارتباط (الكوكيز)، وما الذي يستخدمه موقع tmcsmart.com ومتجرنا الإلكتروني منها، وكيف تتحكم بها.</p>\n          <p class=\"text-muted small\">آخر تحديث: 21 تشرين الثاني 2026</p>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt48 pb48\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h3\">نهجنا</h2>\n          <p>ملفات تعريف الارتباط ملفات صغيرة يحفظها الموقع في متصفحك. لا يستخدم موقع tmcsmart.com ملفات إعلانية أو ملفات تتبّع. ويستخدم متجرنا الإلكتروني الملفات اللازمة لعمله، والملفات التحليلية فقط إذا وافقت عليها.</p>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt32 pb32\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h3\">الملفات التي نستخدمها</h2>\n          <h3 class=\"h5 mt-4\">على موقع tmcsmart.com</h3>\n          <p>لا يضع الموقع نفسه ملفات إعلانية أو تحليلية أو ملفات تتبّع.</p>\n          <h3 class=\"h5 mt-4\">الحماية</h3>\n          <p>قد يضع مزود الحماية والتوصيل لدينا، Cloudflare، ملفات ضرورية فقط لحماية الموقع من الهجمات وإساءة الاستخدام، ولا تُستخدم لتحديد هويتك أو للإعلانات.</p>\n          <h3 class=\"h5 mt-4\">المتجر الإلكتروني</h3>\n          <p>يستخدم المتجر على erp.tmcsmart.com ملفات ضرورية لحفظ جلستك وسلة مشترياتك ولغتك، مثل session_id و frontend_lang، ولا يعمل المتجر بدونها.</p>\n          <h3 class=\"h5 mt-4\">تحليلات المتجر</h3>\n          <p>يستخدم المتجر Google Analytics لفهم طريقة استخدامه. ولا يضع ملفات تحليلية إلا إذا وافقت عليها في شريط ملفات تعريف الارتباط في المتجر، وإلا تصل إلى Google قياسات مجهولة الهوية فقط بدون ملفات. وتبقى الملفات الإعلانية متوقفة.</p>\n          <h3 class=\"h5 mt-4\">المواقع الأخرى</h3>\n          <p>عندما تنتقل عبر رابط إلى واتساب أو فيسبوك أو أي موقع آخر، تنطبق سياسة ملفات تعريف الارتباط الخاصة بذلك الموقع.</p>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt32 pb32\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h3\">خياراتك</h2>\n          <h3 class=\"h5 mt-4\">التحكم بالملفات</h3>\n          <p>يمكنك حظر ملفات تعريف الارتباط أو حذفها من إعدادات متصفحك. وقد يؤدي حظر الملفات الضرورية إلى توقف المتجر أو أجزاء من الموقع عن العمل.</p>\n          <h3 class=\"h5 mt-4\">التغييرات</h3>\n          <p>إذا أضفنا مستقبلًا ملفات تحليلية أو اختيارية أخرى، سنحدّث هذه السياسة ونطلب موافقتك أولًا حين يكون ذلك مطلوبًا.</p>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt40 pb40 o_cc o_cc2\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <p class=\"text-muted mb-2\">بيانات الشركة</p>\n          <h2 class=\"h4\">TMC – Technology Metro Company</h2>\n          <p>تعمل باسم TMC SMART، وتصدر هذه السياسات عنها وتنطبق عليها.</p>\n          <ul class=\"list-unstyled\">\n            <li><strong>العنوان:</strong> إدلب – سرمدا، بعد دوار السيارات باتجاه سرمدا بـ 100 متر، سوريا</li>\n            <li><strong>البريد الإلكتروني:</strong> <a href=\"mailto:sales@tmcsmart.shop\">sales@tmcsmart.shop</a></li>\n            <li><strong>الهاتف وواتساب:</strong> <a href=\"tel:+963965445580\">+963 965 445 580</a></li>\n            <li><strong>الموقع:</strong> <a href=\"https://tmcsmart.com\">tmcsmart.com</a></li>\n          </ul>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt40 pb64 text-center\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h4\">لديك سؤال عن ملفات تعريف الارتباط؟</h2>\n          <p><a class=\"btn btn-primary btn-lg\" href=\"/contactus\">تواصل مع TMC</a></p>\n        </div>\n      </section>\n    </div>\n  </t>\n</t>",
+      "terms_ar": [
+        [
+          "Cookie Policy",
+          "ملفات تعريف الارتباط"
+        ],
+        [
+          "Cookie policy",
+          "سياسة ملفات تعريف الارتباط"
+        ],
+        [
+          "What cookies are, which ones tmcsmart.com and our online store use, and how you can control them.",
+          "ما هي ملفات تعريف الارتباط (الكوكيز)، وما الذي يستخدمه موقع tmcsmart.com ومتجرنا الإلكتروني منها، وكيف تتحكم بها."
+        ],
+        [
+          "Last updated: 21 November 2026",
+          "آخر تحديث: 21 تشرين الثاني 2026"
+        ],
+        [
+          "Our approach",
+          "نهجنا"
+        ],
+        [
+          "Cookies are small files a website saves in your browser. tmcsmart.com does not use advertising or tracking cookies. Our online store uses the cookies it needs to work, and analytics cookies only if you accept them.",
+          "ملفات تعريف الارتباط ملفات صغيرة يحفظها الموقع في متصفحك. لا يستخدم موقع tmcsmart.com ملفات إعلانية أو ملفات تتبّع. ويستخدم متجرنا الإلكتروني الملفات اللازمة لعمله، والملفات التحليلية فقط إذا وافقت عليها."
+        ],
+        [
+          "Cookies we use",
+          "الملفات التي نستخدمها"
+        ],
+        [
+          "On tmcsmart.com",
+          "على موقع tmcsmart.com"
+        ],
+        [
+          "The website itself does not set advertising, analytics or tracking cookies.",
+          "لا يضع الموقع نفسه ملفات إعلانية أو تحليلية أو ملفات تتبّع."
+        ],
+        [
+          "Security",
+          "الحماية"
+        ],
+        [
+          "Our security and delivery provider, Cloudflare, may set strictly necessary cookies to protect the site from attacks and abuse. They are not used to identify you or for advertising.",
+          "قد يضع مزود الحماية والتوصيل لدينا، Cloudflare، ملفات ضرورية فقط لحماية الموقع من الهجمات وإساءة الاستخدام، ولا تُستخدم لتحديد هويتك أو للإعلانات."
+        ],
+        [
+          "Online store",
+          "المتجر الإلكتروني"
+        ],
+        [
+          "The store at erp.tmcsmart.com uses necessary cookies to keep your session, cart and language, such as session_id and frontend_lang. The store cannot work without them.",
+          "يستخدم المتجر على erp.tmcsmart.com ملفات ضرورية لحفظ جلستك وسلة مشترياتك ولغتك، مثل session_id و frontend_lang، ولا يعمل المتجر بدونها."
+        ],
+        [
+          "Store analytics",
+          "تحليلات المتجر"
+        ],
+        [
+          "The store uses Google Analytics to understand how it is used. It sets analytics cookies only if you accept them in the store's cookie bar; otherwise Google receives only anonymous measurements without cookies. Advertising cookies stay off.",
+          "يستخدم المتجر Google Analytics لفهم طريقة استخدامه. ولا يضع ملفات تحليلية إلا إذا وافقت عليها في شريط ملفات تعريف الارتباط في المتجر، وإلا تصل إلى Google قياسات مجهولة الهوية فقط بدون ملفات. وتبقى الملفات الإعلانية متوقفة."
+        ],
+        [
+          "Other websites",
+          "المواقع الأخرى"
+        ],
+        [
+          "When you follow a link to WhatsApp, Facebook or another website, that website's own cookie policy applies.",
+          "عندما تنتقل عبر رابط إلى واتساب أو فيسبوك أو أي موقع آخر، تنطبق سياسة ملفات تعريف الارتباط الخاصة بذلك الموقع."
+        ],
+        [
+          "Your choices",
+          "خياراتك"
+        ],
+        [
+          "Controlling cookies",
+          "التحكم بالملفات"
+        ],
+        [
+          "You can block or delete cookies in your browser settings. Blocking necessary cookies may stop the store or parts of the site from working.",
+          "يمكنك حظر ملفات تعريف الارتباط أو حذفها من إعدادات متصفحك. وقد يؤدي حظر الملفات الضرورية إلى توقف المتجر أو أجزاء من الموقع عن العمل."
+        ],
+        [
+          "Changes",
+          "التغييرات"
+        ],
+        [
+          "If we add analytics or other optional cookies in the future, we will update this policy and ask for your consent first where required.",
+          "إذا أضفنا مستقبلًا ملفات تحليلية أو اختيارية أخرى، سنحدّث هذه السياسة ونطلب موافقتك أولًا حين يكون ذلك مطلوبًا."
+        ],
+        [
+          "Company details",
+          "بيانات الشركة"
+        ],
+        [
+          "Trading as TMC SMART. These policies are issued by and apply to this company.",
+          "تعمل باسم TMC SMART، وتصدر هذه السياسات عنها وتنطبق عليها."
+        ],
+        [
+          "<strong>Address:</strong> Idlib – Sarmada, 100 m after the car roundabout towards Sarmada, Syria",
+          "<strong>العنوان:</strong> إدلب – سرمدا، بعد دوار السيارات باتجاه سرمدا بـ 100 متر، سوريا"
+        ],
+        [
+          "<strong>Email:</strong> <a href=\"mailto:sales@tmcsmart.shop\">sales@tmcsmart.shop</a>",
+          "<strong>البريد الإلكتروني:</strong> <a href=\"mailto:sales@tmcsmart.shop\">sales@tmcsmart.shop</a>"
+        ],
+        [
+          "<strong>Phone and WhatsApp:</strong> <a href=\"tel:+963965445580\">+963 965 445 580</a>",
+          "<strong>الهاتف وواتساب:</strong> <a href=\"tel:+963965445580\">+963 965 445 580</a>"
+        ],
+        [
+          "<strong>Website:</strong> <a href=\"https://tmcsmart.com\">tmcsmart.com</a>",
+          "<strong>الموقع:</strong> <a href=\"https://tmcsmart.com\">tmcsmart.com</a>"
+        ],
+        [
+          "Questions about cookies?",
+          "لديك سؤال عن ملفات تعريف الارتباط؟"
+        ],
+        [
+          "<a class=\"btn btn-primary btn-lg\" href=\"/contactus\">Contact TMC</a>",
+          "<a class=\"btn btn-primary btn-lg\" href=\"/contactus\">تواصل مع TMC</a>"
+        ]
+      ]
+    },
+    {
+      "key": "dataDeletion",
+      "odoo": {
+        "url": "/data-deletion",
+        "view_key": "website.data-deletion",
+        "view_id": null,
+        "action": "create",
+        "optional": false
+      },
+      "portal": "https://tmcsmart.com/data-deletion",
+      "name": {
+        "en": "How to delete your data",
+        "ar": "كيف تحذف بياناتك"
+      },
+      "meta_title": {
+        "en": "Data Deletion | TMC SMART",
+        "ar": "حذف البيانات | TMC SMART"
+      },
+      "arch_en": "<t t-name=\"website.data-deletion\">\n  <t t-call=\"website.layout\">\n    <div id=\"wrap\" class=\"oe_structure oe_empty\">\n      <section class=\"s_text_block o_colored_level pt64 pb32\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <p class=\"text-muted mb-2\">Data Deletion</p>\n          <h1 class=\"display-5\">How to delete your data</h1>\n          <p class=\"lead\">How to ask TMC to delete your personal data, including data we received through Facebook, Instagram, WhatsApp, Google or other platforms you connected to our services.</p>\n          <p class=\"text-muted small\">Last updated: 21 November 2026</p>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt48 pb48\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h3\">Your right to deletion</h2>\n          <p>You can ask us to delete your personal data at any time. Requests are free, and we confirm when the deletion is done.</p>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt32 pb32\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h3\">How to send a request</h2>\n          <h3 class=\"h5 mt-4\">1. Contact us</h3>\n          <p>Email sales@tmcsmart.shop with the subject “Data deletion request”, or send “Delete my data” on WhatsApp to +963 965 445 580.</p>\n          <h3 class=\"h5 mt-4\">2. Tell us who you are</h3>\n          <p>Include your name and the phone number, email or social media account you used with us, so we can find your data.</p>\n          <h3 class=\"h5 mt-4\">3. Verification</h3>\n          <p>We may send a one-time code to your phone or email to make sure the request comes from you.</p>\n          <h3 class=\"h5 mt-4\">4. Confirmation</h3>\n          <p>We confirm receipt within 3 working days, complete the deletion within 30 days, and send you a confirmation.</p>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt32 pb32\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h3\">Facebook, Instagram and other platforms</h2>\n          <h3 class=\"h5 mt-4\">Remove the app</h3>\n          <p>On Facebook, open Settings &amp; privacy › Settings › Apps and websites, find the TMC SMART app and choose Remove. On other platforms, remove TMC SMART from your connected apps.</p>\n          <h3 class=\"h5 mt-4\">Then ask us to delete</h3>\n          <p>Removing the app stops any new access. To delete the data we already received, send a request as described above and mention the platform.</p>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt32 pb32\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h3\">What we delete and what we keep</h2>\n          <h3 class=\"h5 mt-4\">What we delete</h3>\n          <p>Your contact details, customer account, chat history, assistant conversations, and the access tokens and data we received from connected platforms.</p>\n          <h3 class=\"h5 mt-4\">What we must keep</h3>\n          <p>Invoices and transaction records that accounting and legal obligations require us to keep. We keep only what is needed and delete it when that period ends.</p>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt40 pb40 o_cc o_cc2\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <p class=\"text-muted mb-2\">Company details</p>\n          <h2 class=\"h4\">TMC – Technology Metro Company</h2>\n          <p>Trading as TMC SMART. These policies are issued by and apply to this company.</p>\n          <ul class=\"list-unstyled\">\n            <li><strong>Address:</strong> Idlib – Sarmada, 100 m after the car roundabout towards Sarmada, Syria</li>\n            <li><strong>Email:</strong> <a href=\"mailto:sales@tmcsmart.shop\">sales@tmcsmart.shop</a></li>\n            <li><strong>Phone and WhatsApp:</strong> <a href=\"tel:+963965445580\">+963 965 445 580</a></li>\n            <li><strong>Website:</strong> <a href=\"https://tmcsmart.com\">tmcsmart.com</a></li>\n          </ul>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt40 pb64 text-center\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h4\">Ready to send a request?</h2>\n          <p><a class=\"btn btn-primary btn-lg\" href=\"/contactus\">Contact TMC</a></p>\n        </div>\n      </section>\n    </div>\n  </t>\n</t>",
+      "arch_ar": "<t t-name=\"website.data-deletion\">\n  <t t-call=\"website.layout\">\n    <div id=\"wrap\" class=\"oe_structure oe_empty\">\n      <section class=\"s_text_block o_colored_level pt64 pb32\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <p class=\"text-muted mb-2\">حذف البيانات</p>\n          <h1 class=\"display-5\">كيف تحذف بياناتك</h1>\n          <p class=\"lead\">كيف تطلب من TMC حذف بياناتك الشخصية، بما فيها البيانات التي وصلتنا عبر فيسبوك أو إنستغرام أو واتساب أو غوغل أو أي منصة ربطتها بخدماتنا.</p>\n          <p class=\"text-muted small\">آخر تحديث: 21 تشرين الثاني 2026</p>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt48 pb48\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h3\">حقك في الحذف</h2>\n          <p>يمكنك أن تطلب منا حذف بياناتك الشخصية في أي وقت. الطلب مجاني، ونؤكد لك عند إتمام الحذف.</p>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt32 pb32\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h3\">كيف ترسل الطلب</h2>\n          <h3 class=\"h5 mt-4\">1. تواصل معنا</h3>\n          <p>أرسل بريدًا إلى sales@tmcsmart.shop بعنوان «طلب حذف بيانات»، أو أرسل «احذف بياناتي» على واتساب إلى ‎+963 965 445 580.</p>\n          <h3 class=\"h5 mt-4\">2. عرّفنا بنفسك</h3>\n          <p>اذكر اسمك ورقم الهاتف أو البريد أو حساب التواصل الذي استخدمته معنا، لنتمكن من إيجاد بياناتك.</p>\n          <h3 class=\"h5 mt-4\">3. التحقق</h3>\n          <p>قد نرسل رمزًا مؤقتًا إلى هاتفك أو بريدك للتأكد من أن الطلب منك.</p>\n          <h3 class=\"h5 mt-4\">4. التأكيد</h3>\n          <p>نؤكد استلام طلبك خلال 3 أيام عمل، ونُتم الحذف خلال 30 يومًا، ونرسل لك تأكيدًا بذلك.</p>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt32 pb32\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h3\">فيسبوك وإنستغرام والمنصات الأخرى</h2>\n          <h3 class=\"h5 mt-4\">أزل التطبيق</h3>\n          <p>في فيسبوك، افتح الإعدادات والخصوصية › الإعدادات › التطبيقات ومواقع الويب، وابحث عن تطبيق TMC SMART واختر إزالة. وفي المنصات الأخرى، أزل TMC SMART من التطبيقات المرتبطة بحسابك.</p>\n          <h3 class=\"h5 mt-4\">ثم اطلب منا الحذف</h3>\n          <p>إزالة التطبيق توقف أي وصول جديد. ولحذف البيانات التي وصلتنا سابقًا، أرسل طلبًا كما هو موضح أعلاه واذكر اسم المنصة.</p>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt32 pb32\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h3\">ما نحذفه وما نحتفظ به</h2>\n          <h3 class=\"h5 mt-4\">ما نحذفه</h3>\n          <p>بيانات التواصل الخاصة بك، وحسابك كعميل، وسجل المحادثات، ومحادثات المساعد، ورموز الوصول والبيانات التي وصلتنا من المنصات المرتبطة.</p>\n          <h3 class=\"h5 mt-4\">ما يلزمنا الاحتفاظ به</h3>\n          <p>الفواتير وسجلات المعاملات التي تفرض الالتزامات المحاسبية والقانونية الاحتفاظ بها. نحتفظ فقط بما يلزم، ونحذفه عند انتهاء تلك المدة.</p>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt40 pb40 o_cc o_cc2\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <p class=\"text-muted mb-2\">بيانات الشركة</p>\n          <h2 class=\"h4\">TMC – Technology Metro Company</h2>\n          <p>تعمل باسم TMC SMART، وتصدر هذه السياسات عنها وتنطبق عليها.</p>\n          <ul class=\"list-unstyled\">\n            <li><strong>العنوان:</strong> إدلب – سرمدا، بعد دوار السيارات باتجاه سرمدا بـ 100 متر، سوريا</li>\n            <li><strong>البريد الإلكتروني:</strong> <a href=\"mailto:sales@tmcsmart.shop\">sales@tmcsmart.shop</a></li>\n            <li><strong>الهاتف وواتساب:</strong> <a href=\"tel:+963965445580\">+963 965 445 580</a></li>\n            <li><strong>الموقع:</strong> <a href=\"https://tmcsmart.com\">tmcsmart.com</a></li>\n          </ul>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt40 pb64 text-center\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h4\">جاهز لإرسال الطلب؟</h2>\n          <p><a class=\"btn btn-primary btn-lg\" href=\"/contactus\">تواصل مع TMC</a></p>\n        </div>\n      </section>\n    </div>\n  </t>\n</t>",
+      "terms_ar": [
+        [
+          "Data Deletion",
+          "حذف البيانات"
+        ],
+        [
+          "How to delete your data",
+          "كيف تحذف بياناتك"
+        ],
+        [
+          "How to ask TMC to delete your personal data, including data we received through Facebook, Instagram, WhatsApp, Google or other platforms you connected to our services.",
+          "كيف تطلب من TMC حذف بياناتك الشخصية، بما فيها البيانات التي وصلتنا عبر فيسبوك أو إنستغرام أو واتساب أو غوغل أو أي منصة ربطتها بخدماتنا."
+        ],
+        [
+          "Last updated: 21 November 2026",
+          "آخر تحديث: 21 تشرين الثاني 2026"
+        ],
+        [
+          "Your right to deletion",
+          "حقك في الحذف"
+        ],
+        [
+          "You can ask us to delete your personal data at any time. Requests are free, and we confirm when the deletion is done.",
+          "يمكنك أن تطلب منا حذف بياناتك الشخصية في أي وقت. الطلب مجاني، ونؤكد لك عند إتمام الحذف."
+        ],
+        [
+          "How to send a request",
+          "كيف ترسل الطلب"
+        ],
+        [
+          "1. Contact us",
+          "1. تواصل معنا"
+        ],
+        [
+          "Email sales@tmcsmart.shop with the subject “Data deletion request”, or send “Delete my data” on WhatsApp to +963 965 445 580.",
+          "أرسل بريدًا إلى sales@tmcsmart.shop بعنوان «طلب حذف بيانات»، أو أرسل «احذف بياناتي» على واتساب إلى ‎+963 965 445 580."
+        ],
+        [
+          "2. Tell us who you are",
+          "2. عرّفنا بنفسك"
+        ],
+        [
+          "Include your name and the phone number, email or social media account you used with us, so we can find your data.",
+          "اذكر اسمك ورقم الهاتف أو البريد أو حساب التواصل الذي استخدمته معنا، لنتمكن من إيجاد بياناتك."
+        ],
+        [
+          "3. Verification",
+          "3. التحقق"
+        ],
+        [
+          "We may send a one-time code to your phone or email to make sure the request comes from you.",
+          "قد نرسل رمزًا مؤقتًا إلى هاتفك أو بريدك للتأكد من أن الطلب منك."
+        ],
+        [
+          "4. Confirmation",
+          "4. التأكيد"
+        ],
+        [
+          "We confirm receipt within 3 working days, complete the deletion within 30 days, and send you a confirmation.",
+          "نؤكد استلام طلبك خلال 3 أيام عمل، ونُتم الحذف خلال 30 يومًا، ونرسل لك تأكيدًا بذلك."
+        ],
+        [
+          "Facebook, Instagram and other platforms",
+          "فيسبوك وإنستغرام والمنصات الأخرى"
+        ],
+        [
+          "Remove the app",
+          "أزل التطبيق"
+        ],
+        [
+          "On Facebook, open Settings &amp; privacy › Settings › Apps and websites, find the TMC SMART app and choose Remove. On other platforms, remove TMC SMART from your connected apps.",
+          "في فيسبوك، افتح الإعدادات والخصوصية › الإعدادات › التطبيقات ومواقع الويب، وابحث عن تطبيق TMC SMART واختر إزالة. وفي المنصات الأخرى، أزل TMC SMART من التطبيقات المرتبطة بحسابك."
+        ],
+        [
+          "Then ask us to delete",
+          "ثم اطلب منا الحذف"
+        ],
+        [
+          "Removing the app stops any new access. To delete the data we already received, send a request as described above and mention the platform.",
+          "إزالة التطبيق توقف أي وصول جديد. ولحذف البيانات التي وصلتنا سابقًا، أرسل طلبًا كما هو موضح أعلاه واذكر اسم المنصة."
+        ],
+        [
+          "What we delete and what we keep",
+          "ما نحذفه وما نحتفظ به"
+        ],
+        [
+          "What we delete",
+          "ما نحذفه"
+        ],
+        [
+          "Your contact details, customer account, chat history, assistant conversations, and the access tokens and data we received from connected platforms.",
+          "بيانات التواصل الخاصة بك، وحسابك كعميل، وسجل المحادثات، ومحادثات المساعد، ورموز الوصول والبيانات التي وصلتنا من المنصات المرتبطة."
+        ],
+        [
+          "What we must keep",
+          "ما يلزمنا الاحتفاظ به"
+        ],
+        [
+          "Invoices and transaction records that accounting and legal obligations require us to keep. We keep only what is needed and delete it when that period ends.",
+          "الفواتير وسجلات المعاملات التي تفرض الالتزامات المحاسبية والقانونية الاحتفاظ بها. نحتفظ فقط بما يلزم، ونحذفه عند انتهاء تلك المدة."
+        ],
+        [
+          "Company details",
+          "بيانات الشركة"
+        ],
+        [
+          "Trading as TMC SMART. These policies are issued by and apply to this company.",
+          "تعمل باسم TMC SMART، وتصدر هذه السياسات عنها وتنطبق عليها."
+        ],
+        [
+          "<strong>Address:</strong> Idlib – Sarmada, 100 m after the car roundabout towards Sarmada, Syria",
+          "<strong>العنوان:</strong> إدلب – سرمدا، بعد دوار السيارات باتجاه سرمدا بـ 100 متر، سوريا"
+        ],
+        [
+          "<strong>Email:</strong> <a href=\"mailto:sales@tmcsmart.shop\">sales@tmcsmart.shop</a>",
+          "<strong>البريد الإلكتروني:</strong> <a href=\"mailto:sales@tmcsmart.shop\">sales@tmcsmart.shop</a>"
+        ],
+        [
+          "<strong>Phone and WhatsApp:</strong> <a href=\"tel:+963965445580\">+963 965 445 580</a>",
+          "<strong>الهاتف وواتساب:</strong> <a href=\"tel:+963965445580\">+963 965 445 580</a>"
+        ],
+        [
+          "<strong>Website:</strong> <a href=\"https://tmcsmart.com\">tmcsmart.com</a>",
+          "<strong>الموقع:</strong> <a href=\"https://tmcsmart.com\">tmcsmart.com</a>"
+        ],
+        [
+          "Ready to send a request?",
+          "جاهز لإرسال الطلب؟"
+        ],
+        [
+          "<a class=\"btn btn-primary btn-lg\" href=\"/contactus\">Contact TMC</a>",
+          "<a class=\"btn btn-primary btn-lg\" href=\"/contactus\">تواصل مع TMC</a>"
+        ]
+      ]
+    },
+    {
+      "key": "legal",
+      "odoo": {
+        "url": "/legal",
+        "view_key": "website.legal",
+        "view_id": null,
+        "action": "create",
+        "optional": false
+      },
+      "portal": "https://tmcsmart.com/legal",
+      "name": {
+        "en": "Policies and terms",
+        "ar": "السياسات والشروط"
+      },
+      "meta_title": {
+        "en": "Policies | TMC SMART",
+        "ar": "السياسات | TMC SMART"
+      },
+      "arch_en": "<t t-name=\"website.legal\">\n  <t t-call=\"website.layout\">\n    <div id=\"wrap\" class=\"oe_structure oe_empty\">\n      <section class=\"s_text_block o_colored_level pt64 pb32\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <p class=\"text-muted mb-2\">Policies</p>\n          <h1 class=\"display-5\">Policies and terms</h1>\n          <p class=\"lead\">All of TMC's policies in one place: terms of use, privacy, returns and refunds, shipping, cookies and data deletion.</p>\n          <p class=\"text-muted small\">Last updated: 21 November 2026</p>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt48 pb48\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h3\">Who these policies apply to</h2>\n          <p>These policies apply to everyone who uses tmcsmart.com, our online store at erp.tmcsmart.com, our WhatsApp channels, our social media pages, the TMC assistant and our digital services.</p>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt24 pb24\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h3 class=\"h5 mb-1\"><a href=\"/terms-of-use-for-tmc\">Terms of use</a></h3>\n          <p class=\"text-muted\">The rules for using our website, store, assistant and services.</p>\n          <h3 class=\"h5 mb-1\"><a href=\"/privacy\">Privacy policy</a></h3>\n          <p class=\"text-muted\">What data we collect, why, who we share it with and your rights.</p>\n          <h3 class=\"h5 mb-1\"><a href=\"/return-policy\">Return and refund policy</a></h3>\n          <p class=\"text-muted\">Returns, refunds, cancellations and warranty.</p>\n          <h3 class=\"h5 mb-1\"><a href=\"/shipping-policy\">Shipping policy</a></h3>\n          <p class=\"text-muted\">Delivery across Syria, costs, times and branch pickup.</p>\n          <h3 class=\"h5 mb-1\"><a href=\"/cookie-policy\">Cookie policy</a></h3>\n          <p class=\"text-muted\">Which cookies are used and how to control them.</p>\n          <h3 class=\"h5 mb-1\"><a href=\"/data-deletion\">Data deletion</a></h3>\n          <p class=\"text-muted\">How to ask us to delete your personal data.</p>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt40 pb40 o_cc o_cc2\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <p class=\"text-muted mb-2\">Company details</p>\n          <h2 class=\"h4\">TMC – Technology Metro Company</h2>\n          <p>Trading as TMC SMART. These policies are issued by and apply to this company.</p>\n          <ul class=\"list-unstyled\">\n            <li><strong>Address:</strong> Idlib – Sarmada, 100 m after the car roundabout towards Sarmada, Syria</li>\n            <li><strong>Email:</strong> <a href=\"mailto:sales@tmcsmart.shop\">sales@tmcsmart.shop</a></li>\n            <li><strong>Phone and WhatsApp:</strong> <a href=\"tel:+963965445580\">+963 965 445 580</a></li>\n            <li><strong>Website:</strong> <a href=\"https://tmcsmart.com\">tmcsmart.com</a></li>\n          </ul>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt40 pb64 text-center\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h4\">Questions about our policies?</h2>\n          <p><a class=\"btn btn-primary btn-lg\" href=\"/contactus\">Contact TMC</a></p>\n        </div>\n      </section>\n    </div>\n  </t>\n</t>",
+      "arch_ar": "<t t-name=\"website.legal\">\n  <t t-call=\"website.layout\">\n    <div id=\"wrap\" class=\"oe_structure oe_empty\">\n      <section class=\"s_text_block o_colored_level pt64 pb32\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <p class=\"text-muted mb-2\">السياسات</p>\n          <h1 class=\"display-5\">السياسات والشروط</h1>\n          <p class=\"lead\">جميع سياسات TMC في مكان واحد: شروط الاستخدام، والخصوصية، والإرجاع والاسترداد، والشحن، وملفات تعريف الارتباط، وحذف البيانات.</p>\n          <p class=\"text-muted small\">آخر تحديث: 21 تشرين الثاني 2026</p>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt48 pb48\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h3\">على من تنطبق هذه السياسات</h2>\n          <p>تنطبق هذه السياسات على كل من يستخدم موقع tmcsmart.com، ومتجرنا الإلكتروني على erp.tmcsmart.com، وقنوات واتساب الخاصة بنا، وصفحاتنا على مواقع التواصل، ومساعد TMC، وخدماتنا الرقمية.</p>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt24 pb24\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h3 class=\"h5 mb-1\"><a href=\"/terms-of-use-for-tmc\">شروط الاستخدام</a></h3>\n          <p class=\"text-muted\">القواعد التي تنظّم استخدام موقعنا ومتجرنا ومساعدنا وخدماتنا.</p>\n          <h3 class=\"h5 mb-1\"><a href=\"/privacy\">سياسة الخصوصية</a></h3>\n          <p class=\"text-muted\">البيانات التي نجمعها، ولماذا، ومع من نشاركها، وحقوقك.</p>\n          <h3 class=\"h5 mb-1\"><a href=\"/return-policy\">سياسة الإرجاع والاسترداد</a></h3>\n          <p class=\"text-muted\">الإرجاع واسترداد المبالغ وإلغاء الطلبات والكفالة.</p>\n          <h3 class=\"h5 mb-1\"><a href=\"/shipping-policy\">سياسة الشحن</a></h3>\n          <p class=\"text-muted\">التوصيل إلى كل سوريا، والتكلفة والمدة، والاستلام من الفروع.</p>\n          <h3 class=\"h5 mb-1\"><a href=\"/cookie-policy\">سياسة ملفات تعريف الارتباط</a></h3>\n          <p class=\"text-muted\">الملفات المستخدمة وكيف تتحكم بها.</p>\n          <h3 class=\"h5 mb-1\"><a href=\"/data-deletion\">حذف البيانات</a></h3>\n          <p class=\"text-muted\">كيف تطلب منا حذف بياناتك الشخصية.</p>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt40 pb40 o_cc o_cc2\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <p class=\"text-muted mb-2\">بيانات الشركة</p>\n          <h2 class=\"h4\">TMC – Technology Metro Company</h2>\n          <p>تعمل باسم TMC SMART، وتصدر هذه السياسات عنها وتنطبق عليها.</p>\n          <ul class=\"list-unstyled\">\n            <li><strong>العنوان:</strong> إدلب – سرمدا، بعد دوار السيارات باتجاه سرمدا بـ 100 متر، سوريا</li>\n            <li><strong>البريد الإلكتروني:</strong> <a href=\"mailto:sales@tmcsmart.shop\">sales@tmcsmart.shop</a></li>\n            <li><strong>الهاتف وواتساب:</strong> <a href=\"tel:+963965445580\">+963 965 445 580</a></li>\n            <li><strong>الموقع:</strong> <a href=\"https://tmcsmart.com\">tmcsmart.com</a></li>\n          </ul>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt40 pb64 text-center\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h4\">لديك سؤال عن سياساتنا؟</h2>\n          <p><a class=\"btn btn-primary btn-lg\" href=\"/contactus\">تواصل مع TMC</a></p>\n        </div>\n      </section>\n    </div>\n  </t>\n</t>",
+      "terms_ar": [
+        [
+          "Policies",
+          "السياسات"
+        ],
+        [
+          "Policies and terms",
+          "السياسات والشروط"
+        ],
+        [
+          "All of TMC's policies in one place: terms of use, privacy, returns and refunds, shipping, cookies and data deletion.",
+          "جميع سياسات TMC في مكان واحد: شروط الاستخدام، والخصوصية، والإرجاع والاسترداد، والشحن، وملفات تعريف الارتباط، وحذف البيانات."
+        ],
+        [
+          "Last updated: 21 November 2026",
+          "آخر تحديث: 21 تشرين الثاني 2026"
+        ],
+        [
+          "Who these policies apply to",
+          "على من تنطبق هذه السياسات"
+        ],
+        [
+          "These policies apply to everyone who uses tmcsmart.com, our online store at erp.tmcsmart.com, our WhatsApp channels, our social media pages, the TMC assistant and our digital services.",
+          "تنطبق هذه السياسات على كل من يستخدم موقع tmcsmart.com، ومتجرنا الإلكتروني على erp.tmcsmart.com، وقنوات واتساب الخاصة بنا، وصفحاتنا على مواقع التواصل، ومساعد TMC، وخدماتنا الرقمية."
+        ],
+        [
+          "<a href=\"/terms-of-use-for-tmc\">Terms of use</a>",
+          "<a href=\"/terms-of-use-for-tmc\">شروط الاستخدام</a>"
+        ],
+        [
+          "The rules for using our website, store, assistant and services.",
+          "القواعد التي تنظّم استخدام موقعنا ومتجرنا ومساعدنا وخدماتنا."
+        ],
+        [
+          "<a href=\"/privacy\">Privacy policy</a>",
+          "<a href=\"/privacy\">سياسة الخصوصية</a>"
+        ],
+        [
+          "What data we collect, why, who we share it with and your rights.",
+          "البيانات التي نجمعها، ولماذا، ومع من نشاركها، وحقوقك."
+        ],
+        [
+          "<a href=\"/return-policy\">Return and refund policy</a>",
+          "<a href=\"/return-policy\">سياسة الإرجاع والاسترداد</a>"
+        ],
+        [
+          "Returns, refunds, cancellations and warranty.",
+          "الإرجاع واسترداد المبالغ وإلغاء الطلبات والكفالة."
+        ],
+        [
+          "<a href=\"/shipping-policy\">Shipping policy</a>",
+          "<a href=\"/shipping-policy\">سياسة الشحن</a>"
+        ],
+        [
+          "Delivery across Syria, costs, times and branch pickup.",
+          "التوصيل إلى كل سوريا، والتكلفة والمدة، والاستلام من الفروع."
+        ],
+        [
+          "<a href=\"/cookie-policy\">Cookie policy</a>",
+          "<a href=\"/cookie-policy\">سياسة ملفات تعريف الارتباط</a>"
+        ],
+        [
+          "Which cookies are used and how to control them.",
+          "الملفات المستخدمة وكيف تتحكم بها."
+        ],
+        [
+          "<a href=\"/data-deletion\">Data deletion</a>",
+          "<a href=\"/data-deletion\">حذف البيانات</a>"
+        ],
+        [
+          "How to ask us to delete your personal data.",
+          "كيف تطلب منا حذف بياناتك الشخصية."
+        ],
+        [
+          "Company details",
+          "بيانات الشركة"
+        ],
+        [
+          "Trading as TMC SMART. These policies are issued by and apply to this company.",
+          "تعمل باسم TMC SMART، وتصدر هذه السياسات عنها وتنطبق عليها."
+        ],
+        [
+          "<strong>Address:</strong> Idlib – Sarmada, 100 m after the car roundabout towards Sarmada, Syria",
+          "<strong>العنوان:</strong> إدلب – سرمدا، بعد دوار السيارات باتجاه سرمدا بـ 100 متر، سوريا"
+        ],
+        [
+          "<strong>Email:</strong> <a href=\"mailto:sales@tmcsmart.shop\">sales@tmcsmart.shop</a>",
+          "<strong>البريد الإلكتروني:</strong> <a href=\"mailto:sales@tmcsmart.shop\">sales@tmcsmart.shop</a>"
+        ],
+        [
+          "<strong>Phone and WhatsApp:</strong> <a href=\"tel:+963965445580\">+963 965 445 580</a>",
+          "<strong>الهاتف وواتساب:</strong> <a href=\"tel:+963965445580\">+963 965 445 580</a>"
+        ],
+        [
+          "<strong>Website:</strong> <a href=\"https://tmcsmart.com\">tmcsmart.com</a>",
+          "<strong>الموقع:</strong> <a href=\"https://tmcsmart.com\">tmcsmart.com</a>"
+        ],
+        [
+          "Questions about our policies?",
+          "لديك سؤال عن سياساتنا؟"
+        ],
+        [
+          "<a class=\"btn btn-primary btn-lg\" href=\"/contactus\">Contact TMC</a>",
+          "<a class=\"btn btn-primary btn-lg\" href=\"/contactus\">تواصل مع TMC</a>"
+        ]
+      ]
+    },
+    {
+      "key": "specialOrders",
+      "odoo": {
+        "url": "/tmc-special-orders",
+        "view_key": "website.tmc-special-orders",
+        "view_id": 3416,
+        "action": "update",
+        "optional": true
+      },
+      "portal": "https://tmcsmart.com/special-orders",
+      "name": {
+        "en": "Request what you need, and we will source it for you",
+        "ar": "اطلب ما تحتاجه… ونحن نؤمّنه لك"
+      },
+      "meta_title": {
+        "en": "Special Orders | TMC SMART",
+        "ar": "الطلبات الخاصة | TMC SMART"
+      },
+      "arch_en": "<t t-name=\"website.tmc-special-orders\">\n  <t t-call=\"website.layout\">\n    <div id=\"wrap\" class=\"oe_structure oe_empty\">\n      <section class=\"s_text_block o_colored_level pt64 pb32\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <p class=\"text-muted mb-2\">Special Orders</p>\n          <h1 class=\"display-5\">Request what you need, and we will source it for you</h1>\n          <p class=\"lead\">Some projects need specialized equipment that is not in our regular inventory. With special orders, you can order products and technical equipment to the exact specifications you need.</p>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt16 pb16\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <ul>\n            <li><strong>Any product</strong> – even if it isn't in the store</li>\n            <li><strong>Your specs</strong> – model, quantity and details</li>\n            <li><strong>Confirmed</strong> – price and time before you commit</li>\n          </ul>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt48 pb48\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h3\">How it works</h2>\n          <p>Send us the product name, a link or a photo, with the quantity and any details. Our team checks it with our suppliers and gets back to you with availability, price and the expected delivery time.</p>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt48 pb48\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h3 class=\"h5 mt-4\">1. Send your request</h3>\n          <p>Tell us what you need: product name, link or photo, and the quantity.</p>\n          <h3 class=\"h5 mt-4\">2. We source it</h3>\n          <p>We check availability and price with our suppliers.</p>\n          <h3 class=\"h5 mt-4\">3. Confirm and receive</h3>\n          <p>We confirm the price and delivery time with you, then deliver the order.</p>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt48 pb48\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h3\">What can I order?</h2>\n          <p>Any technical product that is not available in the store. Delivery time depends on the product and the supplier, and our team tells you the expected time before you confirm.</p>\n          <h3 class=\"h5 mt-4\">Common requests</h3>\n          <ul>\n            <li>Networking and telecommunications equipment</li>\n            <li>Professional cables and network infrastructure components</li>\n            <li>Advanced routers, switches and networking devices</li>\n            <li>Server and data center equipment</li>\n            <li>Monitoring equipment and specialized technology</li>\n          </ul>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt40 pb64 text-center\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h4\">Send us your request</h2>\n          <p><a class=\"btn btn-primary btn-lg\" href=\"/contactus\">Contact us</a></p>\n        </div>\n      </section>\n    </div>\n  </t>\n</t>",
+      "arch_ar": "<t t-name=\"website.tmc-special-orders\">\n  <t t-call=\"website.layout\">\n    <div id=\"wrap\" class=\"oe_structure oe_empty\">\n      <section class=\"s_text_block o_colored_level pt64 pb32\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <p class=\"text-muted mb-2\">الطلبات الخاصة</p>\n          <h1 class=\"display-5\">اطلب ما تحتاجه… ونحن نؤمّنه لك</h1>\n          <p class=\"lead\">بعض المشاريع تحتاج معدات متخصصة غير متوفرة في مخزوننا المعتاد. مع خدمة الطلبات الخاصة، يمكنك طلب منتجات ومعدات تقنية بالمواصفات الدقيقة التي تحتاجها.</p>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt16 pb16\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <ul>\n            <li><strong>أي منتج</strong> – حتى لو لم يكن في المتجر</li>\n            <li><strong>مواصفاتك</strong> – الطراز والكمية والتفاصيل</li>\n            <li><strong>تأكيد مسبق</strong> – للسعر والمدة قبل الالتزام</li>\n          </ul>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt48 pb48\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h3\">كيف تعمل الخدمة</h2>\n          <p>أرسل لنا اسم المنتج أو رابطه أو صورته، مع الكمية وأي تفاصيل. يتحقق فريقنا منه لدى موردينا ويعود إليك بالتوفر والسعر ومدة التسليم المتوقعة.</p>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt48 pb48\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h3 class=\"h5 mt-4\">1. أرسل طلبك</h3>\n          <p>أخبرنا بما تحتاجه: اسم المنتج أو رابطه أو صورته، والكمية.</p>\n          <h3 class=\"h5 mt-4\">2. نؤمّنه لك</h3>\n          <p>نتحقق من التوفر والسعر لدى موردينا.</p>\n          <h3 class=\"h5 mt-4\">3. أكّد واستلم</h3>\n          <p>نؤكد معك السعر ومدة التسليم، ثم نسلّمك الطلب.</p>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt48 pb48\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h3\">ماذا يمكنني أن أطلب؟</h2>\n          <p>أي منتج تقني غير متوفر في المتجر. تعتمد مدة التسليم على المنتج والمورد، ويخبرك فريقنا بالمدة المتوقعة قبل أن تؤكد.</p>\n          <h3 class=\"h5 mt-4\">طلبات شائعة</h3>\n          <ul>\n            <li>معدات الشبكات والاتصالات</li>\n            <li>الكابلات الاحترافية ومكونات البنية التحتية للشبكات</li>\n            <li>الراوترات والسويتشات وأجهزة الشبكات المتقدمة</li>\n            <li>معدات السيرفرات ومراكز البيانات</li>\n            <li>معدات المراقبة والحلول التقنية المتخصصة</li>\n          </ul>\n        </div>\n      </section>\n      <section class=\"s_text_block o_colored_level pt40 pb64 text-center\" data-snippet=\"s_text_block\" data-name=\"Text\">\n        <div class=\"o_container_small\">\n          <h2 class=\"h4\">أرسل لنا طلبك</h2>\n          <p><a class=\"btn btn-primary btn-lg\" href=\"/contactus\">تواصل معنا</a></p>\n        </div>\n      </section>\n    </div>\n  </t>\n</t>",
+      "terms_ar": [
+        [
+          "Special Orders",
+          "الطلبات الخاصة"
+        ],
+        [
+          "Request what you need, and we will source it for you",
+          "اطلب ما تحتاجه… ونحن نؤمّنه لك"
+        ],
+        [
+          "Some projects need specialized equipment that is not in our regular inventory. With special orders, you can order products and technical equipment to the exact specifications you need.",
+          "بعض المشاريع تحتاج معدات متخصصة غير متوفرة في مخزوننا المعتاد. مع خدمة الطلبات الخاصة، يمكنك طلب منتجات ومعدات تقنية بالمواصفات الدقيقة التي تحتاجها."
+        ],
+        [
+          "<strong>Any product</strong> – even if it isn't in the store",
+          "<strong>أي منتج</strong> – حتى لو لم يكن في المتجر"
+        ],
+        [
+          "<strong>Your specs</strong> – model, quantity and details",
+          "<strong>مواصفاتك</strong> – الطراز والكمية والتفاصيل"
+        ],
+        [
+          "<strong>Confirmed</strong> – price and time before you commit",
+          "<strong>تأكيد مسبق</strong> – للسعر والمدة قبل الالتزام"
+        ],
+        [
+          "How it works",
+          "كيف تعمل الخدمة"
+        ],
+        [
+          "Send us the product name, a link or a photo, with the quantity and any details. Our team checks it with our suppliers and gets back to you with availability, price and the expected delivery time.",
+          "أرسل لنا اسم المنتج أو رابطه أو صورته، مع الكمية وأي تفاصيل. يتحقق فريقنا منه لدى موردينا ويعود إليك بالتوفر والسعر ومدة التسليم المتوقعة."
+        ],
+        [
+          "1. Send your request",
+          "1. أرسل طلبك"
+        ],
+        [
+          "Tell us what you need: product name, link or photo, and the quantity.",
+          "أخبرنا بما تحتاجه: اسم المنتج أو رابطه أو صورته، والكمية."
+        ],
+        [
+          "2. We source it",
+          "2. نؤمّنه لك"
+        ],
+        [
+          "We check availability and price with our suppliers.",
+          "نتحقق من التوفر والسعر لدى موردينا."
+        ],
+        [
+          "3. Confirm and receive",
+          "3. أكّد واستلم"
+        ],
+        [
+          "We confirm the price and delivery time with you, then deliver the order.",
+          "نؤكد معك السعر ومدة التسليم، ثم نسلّمك الطلب."
+        ],
+        [
+          "What can I order?",
+          "ماذا يمكنني أن أطلب؟"
+        ],
+        [
+          "Any technical product that is not available in the store. Delivery time depends on the product and the supplier, and our team tells you the expected time before you confirm.",
+          "أي منتج تقني غير متوفر في المتجر. تعتمد مدة التسليم على المنتج والمورد، ويخبرك فريقنا بالمدة المتوقعة قبل أن تؤكد."
+        ],
+        [
+          "Common requests",
+          "طلبات شائعة"
+        ],
+        [
+          "Networking and telecommunications equipment",
+          "معدات الشبكات والاتصالات"
+        ],
+        [
+          "Professional cables and network infrastructure components",
+          "الكابلات الاحترافية ومكونات البنية التحتية للشبكات"
+        ],
+        [
+          "Advanced routers, switches and networking devices",
+          "الراوترات والسويتشات وأجهزة الشبكات المتقدمة"
+        ],
+        [
+          "Server and data center equipment",
+          "معدات السيرفرات ومراكز البيانات"
+        ],
+        [
+          "Monitoring equipment and specialized technology",
+          "معدات المراقبة والحلول التقنية المتخصصة"
+        ],
+        [
+          "Send us your request",
+          "أرسل لنا طلبك"
+        ],
+        [
+          "<a class=\"btn btn-primary btn-lg\" href=\"/contactus\">Contact us</a>",
+          "<a class=\"btn btn-primary btn-lg\" href=\"/contactus\">تواصل معنا</a>"
+        ]
+      ]
+    }
+  ]
+}

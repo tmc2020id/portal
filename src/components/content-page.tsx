@@ -4,6 +4,7 @@ import type { ReactNode } from "react";
 import { localizeHref, type Locale } from "@/i18n/config";
 import { resolveLocale } from "@/i18n/dictionaries";
 import type { ContentPageData, Dictionary, PageKey } from "@/i18n/dictionaries/en";
+import { LegalCompany } from "./legal-company";
 import { PortalFooter, PortalNav } from "./portal-nav";
 import styles from "./content-page.module.css";
 
@@ -35,11 +36,25 @@ export function ContentPage({ locale, dict, page, children }: ContentPageProps) 
     highlights,
     spotlight,
     sections,
+    links,
+    updated,
     ctaTitle,
     ctaLabel,
     ctaHref,
   } = page;
   const labels = dict.contentPage;
+  // Legal documents read intro first, then the clauses.
+  const isLegal = Boolean(updated);
+
+  const introSection = (
+    <section className={styles.introSection}>
+      <div className={styles.sectionCopy}>
+        <span>{labels.overviewEyebrow}</span>
+        <h2>{introTitle}</h2>
+        <p>{intro}</p>
+      </div>
+    </section>
+  );
 
   return (
     <div className={styles.pageShell}>
@@ -52,6 +67,11 @@ export function ContentPage({ locale, dict, page, children }: ContentPageProps) 
             <span>{eyebrow}</span>
             <h1>{title}</h1>
             <p>{summary}</p>
+            {updated ? (
+              <p className={styles.updated}>
+                {dict.legal.updatedLabel}: <bdi>{updated}</bdi>
+              </p>
+            ) : null}
           </div>
           {metrics.length ? (
             <div className={styles.metricGrid}>
@@ -68,6 +88,25 @@ export function ContentPage({ locale, dict, page, children }: ContentPageProps) 
           ) : null}
         </section>
 
+        {isLegal ? introSection : null}
+
+        {links?.length ? (
+          <section className={styles.entrySection}>
+            <div className={styles.entryGrid}>
+              {links.map((item) => (
+                <Link
+                  key={item.href}
+                  href={localizeHref(locale, item.href)}
+                  className={`${styles.entryCard} ${styles.linkCard}`}
+                >
+                  <h3>{item.title}</h3>
+                  <p>{item.body}</p>
+                </Link>
+              ))}
+            </div>
+          </section>
+        ) : null}
+
         {sections?.map((section) => (
           <section key={section.title} className={styles.entrySection}>
             <h2>{section.title}</h2>
@@ -82,13 +121,13 @@ export function ContentPage({ locale, dict, page, children }: ContentPageProps) 
           </section>
         ))}
 
-        <section className={styles.introSection}>
-          <div className={styles.sectionCopy}>
-            <span>{labels.overviewEyebrow}</span>
-            <h2>{introTitle}</h2>
-            <p>{intro}</p>
-          </div>
-        </section>
+        {isLegal ? (
+          <section className={styles.companySection}>
+            <LegalCompany legal={dict.legal} />
+          </section>
+        ) : (
+          introSection
+        )}
 
         {children}
 

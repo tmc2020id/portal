@@ -1,0 +1,59 @@
+.card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
+  gap: 24px;
+  padding: clamp(24px, 4vw, 34px);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-card);
+  background: var(--surface-glass-card);
+  backdrop-filter: blur(var(--blur-bar));
+}
+
+.copy span {
+  color: var(--muted);
+  font-size: var(--text-label);
+  font-weight: 500;
+  letter-spacing: var(--tracking-ui);
+}
+
+.copy h2 {
+  margin-top: 10px;
+  font-size: var(--text-title-lg);
+  font-weight: 500;
+  line-height: var(--leading-title);
+  letter-spacing: var(--tracking-title);
+}
+
+.copy p {
+  margin-top: 12px;
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.details {
+  display: grid;
+  gap: 16px;
+}
+
+.details dt {
+  color: var(--muted);
+  font-size: var(--text-label);
+}
+
+.details dd {
+  margin-top: 4px;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.details a {
+  color: var(--ink);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+@media (max-width: 720px) {
+  .card {
+    grid-template-columns: 1fr;
+  }
+}

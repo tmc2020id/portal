@@ -8,5 +8,5 @@ export default async function Home({
 }) {
   const { locale, dict } = await resolveLocale(params);
 
-  return <HomePortal locale={locale} dict={dict} />;
+  return <HomePortal locale={locale} dict={{ home: dict.home, nav: dict.nav }} />;
 }
