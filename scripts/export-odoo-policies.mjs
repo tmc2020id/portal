@@ -60,11 +60,14 @@ const node = (tag, text, cls = "") => ({ tag, text, cls });
 const list = (items, cls = "") => ({ tag: "ul", items, cls });
 const section = (nodes, cls = "pt48 pb48") => ({ nodes, cls });
 
+// Some pages (returns) use `summary` for a list of cards, so only a string summary can be the lead.
+const leadOf = (page) => (typeof page.summary === "string" ? page.summary : page.lead);
+
 function heroSection(enPage, arPage, updated) {
   const nodes = [
     node("p", t(enPage.eyebrow, arPage.eyebrow), "text-muted mb-2"),
     node("h1", t(enPage.title, arPage.title), "display-5"),
-    node("p", t(enPage.summary ?? enPage.lead, arPage.summary ?? arPage.lead), "lead"),
+    node("p", t(leadOf(enPage), leadOf(arPage)), "lead"),
   ];
   if (updated) {
     nodes.push(node("p", t(`${en.legal.updatedLabel}: ${updated.en}`, `${ar.legal.updatedLabel}: ${updated.ar}`), "text-muted small"));
