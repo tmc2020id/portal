@@ -186,7 +186,7 @@ export const en = {
         href: "https://erp.tmcsmart.com/en/blog/tech-blog-4/the-difference-between-internet-speed-and-network-speed-why-is-your-speed-not-what-you-expect-117",
       },
     ],
-    cookieBody: "TMC SMART doesn't use advertising or tracking cookies, only what the site and store need to work.",
+    cookieBody: "tmcsmart.com doesn't use advertising or tracking cookies.",
     cookieLink: "Cookie policy",
     cookieHide: "Hide",
   },
@@ -735,7 +735,7 @@ export const en = {
             },
             {
               title: "Information collected automatically",
-              body: "Basic technical data such as your IP address, browser and device type, the pages you visit and the time of your visit, kept in server and security logs. Our cookie policy explains which cookies are used.",
+              body: "Basic technical data such as your IP address, browser and device type, the pages you visit and the time of your visit, kept in server and security logs. On the online store, Google Analytics also measures visits, as our cookie policy explains.",
             },
             {
               title: "Information from other services",
@@ -967,7 +967,7 @@ export const en = {
       metrics: [],
       introTitle: "Our approach",
       intro:
-        "Cookies are small files a website saves in your browser. tmcsmart.com does not use advertising or tracking cookies; only what is needed to run and protect the site and the store.",
+        "Cookies are small files a website saves in your browser. tmcsmart.com does not use advertising or tracking cookies. Our online store uses the cookies it needs to work, and analytics cookies only if you accept them.",
       highlights: [],
       sections: [
         {
@@ -984,6 +984,10 @@ export const en = {
             {
               title: "Online store",
               body: "The store at erp.tmcsmart.com uses necessary cookies to keep your session, cart and language, such as session_id and frontend_lang. The store cannot work without them.",
+            },
+            {
+              title: "Store analytics",
+              body: "The store uses Google Analytics to understand how it is used. It sets analytics cookies only if you accept them in the store's cookie bar; otherwise Google receives only anonymous measurements without cookies. Advertising cookies stay off.",
             },
             {
               title: "Other websites",
