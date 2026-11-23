@@ -168,11 +168,12 @@ export const ar: Dictionary = {
     ],
   },
   consent: {
-    title: "اختيار ملفات تعريف الارتباط",
-    body: "نحسب الزيارات بأداة إحصاءات خاصة بنا لا تضع أي ملفات تعريف ارتباط. وبإذنك، يضع Google Analytics أيضًا ملفات تحليلية تساعدنا على تحسين الموقع. لا نستخدم ملفات إعلانية.",
-    link: "سياسة ملفات تعريف الارتباط",
+    title: "الكوكيز",
+    // Kept to one plain line on purpose; the details live on the cookie policy page.
+    body: "نستخدم ملفات الكوكيز لتحسين تجربتك على الموقع.",
+    link: "التفاصيل",
     accept: "موافق",
-    decline: "رفض",
+    decline: "لا، شكرًا",
     settings: "إعدادات ملفات تعريف الارتباط",
   },
   whatsapp: {
