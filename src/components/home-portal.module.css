@@ -369,6 +369,16 @@
   stroke-width: 1.7;
 }
 
+.downloadIcon {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.9;
+}
+
 :global([dir="rtl"]) .arrowIcon {
   transform: scaleX(-1);
 }
@@ -504,6 +514,7 @@
 .featureStrip,
 .statementBlock,
 .routeSection,
+.toolSection,
 .useCasesSection,
 .planSection,
 .blogSection {
@@ -737,6 +748,111 @@
   color: var(--muted);
   font-size: var(--text-lead);
   line-height: 1.8;
+}
+
+.toolCard {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+  gap: 28px 40px;
+  padding: clamp(24px, 3.4vw, 44px);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-card-lg);
+  background:
+    radial-gradient(circle at 12% 0%, rgba(var(--brand-blue-rgb), 0.1), transparent 42%),
+    radial-gradient(circle at 92% 100%, rgba(var(--brand-orange-rgb), 0.12), transparent 40%),
+    var(--surface-glass-card);
+  backdrop-filter: blur(var(--blur-card));
+}
+
+.toolCopy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.toolEyebrow {
+  padding: 4px 12px;
+  border-radius: var(--radius-pill);
+  background: linear-gradient(135deg, rgba(var(--brand-blue-rgb), 0.14), rgba(var(--brand-orange-rgb), 0.2));
+  color: var(--ink);
+  font-size: var(--text-label);
+  font-weight: 500;
+  letter-spacing: var(--tracking-ui);
+}
+
+.toolCopy h2 {
+  font-size: var(--text-display-4);
+  line-height: var(--leading-title);
+  letter-spacing: var(--tracking-display);
+  font-weight: 500;
+}
+
+.toolCopy p {
+  color: var(--muted);
+  font-size: var(--text-lead);
+  line-height: 1.8;
+}
+
+.toolActions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px 18px;
+  margin-top: 6px;
+}
+
+.toolActions small {
+  color: var(--muted);
+  font-size: var(--text-label);
+}
+
+.toolPoints {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.toolPoints li {
+  position: relative;
+  padding-inline-start: 30px;
+  line-height: 1.6;
+}
+
+.toolPoints li::before {
+  content: "";
+  position: absolute;
+  inset-inline-start: 0;
+  top: 0.32em;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgb(var(--brand-blue-rgb)), rgb(var(--brand-orange-rgb)));
+  -webkit-mask: radial-gradient(circle, transparent 3.5px, #000 4px);
+  mask: radial-gradient(circle, transparent 3.5px, #000 4px);
+}
+
+.toolShot {
+  grid-column: 1 / -1;
+  justify-self: center;
+  width: 100%;
+  max-width: 940px;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-card);
+  background: rgb(var(--palette-white-rgb));
+  box-shadow: var(--shadow-card-hover);
+}
+
+.toolShot img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .sectionIntro {
@@ -1088,6 +1204,7 @@
 }
 
 @media (max-width: 1100px) {
+  .toolCard,
   .featureStrip,
   .routeGrid,
   .planGrid,

@@ -62,6 +62,12 @@ export const en = {
     aiBadge: "Beta",
     switchLabel: "العربية",
     switchAriaLabel: "اعرض الموقع بالعربية",
+    tool: {
+      label: "NetScan",
+      badge: "Free",
+      ariaLabel: "Download TMC NetScan, the free network scanner for Windows (opens in a new tab)",
+      href: "https://netscan.tmcsmart.com",
+    },
     primary: [
       { href: "/", label: "Home" },
       { href: "/about-us", label: "About us" },
@@ -120,6 +126,23 @@ export const en = {
     routesEyebrow: "Explore",
     routesTitle: "Everything you need from TMC in one place",
     routeOpen: "Open page",
+    netscan: {
+      eyebrow: "Free tool from TMC",
+      title: "TMC NetScan: see every device on your network from your PC",
+      body:
+        "A free Windows app, like Fing or WiFiMan but on your computer. It finds every device on your network (cameras, NVRs, routers, printers, phones, computers and Mimosa or Ubiquiti radios) and names each device's manufacturer from its MAC address.",
+      points: [
+        "Finds devices that ignore ping, using an ARP scan",
+        "Names the vendor from the full IEEE list of about 52,000 manufacturers",
+        "Finds cameras over ONVIF, Hikvision SADP and Dahua, even on the wrong IP",
+        "Ubiquiti discovery and a health check for Mimosa radios",
+        "Scans in about 18 seconds, from one Windows file with nothing to install",
+      ],
+      cta: "Download TMC NetScan free",
+      ctaNote: "Windows · Free",
+      imageAlt: "TMC NetScan listing network devices with their manufacturers",
+      href: "https://netscan.tmcsmart.com",
+    },
     useCasesEyebrow: "Who we work with",
     useCasesTitle: "Supply that fits the way you work",
     useCases: [
@@ -161,6 +184,12 @@ export const en = {
     blogTitle: "Technical articles from the TMC team",
     // Latest posts from the Odoo blog; phase 4 loads these live.
     blogPosts: [
+      {
+        title: "Download TMC NetScan free: see every device on your network from your PC",
+        category: "Tech Blog",
+        date: "Nov 23, 2026",
+        href: "https://erp.tmcsmart.com/en/blog/tech-blog-4/download-tmc-netscan-free-see-every-device-on-your-network-from-your-pc-121",
+      },
       {
         title: "The best network structure for an office with cameras, printers, computers and WiFi",
         category: "Tech Blog",

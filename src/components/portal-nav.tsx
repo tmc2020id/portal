@@ -70,6 +70,16 @@ export function PortalNav({ locale, nav }: NavProps) {
               </Link>
             );
           })}
+          <a
+            className={`${styles.navLink} ${styles.toolLink}`}
+            href={nav.tool.href}
+            target="_blank"
+            rel="noopener"
+            aria-label={nav.tool.ariaLabel}
+          >
+            {nav.tool.label}
+            <span className={styles.toolBadge}>{nav.tool.badge}</span>
+          </a>
         </nav>
 
         <div className={styles.utilityActions}>
@@ -129,6 +139,17 @@ export function PortalNav({ locale, nav }: NavProps) {
           );
         })}
         <a
+          className={`${styles.mobileLink} ${styles.toolLink}`}
+          href={nav.tool.href}
+          target="_blank"
+          rel="noopener"
+          aria-label={nav.tool.ariaLabel}
+          onClick={() => setMenuOpen(false)}
+        >
+          {nav.tool.label}
+          <span className={styles.toolBadge}>{nav.tool.badge}</span>
+        </a>
+        <a
           className={styles.mobileExternalLink}
           href={AI_PORTAL_URL}
           target="_blank"
@@ -153,6 +174,9 @@ export function PortalFooter({ locale, nav }: NavProps) {
             {item.label}
           </Link>
         ))}
+        <a href={nav.tool.href} target="_blank" rel="noopener" aria-label={nav.tool.ariaLabel}>
+          {nav.tool.label}
+        </a>
       </div>
       <div className={styles.footerSecondary}>
         {nav.footer.map((item) => (

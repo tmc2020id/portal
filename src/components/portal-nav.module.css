@@ -144,6 +144,21 @@
   padding: 0 12px;
 }
 
+.toolLink {
+  gap: 8px;
+  color: var(--ink);
+}
+
+.toolBadge {
+  padding: 2px 8px;
+  border-radius: var(--radius-pill);
+  background: linear-gradient(135deg, rgba(var(--brand-blue-rgb), 0.14), rgba(var(--brand-orange-rgb), 0.2));
+  color: var(--ink);
+  font-size: var(--text-caption);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
 .navLinkActive,
 .mobileLinkActive {
   color: var(--ink);
@@ -247,6 +262,14 @@
   .localeSwitch:hover {
     transform: translateY(-1px);
     box-shadow: var(--shadow-control-hover);
+  }
+}
+
+/* The extra link only fits the desktop bar on wide screens; narrower laptops
+   still reach NetScan from the footer and the home page section. */
+@media (max-width: 1399px) {
+  .desktopNav .toolLink {
+    display: none;
   }
 }
 
