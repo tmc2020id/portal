@@ -1,6 +1,6 @@
 "use client";
 
-import type { CSSProperties } from "react";
+import type { CSSProperties, ReactNode } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useMemo, useRef, useState } from "react";
@@ -33,6 +33,8 @@ type HomePortalProps = {
   locale: Locale;
   // Only what the home page renders, so the policy text isn't sent to the browser.
   dict: Pick<Dictionary, "home" | "nav">;
+  // Latest products from the Odoo shop, rendered on the server.
+  store?: ReactNode;
 };
 
 type HeadlineCharacter = {
@@ -87,7 +89,7 @@ function DownloadIcon() {
   );
 }
 
-export function HomePortal({ locale, dict }: HomePortalProps) {
+export function HomePortal({ locale, dict, store }: HomePortalProps) {
   const home = dict.home;
   const { featureSlides, useCases, plans, blogPosts, netscan } = home;
   const [featureIndex, setFeatureIndex] = useState(0);
@@ -757,6 +759,8 @@ export function HomePortal({ locale, dict }: HomePortalProps) {
               ))}
           </div>
         </section>
+
+        {store}
 
         <section id="netscan" className={`${styles.toolSection} ${styles.cinematicSection}`}>
           <div className={`${styles.toolCard} ${styles.reveal}`}>
