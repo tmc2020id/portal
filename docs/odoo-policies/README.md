@@ -1,6 +1,8 @@
 # سياسات متجر Odoo
 
-ملفات جاهزة لتحديث صفحات السياسات على المتجر `erp.tmcsmart.com`، بنفس نصوص موقع `tmcsmart.com` حرفياً. لم يُطبَّق شيء على Odoo بعد؛ هذه المرحلة تجهيز فقط.
+ملفات جاهزة لتحديث صفحات السياسات على المتجر `erp.tmcsmart.com`، بنفس نصوص موقع `tmcsmart.com` حرفياً.
+
+**طُبّقت على Odoo في 2026-11-21** (السجل في `vps-hostinger-2/oracle/changes/2026-11-21-odoo-policy-pages.md`). الصفحات الجديدة: الشحن (view 4056)، حذف البيانات (4057)، كل السياسات (4058). صفحة الطلبات الخاصة لم تُستبدل لأن فيها نموذج طلب شغّال، وتغيّر فيها رابط واتساب فقط.
 
 ## الملفات
 
@@ -23,11 +25,11 @@ node --experimental-strip-types --no-warnings scripts/export-odoo-policies.mjs
 | شروط الاستخدام | `/terms-of-use-for-tmc` | تحديث (view 3755) | |
 | سياسة الخصوصية | `/privacy` | تحديث (view 2668) | |
 | الإرجاع والاسترداد | `/return-policy` | تحديث (view 3765) | الصفحة الحالية تحمّل Tailwind و Chart.js من الخارج وتقول «3 أيام» بدل 24 ساعة |
-| سياسة الشحن | `/shipping-policy` | إنشاء | غير موجودة على Odoo |
+| سياسة الشحن | `/shipping-policy` | إنشاء (view 4056) | غير موجودة على Odoo |
 | ملفات تعريف الارتباط | `/cookie-policy` | تحديث (view 3737) | شريط الكوكيز في Odoo يربط عليها |
-| حذف البيانات | `/data-deletion` | إنشاء | تطلبها Meta |
-| كل السياسات | `/legal` | إنشاء | فهرس بروابط الصفحات |
-| الطلبات الخاصة | `/tmc-special-orders` | تحديث (view 3416) | اختيارية، لإزالة الرقم التركي القديم |
+| حذف البيانات | `/data-deletion` | إنشاء (view 4057) | تطلبها Meta |
+| كل السياسات | `/legal` | إنشاء (view 4058) | فهرس بروابط الصفحات |
+| الطلبات الخاصة | `/tmc-special-orders` | لم تُستبدل (view 3416) | فيها نموذج طلب، تغيّر رابط واتساب فقط |
 
 ## ما وجدناه على Odoo (2026-11-21)
 
@@ -35,7 +37,7 @@ node --experimental-strip-types --no-warnings scripts/export-odoo-policies.mjs
 - المتجر يشغّل Google Analytics (`G-DXDM819BV0`) بوضع الموافقة، وشريط الكوكيز مفعّل.
 - خانة القبول بالشروط عند الدفع (`website_sale.accept_terms_and_conditions`) غير مفعّلة. وشروط الشركة من نوع HTML وتظهر على `/terms`.
 
-## خطوات التطبيق (المرحلة الجاية، بعد موافقتك)
+## خطوات التطبيق
 
 1. **نسخة احتياطية:** حفظ `arch_db` الحالي لكل صفحة بالعربي والإنجليزي في `vps-hostinger-2/oracle/backups/`، وتسجيل التغيير في `oracle/CHANGELOG.md`.
 2. **تحديث الصفحات الموجودة:** كتابة `arch_en` في `arch_db` بسياق `en_US`، ثم إضافة العربي بـ `update_field_translations('arch_db', {'ar_001': {...}})` من `terms_ar`.
