@@ -1,3 +1,7 @@
+"use client";
+
+import { useSyncExternalStore } from "react";
+import { getConsentState, subscribeConsent, type ConsentState } from "@/lib/analytics";
 import styles from "./whatsapp-button.module.css";
 
 // Sales and WhatsApp number shown in the company details (+963 965 445 580).
@@ -9,8 +13,19 @@ type WhatsAppButtonProps = {
   message: string;
 };
 
+// Same server answer as the consent banner: the choice is only known in the browser.
+const serverState = (): ConsentState => "granted";
+
 // Clicks are counted as "whatsapp_click" by instrumentation-client.ts.
 export function WhatsAppButton({ label, message }: WhatsAppButtonProps) {
+  const consent = useSyncExternalStore(subscribeConsent, getConsentState, serverState);
+
+  // On phones the button sits on top of the consent banner's link and buttons,
+  // so it waits until the visitor has answered.
+  if (consent === "pending" || consent === "open") {
+    return null;
+  }
+
   const href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
 
   return (
