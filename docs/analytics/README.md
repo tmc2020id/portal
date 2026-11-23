@@ -49,12 +49,14 @@
 
 **شغّال هلأ:** Odoo بيبعت لـ GA4 أحداث التجارة لحاله (`view_item`، `add_to_cart`، `begin_checkout`، `purchase`…) مع consent mode (كل شي ممنوع لحتى يوافق الزائر).
 
-**مقترح، بينتظر موافقتك قبل ما نلمس Odoo:**
-- سكربت Umami على المتجر.
+**كود المتجر بملف [odoo-head.html](odoo-head.html)**، وبينضاف بآخر `custom_code_head` بإعدادات الموقع بـ Odoo:
+- سكربت Umami.
 - نسخ أحداث التجارة نفسها لـ Umami.
-- `search` (الكلمة وعدد النتائج) و `search_no_results` للأداتين: هيك بنعرف شو بيدوّروا الناس وما لقوه.
-- نفس أحداث الواتساب والهاتف واللغة والطلب الخاص.
-- Facebook Pixel يشتغل بس بعد الموافقة (هلأ عم يشتغل قبلها).
+- `search` لـ Umami (الكلمة، عدد نتائج الصفحة الأولى، ومكان البحث `shop` أو `site`)، و `search_no_results` للأداتين: هيك بنعرف شو بيدوّروا الناس وما لقوه.
+- `whatsapp_click` و `phone_click` و `email_click` و `language_switch` متل الموقع.
+- `special_order_request` لما ينبعت فورم الطلبات الخاصة (Odoo بيحوّل لصفحة الشكر).
+
+Facebook Pixel بالمتجر صار يشتغل بس بعد «I agree» بشريط الكوكيز.
 
 ### فلترة البوتات
 
