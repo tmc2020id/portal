@@ -7,8 +7,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 24px;
-  padding: 22px clamp(20px, 3vw, 32px);
+  gap: 16px 24px;
+  padding: 14px clamp(16px, 3vw, 32px);
   border-top: 1px solid var(--line-subtle);
   background: var(--surface-banner);
   backdrop-filter: blur(var(--blur-bar));
@@ -16,8 +16,8 @@
 
 .banner p {
   max-width: 920px;
-  color: var(--muted);
-  font-size: var(--text-label);
+  color: var(--ink);
+  font-size: var(--text-body);
   line-height: 1.55;
 }
 
@@ -35,11 +35,11 @@
 
 .accept,
 .decline {
-  min-width: 102px;
-  min-height: 54px;
-  padding: 0 22px;
+  min-width: 92px;
+  min-height: 44px;
+  padding: 0 20px;
   border-radius: var(--radius-pill);
-  font-size: var(--text-body);
+  font-size: var(--text-label);
   font-weight: 500;
   cursor: pointer;
 }
@@ -84,7 +84,8 @@
   .banner {
     flex-direction: column;
     align-items: stretch;
-    padding-bottom: calc(18px + env(safe-area-inset-bottom));
+    gap: 12px;
+    padding-bottom: calc(14px + env(safe-area-inset-bottom));
   }
 
   .actions > button {

@@ -217,11 +217,12 @@ export const en = {
     ],
   },
   consent: {
-    title: "Cookie choice",
-    body: "We count visits with our own statistics tool, which sets no cookies. With your permission, Google Analytics also sets analytics cookies to help us improve the site. We don't use advertising cookies.",
-    link: "Cookie policy",
+    title: "Cookies",
+    // Kept to one plain line on purpose; the details live on the cookie policy page.
+    body: "We use cookies to improve your experience on the site.",
+    link: "Learn more",
     accept: "Accept",
-    decline: "Decline",
+    decline: "No thanks",
     settings: "Cookie settings",
   },
   whatsapp: {
