@@ -79,9 +79,17 @@ function GridIcon() {
   );
 }
 
+function DownloadIcon() {
+  return (
+    <svg aria-hidden="true" viewBox="0 0 24 24" className={styles.downloadIcon}>
+      <path d="M12 4v11M7 10.5l5 5 5-5M5 19.5h14" />
+    </svg>
+  );
+}
+
 export function HomePortal({ locale, dict }: HomePortalProps) {
   const home = dict.home;
-  const { featureSlides, useCases, plans, blogPosts } = home;
+  const { featureSlides, useCases, plans, blogPosts, netscan } = home;
   const [featureIndex, setFeatureIndex] = useState(0);
   const [cookieVisible, setCookieVisible] = useState(true);
   const [typedCount, setTypedCount] = useState(0);
@@ -745,6 +753,42 @@ export function HomePortal({ locale, dict }: HomePortalProps) {
                   <small>{home.routeOpen}</small>
                 </Link>
               ))}
+          </div>
+        </section>
+
+        <section id="netscan" className={`${styles.toolSection} ${styles.cinematicSection}`}>
+          <div className={`${styles.toolCard} ${styles.reveal}`}>
+            <div className={styles.toolCopy}>
+              <span className={styles.toolEyebrow}>{netscan.eyebrow}</span>
+              <h2>{netscan.title}</h2>
+              <p>{netscan.body}</p>
+              <div className={styles.toolActions}>
+                <a
+                  className={styles.primaryAction}
+                  href={netscan.href}
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <DownloadIcon />
+                  <span>{netscan.cta}</span>
+                </a>
+                <small>{netscan.ctaNote}</small>
+              </div>
+            </div>
+            <ul className={styles.toolPoints}>
+              {netscan.points.map((point) => (
+                <li key={point}>{point}</li>
+              ))}
+            </ul>
+            <figure className={styles.toolShot}>
+              <Image
+                src="/netscan-screenshot.png"
+                alt={netscan.imageAlt}
+                width={940}
+                height={234}
+                sizes="(max-width: 1100px) 100vw, 1180px"
+              />
+            </figure>
           </div>
         </section>
 

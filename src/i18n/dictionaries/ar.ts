@@ -19,6 +19,12 @@ export const ar: Dictionary = {
     aiBadge: "تجريبي",
     switchLabel: "English",
     switchAriaLabel: "View the site in English",
+    tool: {
+      label: "NetScan",
+      badge: "مجاني",
+      ariaLabel: "حمّل TMC NetScan، ماسح الشبكات المجاني لويندوز (يفتح في تبويب جديد)",
+      href: "https://netscan.tmcsmart.com",
+    },
     primary: [
       { href: "/", label: "الرئيسية" },
       { href: "/about-us", label: "من نحن" },
@@ -75,6 +81,23 @@ export const ar: Dictionary = {
     routesEyebrow: "تصفّح الموقع",
     routesTitle: "كل ما تحتاجه من TMC في مكان واحد",
     routeOpen: "افتح الصفحة",
+    netscan: {
+      eyebrow: "أداة مجانية من TMC",
+      title: "TMC NetScan: اكتشف كل جهاز على شبكتك من الكمبيوتر",
+      body:
+        "أداة ويندوز مجانية من TMC، مثل Fing و WiFiMan لكن على الكمبيوتر. تكشف كل جهاز متصل بشبكتك: كاميرات، مسجّلات NVR، راوترات، طابعات، موبايلات، كمبيوترات، وراديوهات Mimosa و Ubiquiti، وتعرض مصنّع كل جهاز من عنوان الـ MAC.",
+      points: [
+        "مسح ARP يكشف حتى الأجهزة التي لا ترد على ping",
+        "اسم المصنّع من قاعدة IEEE الكاملة (نحو 52 ألف مصنّع)",
+        "اكتشاف الكاميرات عبر ONVIF و Hikvision SADP و Dahua حتى لو كان الـ IP خاطئاً",
+        "اكتشاف أجهزة Ubiquiti وفحص صحة راديوهات Mimosa",
+        "مسح خلال نحو 18 ثانية، بملف ويندوز واحد بلا تنصيب",
+      ],
+      cta: "حمّل TMC NetScan مجاناً",
+      ctaNote: "ويندوز · مجاني",
+      imageAlt: "واجهة TMC NetScan تعرض أجهزة الشبكة مع أسماء المصنّعين",
+      href: "https://netscan.tmcsmart.com",
+    },
     useCasesEyebrow: "مع من نعمل",
     useCasesTitle: "توريد يناسب طريقة عملك",
     useCases: [
@@ -112,6 +135,12 @@ export const ar: Dictionary = {
     blogEyebrow: "من المدونة",
     blogTitle: "مقالات تقنية من فريق TMC",
     blogPosts: [
+      {
+        title: "حمّل TMC NetScan مجاناً: اكتشف كل جهاز على شبكتك من الكمبيوتر",
+        category: "المقالات التقنية",
+        date: "23 تشرين الثاني 2026",
+        href: "https://erp.tmcsmart.com/blog/مدونة-المقالات-التقنية-4/حمل-tmc-netscan-مجانا-اكتشف-كل-جهاز-على-شبكتك-من-الكمبيوتر-121",
+      },
       {
         title: "أفضل بنية شبكة لمكتب فيه كاميرات، طابعات، أجهزة كمبيوتر، وWiFi",
         category: "المقالات التقنية",
