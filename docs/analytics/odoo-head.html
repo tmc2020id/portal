@@ -1,0 +1,135 @@
+<!-- TMC analytics for the store (erp.tmcsmart.com). Added at the END of Website > custom_code_head,
+     after Odoo's Google Analytics code. Source: portal repo docs/analytics/odoo-head.html -->
+<script>
+(function () {
+    var UMAMI_SRC = 'https://t.tmcsmart.com/script.js';
+    var UMAMI_WEBSITE_ID = 'd265a602-820c-4aad-ac9c-450ccbb2953c';
+    var WHATSAPP_HOSTS = ['wa.me', 'api.whatsapp.com', 'web.whatsapp.com', 'chat.whatsapp.com'];
+    var lang = (document.documentElement.lang || 'ar').slice(0, 2);
+    var queue = [];
+
+    // Umami sets no cookies, so it loads for every visitor.
+    var script = document.createElement('script');
+    script.defer = true;
+    script.src = UMAMI_SRC;
+    script.setAttribute('data-website-id', UMAMI_WEBSITE_ID);
+    script.setAttribute('data-domains', 'erp.tmcsmart.com');
+    script.setAttribute('data-tag', lang);
+    script.onload = function () {
+        while (queue.length) { toUmami.apply(null, queue.shift()); }
+    };
+    document.head.appendChild(script);
+
+    function toUmami(name, data) {
+        if (window.umami && window.umami.track) {
+            try { window.umami.track(name, data); } catch (e) {}
+        } else {
+            queue.push([name, data]);
+        }
+    }
+
+    // Google Analytics keeps following Odoo's consent bar (consent mode).
+    function toGoogle(name, data) {
+        try { if (typeof window.gtag === 'function') { window.gtag('event', name, data); } } catch (e) {}
+    }
+
+    function send(name, data) {
+        toUmami(name, data);
+        toGoogle(name, data);
+    }
+
+    function clean(data) {
+        Object.keys(data).forEach(function (key) {
+            if (data[key] === undefined || data[key] === null || data[key] === '') { delete data[key]; }
+        });
+        return data;
+    }
+
+    function has(text, part) { return String(text || '').indexOf(part) !== -1; }
+
+    // Odoo already sends its shop events to Google; copy them to Umami too. They are read from
+    // dataLayer, because Odoo's cookie bar defines gtag again after the page loads.
+    var SHOP_EVENTS = { view_item: 1, add_to_cart: 1, begin_checkout: 1, add_shipping_info: 1, add_payment_info: 1, purchase: 1 };
+    var seen = 0;
+
+    function copyShopEvents() {
+        var layer = window.dataLayer || [];
+        for (; seen < layer.length; seen++) {
+            var entry = layer[seen];
+            if (!entry || entry[0] !== 'event' || !SHOP_EVENTS[entry[1]]) { continue; }
+            var p = entry[2] || {};
+            if (typeof p === 'string') {
+                try { p = JSON.parse(p); } catch (e) { p = {}; }
+            }
+            var item = (p.items && p.items[0]) || {};
+            toUmami(entry[1], clean({
+                value: p.value,
+                currency: p.currency,
+                transaction_id: p.transaction_id,
+                item_id: item.item_id,
+                item_name: item.item_name,
+                items: p.items ? p.items.length : undefined
+            }));
+        }
+    }
+
+    setInterval(copyShopEvents, 500);
+    window.addEventListener('pagehide', copyShopEvents);
+
+    function digits(value) { return String(value || '').replace(/[^0-9]/g, ''); }
+
+    function placementOf(el) {
+        if (el.closest('.whatsapp-float')) { return 'floating'; }
+        if (el.closest('header')) { return 'header'; }
+        if (el.closest('footer')) { return 'footer'; }
+        return 'main';
+    }
+
+    document.addEventListener('click', function (event) {
+        var link = event.target && event.target.closest ? event.target.closest('a[href]') : null;
+        if (!link) { return; }
+        var url;
+        try { url = new URL(link.href, location.href); } catch (e) { return; }
+        var placement = placementOf(link);
+
+        if (link.classList.contains('js_change_lang')) {
+            send('language_switch', { placement: placement, from_lang: lang, to_lang: (link.getAttribute('data-url_code') || '').slice(0, 2) });
+        } else if (url.protocol === 'tel:') {
+            send('phone_click', { placement: placement, number: digits(url.pathname) });
+        } else if (url.protocol === 'mailto:') {
+            send('email_click', { placement: placement });
+        } else if (url.protocol === 'whatsapp:' || WHATSAPP_HOSTS.indexOf(url.hostname) !== -1) {
+            send('whatsapp_click', { placement: placement, number: digits(url.hostname === 'wa.me' ? url.pathname : url.searchParams.get('phone')) });
+        }
+    }, true);
+
+    function onPageReady() {
+        var path = location.pathname;
+        var term = (new URLSearchParams(location.search).get('search') || '').trim().slice(0, 100);
+
+        // Searches, counted once on the first results page.
+        if (term && !/[/]page[/][0-9]+/.test(path)) {
+            var where = /[/]shop([/]|$)/.test(path) ? 'shop' : has(path, '/website/search') ? 'site' : '';
+            if (where) {
+                var results = where === 'shop'
+                    ? document.querySelectorAll('#products_grid .oe_product').length
+                    : document.querySelectorAll('.o_search_result_item').length;
+                var data = { search_term: term, results: results, search_page: where };
+                toUmami('search', data);
+                if (results === 0) { send('search_no_results', data); }
+            }
+        }
+
+        // The special orders form sends visitors to the thank-you page when it is submitted.
+        if (has(path, '/contactus-thank-you') && has(document.referrer, '/tmc-special-orders')) {
+            send('special_order_request', { placement: 'form' });
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', onPageReady);
+    } else {
+        onPageReady();
+    }
+})();
+</script>

@@ -13,7 +13,7 @@ export function ProductGrid({ labels, products }: ProductGridProps) {
   }
 
   return (
-    <section className={styles.storeSection}>
+    <section className={styles.storeSection} data-track-placement="product_grid">
       <div className={styles.storeHeader}>
         <div>
           <span>{labels.eyebrow}</span>

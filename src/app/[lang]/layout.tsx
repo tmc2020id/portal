@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { IBM_Plex_Sans_Arabic, Outfit } from "next/font/google";
+import { ConsentBanner } from "@/components/consent-banner";
+import { WhatsAppButton } from "@/components/whatsapp-button";
 import { localeDirection, locales } from "@/i18n/config";
 import { resolveLocale } from "@/i18n/dictionaries";
 import "../globals.css";
@@ -44,7 +46,7 @@ export default async function RootLayout({
   children: React.ReactNode;
   params: Promise<{ lang: string }>;
 }>) {
-  const { locale } = await resolveLocale(params);
+  const { locale, dict } = await resolveLocale(params);
 
   return (
     <html
@@ -52,7 +54,11 @@ export default async function RootLayout({
       dir={localeDirection(locale)}
       className={`${outfit.variable} ${plexArabic.variable}`}
     >
-      <body>{children}</body>
+      <body>
+        {children}
+        <WhatsAppButton label={dict.whatsapp.label} message={dict.whatsapp.message} />
+        <ConsentBanner locale={locale} labels={dict.consent} />
+      </body>
     </html>
   );
 }

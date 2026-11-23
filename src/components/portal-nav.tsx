@@ -101,6 +101,9 @@ export function PortalNav({ locale, nav }: NavProps) {
             hrefLang={otherLocale}
             lang={otherLocale}
             aria-label={nav.switchAriaLabel}
+            data-track="language_switch"
+            data-track-from-lang={locale}
+            data-track-to-lang={otherLocale}
           >
             {nav.switchLabel}
           </a>

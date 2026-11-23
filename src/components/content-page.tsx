@@ -4,6 +4,7 @@ import type { ReactNode } from "react";
 import { localizeHref, type Locale } from "@/i18n/config";
 import { resolveLocale } from "@/i18n/dictionaries";
 import type { ContentPageData, Dictionary, PageKey } from "@/i18n/dictionaries/en";
+import type { TrackedEvent } from "@/lib/analytics";
 import { LegalCompany } from "./legal-company";
 import { PortalFooter, PortalNav } from "./portal-nav";
 import styles from "./content-page.module.css";
@@ -13,6 +14,8 @@ type ContentPageProps = {
   dict: Dictionary;
   page: ContentPageData;
   children?: ReactNode;
+  // Analytics event for the call-to-action link, e.g. "special_order_request".
+  ctaTrack?: TrackedEvent;
 };
 
 export async function contentPageMetadata(
@@ -25,7 +28,7 @@ export async function contentPageMetadata(
   return { title: page.metaTitle, description: page.summary };
 }
 
-export function ContentPage({ locale, dict, page, children }: ContentPageProps) {
+export function ContentPage({ locale, dict, page, children, ctaTrack }: ContentPageProps) {
   const {
     eyebrow,
     title,
@@ -170,7 +173,9 @@ export function ContentPage({ locale, dict, page, children }: ContentPageProps) 
               <span>{labels.nextStepEyebrow}</span>
               <h2>{ctaTitle}</h2>
             </div>
-            <Link href={localizeHref(locale, ctaHref)}>{ctaLabel}</Link>
+            <Link href={localizeHref(locale, ctaHref)} data-track={ctaTrack}>
+              {ctaLabel}
+            </Link>
           </article>
         </section>
       </main>
