@@ -5,15 +5,17 @@ import styles from "./product-grid.module.css";
 type ProductGridProps = {
   labels: Dictionary["store"];
   products: OdooProduct[];
+  // Tells the click tracking which grid a store link came from.
+  placement?: string;
 };
 
-export function ProductGrid({ labels, products }: ProductGridProps) {
+export function ProductGrid({ labels, products, placement = "product_grid" }: ProductGridProps) {
   if (!products.length) {
     return null;
   }
 
   return (
-    <section className={styles.storeSection} data-track-placement="product_grid">
+    <section className={styles.storeSection} data-track-placement={placement}>
       <div className={styles.storeHeader}>
         <div>
           <span>{labels.eyebrow}</span>
