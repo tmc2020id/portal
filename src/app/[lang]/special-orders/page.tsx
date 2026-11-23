@@ -11,5 +11,12 @@ export default async function SpecialOrdersPage({
 }) {
   const { locale, dict } = await resolveLocale(params);
 
-  return <ContentPage locale={locale} dict={dict} page={dict.pages.specialOrders} />;
+  return (
+    <ContentPage
+      locale={locale}
+      dict={dict}
+      page={dict.pages.specialOrders}
+      ctaTrack="special_order_request"
+    />
+  );
 }

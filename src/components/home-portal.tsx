@@ -91,7 +91,6 @@ export function HomePortal({ locale, dict }: HomePortalProps) {
   const home = dict.home;
   const { featureSlides, useCases, plans, blogPosts, netscan } = home;
   const [featureIndex, setFeatureIndex] = useState(0);
-  const [cookieVisible, setCookieVisible] = useState(true);
   const [typedCount, setTypedCount] = useState(0);
   const [typingComplete, setTypingComplete] = useState(false);
   const [heroActionsVisible, setHeroActionsVisible] = useState(false);
@@ -631,7 +630,10 @@ export function HomePortal({ locale, dict }: HomePortalProps) {
                 </span>
               </span>
             </h1>
-            <div className={`${styles.heroActions} ${heroActionsVisible ? styles.heroActionsVisible : ''}`}>
+            <div
+              className={`${styles.heroActions} ${heroActionsVisible ? styles.heroActionsVisible : ''}`}
+              data-track-placement="hero"
+            >
               <a className={styles.primaryAction} href={LOGIN_URL}>
                 <GridIcon />
                 <span>{home.login}</span>
@@ -875,18 +877,6 @@ export function HomePortal({ locale, dict }: HomePortalProps) {
       </main>
 
       <PortalFooter locale={locale} nav={dict.nav} />
-
-      {cookieVisible ? (
-        <aside className={styles.cookieBanner}>
-          <p>
-            {home.cookieBody}{" "}
-            <Link href={localizeHref(locale, "/cookie-policy")}>{home.cookieLink}</Link>
-          </p>
-          <button type="button" onClick={() => setCookieVisible(false)}>
-            {home.cookieHide}
-          </button>
-        </aside>
-      ) : null}
     </div>
   );
 }

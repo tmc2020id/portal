@@ -1,0 +1,42 @@
+/* WhatsApp's own brand green, kept local because it is not a TMC token. */
+.button {
+  --whatsapp-green: #25d366;
+
+  position: fixed;
+  right: clamp(16px, 2.5vw, 28px);
+  bottom: calc(clamp(16px, 2.5vw, 28px) + env(safe-area-inset-bottom));
+  z-index: 30;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 58px;
+  height: 58px;
+  border-radius: var(--radius-disc);
+  background: var(--whatsapp-green);
+  color: var(--on-inverse);
+  box-shadow: var(--shadow-control-hover);
+  transition: transform var(--duration-fast) var(--ease-standard);
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  fill: currentColor;
+}
+
+.button:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .button:hover {
+    transform: translateY(-2px) scale(1.04);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .button {
+    transition: none;
+  }
+}

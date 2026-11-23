@@ -215,9 +215,18 @@ export const en = {
         href: "https://erp.tmcsmart.com/en/blog/tech-blog-4/the-difference-between-internet-speed-and-network-speed-why-is-your-speed-not-what-you-expect-117",
       },
     ],
-    cookieBody: "tmcsmart.com doesn't use advertising or tracking cookies.",
-    cookieLink: "Cookie policy",
-    cookieHide: "Hide",
+  },
+  consent: {
+    title: "Cookie choice",
+    body: "We count visits with our own statistics tool, which sets no cookies. With your permission, Google Analytics also sets analytics cookies to help us improve the site. We don't use advertising cookies.",
+    link: "Cookie policy",
+    accept: "Accept",
+    decline: "Decline",
+    settings: "Cookie settings",
+  },
+  whatsapp: {
+    label: "Chat with TMC on WhatsApp",
+    message: "Hello TMC, I'm writing from tmcsmart.com.",
   },
   contentPage: {
     overviewEyebrow: "Overview",
@@ -764,7 +773,7 @@ export const en = {
             },
             {
               title: "Information collected automatically",
-              body: "Basic technical data such as your IP address, browser and device type, the pages you visit and the time of your visit, kept in server and security logs. On the online store, Google Analytics and, if you accept cookies there, the Meta pixel also measure visits, as our cookie policy explains.",
+              body: "Basic technical data such as your IP address, browser and device type, the pages you visit and the time of your visit, kept in server and security logs. We also measure visits to tmcsmart.com and the online store with Google Analytics and with Umami, our own statistics tool that sets no cookies, and the store loads the Meta (Facebook) Pixel if you accept optional cookies, as our cookie policy explains.",
             },
             {
               title: "Information from other services",
@@ -832,7 +841,7 @@ export const en = {
           items: [
             {
               title: "Who we share data with",
-              body: "We do not sell or rent your personal data. We share only what is needed with delivery and shipping companies, payment providers, the hosting and cloud providers that run our servers, artificial intelligence providers for the assistant, Google and Meta when you accept analytics or advertising cookies on the store, and accountants or authorities when the law requires it.",
+              body: "We do not sell or rent your personal data. We share only what is needed with delivery and shipping companies, payment providers, the hosting and cloud providers that run our servers, artificial intelligence providers for the assistant, Google and Meta for website measurement as described in our cookie policy, and accountants or authorities when the law requires it.",
             },
             {
               title: "Where your data is stored",
@@ -996,27 +1005,31 @@ export const en = {
       metrics: [],
       introTitle: "Our approach",
       intro:
-        "Cookies are small files a website saves in your browser. tmcsmart.com does not use advertising or tracking cookies. Our online store uses the cookies it needs to work, and analytics and advertising cookies only if you accept them.",
+        "Cookies are small files a website saves in your browser. tmcsmart.com and our online store use the cookies they need to work. Analytics and advertising cookies are set only if you accept them, and we also count visits with our own statistics tool, which sets no cookies.",
       highlights: [],
       sections: [
         {
           title: "Cookies we use",
           items: [
             {
-              title: "On tmcsmart.com",
-              body: "The website itself does not set advertising, analytics or tracking cookies.",
-            },
-            {
               title: "Security",
-              body: "Our security and delivery provider, Cloudflare, may set strictly necessary cookies to protect the site from attacks and abuse. They are not used to identify you or for advertising.",
+              body: "Our security and delivery provider, Cloudflare, may set strictly necessary cookies to protect both sites from attacks and abuse. They are not used to identify you or for advertising.",
             },
             {
               title: "Online store",
-              body: "The store at erp.tmcsmart.com uses necessary cookies to keep your session, cart and language, such as session_id and frontend_lang. The store cannot work without them.",
+              body: "The store at erp.tmcsmart.com uses necessary cookies to keep your session, cart and language and to remember your cookie choice, such as session_id, frontend_lang and website_cookies_bar. The store cannot work without them.",
             },
             {
-              title: "Store analytics and advertising",
-              body: "The store uses Google Analytics to understand how it is used, and the Meta (Facebook) pixel to measure visits and the results of our ads. Both work only after you accept cookies in the store's cookie bar. Until then, Google receives only anonymous measurements without cookies, and the Meta pixel does not load.",
+              title: "Google Analytics",
+              body: "tmcsmart.com and the store use Google Analytics to understand how visitors find and use them. Its analytics cookies (_ga and _ga_…) are set only after you accept them in the cookie banner; until then Google receives only anonymous measurements without cookies. On tmcsmart.com, Google's advertising features stay off.",
+            },
+            {
+              title: "Facebook Pixel in the store",
+              body: "If you accept optional cookies in the store's cookie bar, the store also loads the Meta (Facebook) Pixel, which sets the _fbp cookie so we can measure our Facebook and Instagram ads. If you keep only the necessary cookies, the Pixel does not load. tmcsmart.com does not use the Pixel.",
+            },
+            {
+              title: "Our own visit statistics",
+              body: "On both sites we count visits with Umami, a statistics tool that runs on our own server. It sets no cookies and does not store your IP address or name. It records the page, the site or campaign link you came from, your country, device and browser type, and actions such as tapping WhatsApp or adding a product to the cart, linked only to an anonymous code that changes every month. This data is not shared with anyone.",
             },
             {
               title: "Other websites",
@@ -1028,12 +1041,16 @@ export const en = {
           title: "Your choices",
           items: [
             {
+              title: "Accept or decline",
+              body: "On tmcsmart.com, the cookie banner lets you accept or decline analytics cookies. Your choice is saved in your browser, and you can change it at any time with the “Cookie settings” button on the cookie policy page at tmcsmart.com. In the store, choose in the store's cookie bar; to choose again, delete the store's cookies in your browser.",
+            },
+            {
               title: "Controlling cookies",
               body: "You can block or delete cookies in your browser settings. Blocking necessary cookies may stop the store or parts of the site from working.",
             },
             {
               title: "Changes",
-              body: "If we add analytics or other optional cookies in the future, we will update this policy and ask for your consent first where required.",
+              body: "If we add other optional cookies or tools, we will update this policy and ask for your consent first where required.",
             },
           ],
         },
