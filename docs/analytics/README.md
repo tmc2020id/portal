@@ -64,13 +64,17 @@ Facebook Pixel بالمتجر صار يشتغل بس بعد «I agree» بشري
 - GA4 بيستبعد البوتات المعروفة تلقائياً.
 - زيارات الاختبار المحلي بتروح لموقع منفصل «TMC local test» بـ Umami، و GA4 لـ `G-TMCTEST000` (رقم وهمي ما بيوصل لشي).
 
-## إعدادات GA4 (من analytics.google.com، بتعملها مرة وحدة)
+## إعدادات GA4
 
-1. **Admin → Data streams → الـ stream تبع الويب → Enhanced measurement:** تأكد إنه شغّال ومعه **Site search**. Odoo بيستعمل `?search=` وهاد من ضمن المعاملات الافتراضية، فما بدها تعديل.
-2. **Admin → Custom definitions → Create custom dimension** (Scope: Event)، وحدة لكل وحدة من: `placement`، `link_path`، `from_lang`، `to_lang`. بدونها ما بتطلع هالقيم بالتقارير.
-3. **Admin → Events:** علّم `whatsapp_click` و `phone_click` و `special_order_request` كـ **Key event** (بيظهروا بعد أول ما ينبعتوا من الموقع الحقيقي). `purchase` معلّم لحاله.
-4. **Admin → Data retention:** خليها 14 شهر بدل شهرين.
-5. **Admin → Google signals:** خليها مطفية (نحنا ما عم نستعمل إعلانات على الموقع).
+الحساب `388175613`، الخاصية `529111125`، والـ stream «odoo» (`14006158891`) اللي رقمه `G-DXDM819BV0`. الموقع والمتجر الاتنين بيبعتوا لنفس الـ stream.
+
+| الإعداد | الحالة (2026-11-23) |
+|---|---|
+| Enhanced measurement | شغّال. **Site search** شغّال ومعاملاته `q,s,search,query,keyword` (Odoo بيستعمل `search`). **Page changes based on browser history** شغّال، وهاد ضروري لأن الموقع بيتنقّل بدون إعادة تحميل |
+| Custom dimensions (Scope: Event) | انعملوا: Placement ← `placement`، Link path ← `link_path`، From language ← `from_lang`، To language ← `to_lang` |
+| Data retention | بيانات الأحداث صارت **14 شهر** (كانت شهرين)، وبيانات المستخدم كانت أصلاً 14 شهر |
+| Google signals | **شغّال** من قبل، وما تغيّر. على tmcsmart.com الشريط بيرفض موافقة الإعلانات دايماً، فـ Google ما بيستعمل زيارات الموقع للإعلانات. على المتجر بيشتغل بس بعد «I agree» |
+| Key events | **لسا.** GA ما بيسمح تعلّم حدث كـ Key event قبل ما يظهر بقائمة **Admin → Events → Recent events** (بياخد لحد 24 ساعة من أول إرسال). وقتها كبسة النجمة جنب `whatsapp_click` و `phone_click` و `special_order_request`. `purchase` معلّم من قبل |
 
 ## اختبار محلي
 
