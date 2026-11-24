@@ -5,7 +5,8 @@ const policiesUpdated = "21 تشرين الثاني 2026";
 
 export const ar: Dictionary = {
   meta: {
-    title: "TMC SMART",
+    title: "TMC SMART | معدات الشبكات والحماية والسيرفرات",
+    imageAlt: "TMC SMART: معدات الشبكات وأنظمة الحماية والسيرفرات",
     description:
       "شركة TMC – Technology Metro Company لتوريد معدات الشبكات وأنظمة الحماية والسيرفرات وأجهزة المنزل الذكي للشركات والفنيين والموزعين، مع خدمة الطلبات الخاصة للمنتجات غير المتوفرة.",
   },

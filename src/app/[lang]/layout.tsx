@@ -4,6 +4,7 @@ import { ConsentBanner } from "@/components/consent-banner";
 import { WhatsAppButton } from "@/components/whatsapp-button";
 import { localeDirection, locales } from "@/i18n/config";
 import { resolveLocale } from "@/i18n/dictionaries";
+import { pageMetadata, siteUrl } from "@/lib/seo";
 import "../globals.css";
 
 const outfit = Outfit({
@@ -31,11 +32,18 @@ export async function generateMetadata({
 }: {
   params: Promise<{ lang: string }>;
 }): Promise<Metadata> {
-  const { dict } = await resolveLocale(params);
+  const { locale, dict } = await resolveLocale(params);
 
+  // Pages below set their own title and share card; the home page uses this.
   return {
-    title: dict.meta.title,
-    description: dict.meta.description,
+    metadataBase: new URL(siteUrl),
+    ...pageMetadata({
+      locale,
+      path: "/",
+      title: dict.meta.title,
+      description: dict.meta.description,
+      imageAlt: dict.meta.imageAlt,
+    }),
   };
 }
 
