@@ -48,7 +48,8 @@ const policiesUpdated = "21 November 2026";
 
 export const en = {
   meta: {
-    title: "TMC SMART",
+    title: "TMC SMART | Networking, Security & Server Equipment",
+    imageAlt: "TMC SMART: networking, security and server equipment",
     description:
       "TMC – Technology Metro Company supplies networking equipment, security systems, servers and smart home devices to companies, technicians and resellers, with special orders for anything not in stock.",
   },

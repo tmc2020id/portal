@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { PolicyPage } from "@/components/policy-page";
 import { resolveLocale } from "@/i18n/dictionaries";
+import { pageMetadata } from "@/lib/seo";
 
 export const dynamic = "force-static";
 
@@ -11,12 +12,15 @@ type ReturnPolicyProps = {
 export async function generateMetadata({
   params,
 }: ReturnPolicyProps): Promise<Metadata> {
-  const { dict } = await resolveLocale(params);
+  const { locale, dict } = await resolveLocale(params);
 
-  return {
+  return pageMetadata({
+    locale,
+    path: "/return-policy",
     title: dict.returnPolicy.metaTitle,
     description: dict.returnPolicy.metaDescription,
-  };
+    imageAlt: dict.meta.imageAlt,
+  });
 }
 
 export default async function ReturnPolicyPage({ params }: ReturnPolicyProps) {

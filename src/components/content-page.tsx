@@ -5,6 +5,7 @@ import { localizeHref, type Locale } from "@/i18n/config";
 import { resolveLocale } from "@/i18n/dictionaries";
 import type { ContentPageData, Dictionary, PageKey } from "@/i18n/dictionaries/en";
 import type { TrackedEvent } from "@/lib/analytics";
+import { pageMetadata, pagePaths } from "@/lib/seo";
 import { LegalCompany } from "./legal-company";
 import { PortalFooter, PortalNav } from "./portal-nav";
 import styles from "./content-page.module.css";
@@ -22,10 +23,16 @@ export async function contentPageMetadata(
   params: Promise<{ lang: string }>,
   key: PageKey,
 ): Promise<Metadata> {
-  const { dict } = await resolveLocale(params);
+  const { locale, dict } = await resolveLocale(params);
   const page: ContentPageData = dict.pages[key];
 
-  return { title: page.metaTitle, description: page.summary };
+  return pageMetadata({
+    locale,
+    path: pagePaths[key],
+    title: page.metaTitle,
+    description: page.summary,
+    imageAlt: dict.meta.imageAlt,
+  });
 }
 
 export function ContentPage({ locale, dict, page, children, ctaTrack }: ContentPageProps) {
