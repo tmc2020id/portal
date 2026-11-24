@@ -50,6 +50,8 @@ const esc = (value) =>
 // A text block in both languages. Inner HTML is escaped here once.
 const t = (enText, arText) => ({ en: esc(enText), ar: esc(arText) });
 const raw = (enHtml, arHtml) => ({ en: enHtml, ar: arHtml });
+// Plain text in both languages (not HTML), for page fields such as the meta description.
+const plain = (enText, arText) => ({ en: String(enText).trim(), ar: String(arText).trim() });
 const link = (href, enLabel, arLabel, cls = "") => {
   const attrs = `${cls ? ` class="${cls}"` : ""} href="${esc(odooPath[href] ?? href)}"`;
   return raw(`<a${attrs}>${esc(enLabel)}</a>`, `<a${attrs}>${esc(arLabel)}</a>`);
@@ -185,7 +187,13 @@ function contentPage(key) {
 
   if (isLegal) sections.push(companySection());
   sections.push(ctaSection(enPage, arPage));
-  return { name: t(enPage.title, arPage.title), meta: t(enPage.metaTitle, arPage.metaTitle), sections };
+  // Same description as the site: contentPageMetadata uses the page summary.
+  return {
+    name: t(enPage.title, arPage.title),
+    meta: t(enPage.metaTitle, arPage.metaTitle),
+    description: plain(enPage.summary, arPage.summary),
+    sections,
+  };
 }
 
 // The return policy has its own shape on the site.
@@ -225,7 +233,12 @@ function returnsPage() {
       "pt40 pb64 text-center",
     ),
   );
-  return { name: t(e.title, a.title), meta: t(e.metaTitle, a.metaTitle), sections };
+  return {
+    name: t(e.title, a.title),
+    meta: t(e.metaTitle, a.metaTitle),
+    description: plain(e.metaDescription, a.metaDescription),
+    sections,
+  };
 }
 
 const cls = (value) => (value ? ` class="${value}"` : "");
@@ -275,6 +288,7 @@ const result = pages.map((page) => {
     portal: `https://tmcsmart.com${Object.keys(odooPath).find((path) => odooPath[path] === page.url)}`,
     name: model.name,
     meta_title: model.meta,
+    meta_description: model.description,
     arch_en: renderArch(model, page.viewKey, "en"),
     arch_ar: renderArch(model, page.viewKey, "ar"),
     terms_ar: terms(model),
@@ -285,7 +299,7 @@ const result = pages.map((page) => {
 const generated = new Date().toISOString();
 const json = {
   about:
-    "TMC policy pages for the Odoo store, generated from the tmcsmart.com dictionaries by scripts/export-odoo-policies.mjs. arch_en is the view source (en_US); terms_ar maps each English block to its Arabic translation (ar_001, the website's default language). arch_ar is the full Arabic page for manual pasting.",
+    "TMC policy pages for the Odoo store, generated from the tmcsmart.com dictionaries by scripts/export-odoo-policies.mjs. arch_en is the view source (en_US); terms_ar maps each English block to its Arabic translation (ar_001, the website's default language). arch_ar is the full Arabic page for manual pasting. meta_description is plain text for the page's website_meta_description (en_US source, ar_001 translation), the same description tmcsmart.com uses.",
   generated,
   odoo: { url: "https://erp.tmcsmart.com", website_id: 1, default_lang: "ar_001", other_langs: ["en_US"] },
   // The render model is only needed for the preview.
