@@ -22,6 +22,10 @@ export function proxy(request: NextRequest) {
 }
 
 export const config = {
-  // Skip Next internals and files with an extension (images, robots.txt, sitemap.xml).
-  matcher: ["/((?!_next|api|.*\\..*).*)"],
+  // Skip Next internals and real files (images, icons, robots.txt, sitemap.xml,
+  // the manifest). Other dotted paths, like an old "/page.html" link, still go
+  // through /ar so they get the site's own 404 page.
+  matcher: [
+    "/((?!_next|api|.*\\.(?:png|jpe?g|gif|webp|avif|svg|ico|txt|xml|webmanifest|json|js|css|map|woff2?|ttf|pdf)$).*)",
+  ],
 };
