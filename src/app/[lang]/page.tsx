@@ -2,7 +2,7 @@ import { connection } from "next/server";
 import { HomePortal } from "@/components/home-portal";
 import { ProductGrid } from "@/components/product-grid";
 import { resolveLocale } from "@/i18n/dictionaries";
-import { getOdooProducts } from "@/lib/odoo";
+import { getOdooBlogPosts, getOdooProducts } from "@/lib/odoo";
 
 export default async function Home({
   params,
@@ -14,12 +14,21 @@ export default async function Home({
   // home page shares the /products cache entry by asking for the same list.
   await connection();
   const { locale, dict } = await resolveLocale(params);
-  const products = (await getOdooProducts(locale)).slice(0, 4);
+  const [allProducts, posts] = await Promise.all([getOdooProducts(locale), getOdooBlogPosts(locale)]);
+  const products = allProducts.slice(0, 4);
+  const blogPosts = posts.map((post) => ({
+    title: post.title,
+    category: dict.home.blogCategory,
+    date: post.date,
+    href: post.href,
+    image: post.image,
+  }));
 
   return (
     <HomePortal
       locale={locale}
       dict={{ home: dict.home, nav: dict.nav }}
+      blogPosts={blogPosts}
       store={<ProductGrid labels={dict.store} products={products} placement="home_product_grid" />}
     />
   );
