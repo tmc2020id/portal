@@ -35,6 +35,13 @@ type HomePortalProps = {
   dict: Pick<Dictionary, "home" | "nav">;
   // Latest products from the Odoo shop, rendered on the server.
   store?: ReactNode;
+  // Latest articles from the Odoo blog. Empty means Odoo couldn't be reached,
+  // and the dictionary's list is shown instead.
+  blogPosts?: HomeBlogPost[];
+};
+
+export type HomeBlogPost = Dictionary["home"]["blogPosts"][number] & {
+  image?: string | null;
 };
 
 type HeadlineCharacter = {
@@ -89,9 +96,10 @@ function DownloadIcon() {
   );
 }
 
-export function HomePortal({ locale, dict, store }: HomePortalProps) {
+export function HomePortal({ locale, dict, store, blogPosts: liveBlogPosts }: HomePortalProps) {
   const home = dict.home;
-  const { featureSlides, useCases, plans, blogPosts, netscan } = home;
+  const { featureSlides, useCases, plans, netscan } = home;
+  const blogPosts: HomeBlogPost[] = liveBlogPosts?.length ? liveBlogPosts : home.blogPosts;
   const [featureIndex, setFeatureIndex] = useState(0);
   const [typedCount, setTypedCount] = useState(0);
   const [typingComplete, setTypingComplete] = useState(false);
@@ -858,17 +866,24 @@ export function HomePortal({ locale, dict, store }: HomePortalProps) {
             <h2>{home.blogTitle}</h2>
           </div>
           <div className={styles.blogGrid}>
-            {blogPosts.map((post) => (
+            {blogPosts.map((post, index) => (
               <article
-                key={post.title}
+                key={post.href}
                 className={`${styles.blogCard} ${styles.reveal}`}
                 style={
                   {
-                    transitionDelay: `${blogPosts.indexOf(post) * 100}ms`,
+                    transitionDelay: `${index * 100}ms`,
                   } as CSSProperties
                 }
               >
-                <div className={styles.blogVisual} />
+                {/* Same link as the title, so it is hidden from keyboard and screen readers. */}
+                <a href={post.href} className={styles.blogVisual} tabIndex={-1} aria-hidden="true">
+                  {post.image ? (
+                    // Served straight from the Odoo shop, like the product images.
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img src={post.image} alt="" loading="lazy" decoding="async" />
+                  ) : null}
+                </a>
                 <div className={styles.blogMeta}>
                   <span>{post.category}</span>
                   <small>{post.date}</small>

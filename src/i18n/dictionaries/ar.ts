@@ -135,6 +135,7 @@ export const ar: Dictionary = {
     ],
     blogEyebrow: "من المدونة",
     blogTitle: "مقالات تقنية من فريق TMC",
+    blogCategory: "المقالات التقنية",
     blogPosts: [
       {
         title: "حمّل TMC NetScan مجاناً: اكتشف كل جهاز على شبكتك من الكمبيوتر",

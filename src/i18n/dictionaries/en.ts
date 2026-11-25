@@ -183,7 +183,9 @@ export const en = {
     ],
     blogEyebrow: "From the blog",
     blogTitle: "Technical articles from the TMC team",
-    // Latest posts from the Odoo blog; phase 4 loads these live.
+    // Label on the cards the home page loads live from the Odoo blog.
+    blogCategory: "Tech Blog",
+    // Shown only when Odoo can't be reached.
     blogPosts: [
       {
         title: "Download TMC NetScan free: see every device on your network from your PC",
