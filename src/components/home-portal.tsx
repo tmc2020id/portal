@@ -58,7 +58,7 @@ function BrandMark({ alt }: { alt: string }) {
       alt={alt}
       className={styles.brandMark}
       width={1024}
-      height={597}
+      height={601}
       priority
     />
   );
