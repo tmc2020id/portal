@@ -252,7 +252,7 @@ export const en = {
     company: [
       {
         label: "Address",
-        value: "Idlib – Sarmada, 100 m after the car roundabout towards Sarmada, Syria",
+        value: "Idlib – Sarmada, 100 m after the car roundabout towards Sarmada, Zumurrud roundabout, Syria",
       },
       { label: "Email", value: "sales@tmcsmart.shop", href: "mailto:sales@tmcsmart.shop" },
       { label: "Phone and WhatsApp", value: "+963 965 445 580", href: "tel:+963965445580" },
@@ -524,7 +524,7 @@ export const en = {
       highlights: [
         {
           title: "Sarmada branch",
-          body: "Idlib – Sarmada, 100 m after the car roundabout towards Sarmada, Syria. Phone: +963 965 445 580.",
+          body: "Idlib – Sarmada, 100 m after the car roundabout towards Sarmada, Zumurrud roundabout, Syria. Phone: +963 965 445 580.",
         },
         {
           title: "Maarat al-Numan branch",
